@@ -1,0 +1,8 @@
+#!/bin/bash
+# REV02 Mon 11 Oct 2021 11:21:09 WIB ana117
+# REV01 Mon 11 Oct 2021 06:53:06 WIB rms46
+# REV00 Thu 08 Jul 2021 10:20:41 WIB rms46
+
+sed -i "s/^## Last.*/$(sed "s/Week/Last Report/" Log/index.md | grep "^## ")/" index.md
+grep "^## L" index.md | head -1
+
