@@ -17,10 +17,6 @@ title:  "Operating Systems - Sistem Operasi"
     * For assignment questions, use 
       [<span style="color:red; font-weight:bold; font-size:larger;">SCELE</span>]({{ site.urlscele }}).
     * For grading related questions, email (Subject:[**HELP**]) operatingsystems at vlsm dot org. See also 
-  * M. Anwar Ma'sum:
-    * [More Information](mam.md)
-  * Rahmat M. Samik-Ibrahim:
-    * [More Information](https://rahmatm.samik-ibrahim.vlsm.org/2021/01/how-to-contact-rahmat-m-samik-ibrahim.html).
 
 <br>
 # LINKS
@@ -80,7 +76,6 @@ Semoga catatan ini akan bermanfaat di masa mendatang,
 saat sudah lupa cara menyelesaikan masalah trivia ini.<br><br>
 <div style="text-align: right;">
 <h2>Qapla!</h2>
-<a href="https://rahmatm.samik-ibrahim.vlsm.org/2021/01/how-to-contact-rahmat-m-samik-ibrahim.html">---
-RMS46</a><br></div>
+<a href="https://cbkadal.blogspot.com/">C. BinKadal</a><br></div>
 <br>
 
