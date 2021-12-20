@@ -1,0 +1,442 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation - LaTeX - Template Version 1.0 (10/11/12)
+% This template has been downloaded from: http://www.LaTeXTemplates.com
+% License: % CC BY-NC-SA 3.0 (http://creativecommons.org/)
+% Modified by Rahmat M. Samik-Ibrahim
+
+% REV319 Mon 19 Jul 2021 23:57:40 WIB
+% REV284 Fri 12 Mar 2021 07:29:51 WIB
+% REV283 Thu 11 Mar 2021 15:40:30 WIB
+% REV282 Wed 10 Mar 2021 15:02:33 WIB
+% REV239 Sun Sep 13 19:17:17 WIB 2020
+% STARTX Wed Sep 14 10:55:16 WIB 2016
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PACKAGES AND THEMES ZCZC
+\documentclass[xcolor=table, notheorems, hyperref={pdfpagelabels=false}]{beamer}
+\input{beamer.tex}
+\input{osHH.tex}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+% The short title appears at the bottom of every slide, 
+% the full title is only on the title page
+% \date{\today}
+\title[\kopikopi]
+{CSGE602055 Operating Systems \\ 
+CSF2600505 Sistem Operasi \\
+Week 03:
+File System \& FUSE} 
+\author{Rahmat M. Samik-Ibrahim (ed.)}
+\institute[UI]
+{
+University of Indonesia \\
+\medskip
+\url{https://os.vlsm.org/Slides/os03.pdf}
+\\ \texttt{Always check for the latest revision!}
+}
+\date{\revision}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\begin{document}
+
+\lstset{
+basicstyle=\ttfamily\tiny, % \tiny \small \footnotesize 
+breakatwhitespace=true,
+language=C,
+columns=fullflexible,
+keepspaces=true,
+breaklines=true,
+tabsize=3, 
+showstringspaces=false,
+extendedchars=true}
+\section{Start}
+\begin{frame}
+\titlepage
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+\input{osII-jadwal.tex}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{Agenda}
+% \begin{frame}{Outline}
+%   \frametitle{Agenda}
+%   \tableofcontents[sections={1-2}]
+% \end{frame}
+\begin{frame}[fragile]
+   \frametitle{Agenda}
+   \tableofcontents
+\end{frame}
+
+% \begin{frame}
+% \frametitle{Agenda}
+% Throughout your presentation, if you choose to use \section{} and 
+% \subsection{} commands, these will automatically be printed on 
+% this slide as an overview of your presentation
+% \tableofcontents 
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+\input{os03-BRP.tex}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{File System Interface}
+\begin{frame}[fragile]
+\frametitle{File System Interface}
+\begin{itemize}
+\item File Concept
+\begin{itemize}
+\item File Attributes: Name, Id, Type, Location, Size, Protection, Time Stamp: create, last modified, last accessed.
+\item File Operation
+\begin{itemize}
+\item Create/Delete/Truncate
+\item Open/Close
+\item Read/Write
+\end{itemize}
+\item File Types: Executable, Object, Source Code, Library, Markup, Markdown, Archive, Compressed.
+\item File Structure: No Structure (just a string).
+\item Access Methods: Sequential vs Direct Access
+\end{itemize}
+\item Directory and Disk Structure
+\begin{itemize}
+\item Three-Structured Directories
+\item Directory Operation: create/delete, search/list, rename, traverse
+\item Path Name: Absolute vs. Relative
+\item FS Mounting vs. Volume Based System
+\end{itemize}
+\item File Sharing
+\item Protection: Access Control (eg. -rwx--x--x)
+\end{itemize}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{File System Organization}
+\begin{frame}[fragile]
+\frametitle{File System Organization}
+\begin{itemize}
+\item Disk Partition
+\begin{itemize}
+\item One Disk --- Many Partitions
+\item Many Disks --- One Partitions
+\item Many Disks --- Many Partitions
+\item One Partition --- One File System (Volume)
+\end{itemize}
+\item Mounting vs. Volumes
+\end{itemize}
+% \begin{lstlisting}[basicstyle=\ttfamily\tiny]
+\begin{lstlisting}[basicstyle=\ttfamily\footnotesize]
+demo@badak:~$ df
+Filesystem     1K-blocks     Used Available Use% Mounted on
+/dev/sda2        9515660  1435776   7573468  16% /
+/dev/sdb1       32895760 12156672  19045036  39% /usr
+/dev/sdc1      412322216 79695252 311639116  21% /home
+udev               10240        0     10240   0% /dev
+tmpfs           16508828        0  16508828   0% /dev/shm
+tmpfs            6603532     8880   6594652   1% /run
+tmpfs               5120        0      5120   0% /run/lock
+tmpfs           16508828        0  16508828   0% /sys/fs/cgroup
+tmpfs            3301768        0   3301768   0% /run/user/1002
+demo@badak:~$ 
+\end{lstlisting}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{FHS: Filesystem Hierarchy Standard}
+\begin{frame}[fragile]
+\frametitle{FHS: Filesystem Hierarchy Standard}
+\begin{itemize}
+\item {\scriptsize Source (URL) \url{http://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.pdf}}
+\item A file placement guidelines/requirements for GNU/Linux-like OS.
+\item[]
+\scalebox{0.72}{%\multirow{2}{*}{XXX}   
+\begin{tabular}{|l|l|l|}
+\hline
+FILES                                 & shareable (multiple hosts) & unshareable (single hosts) \\
+\hline
+static (read only, except for update) & /usr, /opt                 & /etc, /boot                \\
+\hline
+variable (r/w)                        & /var/mail, /var/spool/news & /var/run, /var/lock        \\
+\hline
+\end{tabular}
+}
+\item The Root File System (Required)
+\item[]
+\scalebox{0.72}{%
+\begin{tabular}{l|l}
+Directory & Description \\
+\hline
+/bin   & Essential command binaries \\
+/boot  & Static files of the boot loader\\
+/dev   & Device files\\
+/etc   & Host-specific system configuration\\
+/lib   & Essential shared libraries and kernel modules\\
+/media & Mount point for removable media\\
+/mnt   & Mount point for mounting a filesystem temporarily\\
+/opt   & Add-on application software packages\\
+/run   & Data relevant to running processes\\
+/sbin  & Essential system binaries\\
+/srv   & Data for services provided by this system\\
+/tmp   & Temporary files\\
+/usr   & Secondary hierarchy\\
+/var   & Variable data \\
+\end{tabular}
+}
+
+\end{itemize}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\begin{frame}[fragile]
+\frametitle{More FHS 1}
+\begin{itemize}
+\item  Specific Options
+\item[]
+\scalebox{0.72}{%
+\begin{tabular}{l|l}
+Directory & Description \\
+\hline
+/home      & User home directories (optional) \\
+/lib<qual> & Alternate format essential shared libraries(optional) \\
+/root       & Home directory for the root user (optional) \\
+\end{tabular}
+}
+\item The /usr Hierarchy
+\item[]
+\scalebox{0.72}{%
+\begin{tabular}{l|l}
+Directory & Description \\
+\hline
+/usr/bin & Most user commands (required)\\
+/usr/lib & Libraries (required)\\
+/usr/local & Local hierarchy (empty after main installation) (required)\\
+          & /usr/local/\{bin|etc|games|include|lib|man|sbin|share|src\} (required) \\
+/usr/sbin & Non-vital system binaries (required)\\
+/usr/share & Architecture-independent data (required)\\
+          & /usr/share/\{man|misc\} (required)\\
+          & /usr/share/\{color|dict|doc|games|info|locale\} (optional)\\
+          & /usr/share/\{nls|ppd|sgml|terminfo|tmac|xml|zoneinfo\} (optional)\\
+\hline
+/usr/games   & Games and educational binaries (optional)\\
+/usr/include & Header files included by C programs (optional)\\
+/usr/libexec & Binaries run by other programs (optional)\\
+/usr/lib<qual> & Alternate Format Libraries (optional)\\
+/usr/src     & Source code (optional)\\
+\end{tabular}
+}
+
+\end{itemize}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\begin{frame}[fragile]
+\frametitle{More FHS 2}
+\begin{itemize}
+\item The /var Hierarchy
+\item[]
+\scalebox{0.72}{%
+\begin{tabular}{l|l}
+Directory & Description \\
+\hline
+/var/cache & Application cache data (required)\\
+/var/lib   & Variable state information (required)\\
+           & /var/lib/misc (required)\\
+/var/local & Variable data for /usr/local (required)\\
+/var/lock  & Lock fileslogLog files and directories (required)\\
+/var/opt   & Variable data for /opt (required)\\
+/var/run   & Data relevant to running processes (required)\\
+/var/spool & Application spool data (required)\\
+/var/tmp   & Temporary files preserved between system reboots (required)\\
+\hline
+/var/backups  & (reserved names, do not use)\\
+/var/cron     & (reserved names, do not use)\\
+/var/msgs     & (reserved names, do not use)\\
+/var/preserve & (reserved names, do not use)\\
+\hline
+/var/account  & Process accounting logs (optional)\\
+/var/crash    & System crash dumps (optional)\\
+/var/games    & Variable game data (optional)\\
+/var/mail     & User mailbox files (optional)\\
+/var/yp       & Network Information Service (NIS) database files(optional)\\
+\end{tabular}
+}
+
+\end{itemize}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\begin{frame}[fragile]
+\frametitle{More FHS 3}
+\begin{itemize}
+\item (Mostly) Linux
+\item[]
+\scalebox{0.92}{%
+\begin{tabular}{l|l}
+Directory & Description \\
+\hline
+/proc           & Kernel and process information virtual filesystem\\
+/sys            & Kernel and system information virtual filesystem\\
+/usr/include    & Header files included by C programs\\
+/usr/src        & Source code\\
+/var/spool/cron & cron and at jobs\\
+\end{tabular}
+}
+
+\end{itemize}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+\section{Devices}
+\begin{frame}[fragile]
+\frametitle{Devices}
+\begin{itemize}
+\item the \texttt{/dev/} directory
+\begin{itemize}
+\item \texttt{/etc/fstab}: configuration of filesystems
+\item \texttt{/etc/mtab} $\rightarrow$ \texttt{/proc/mounts}: mounted filesystems
+\item \texttt{/proc/swaps}: swap filesystems
+\item \texttt{df}: checking diskspace and filesystems
+\item Device Major and Minor Numbers
+\item UUID - Universally Unique IDentifier (128 bits)
+\item GUID - Globally Unique IDentifiers: \texttt{ls -al /dev/disk/by-uuid}
+\item practically is NOT guaranteed unique
+\item FUSE: Filesystem in Userspace
+\item BBFS: Big Brother File System
+\end{itemize}
+\item More Storage Structure
+\begin{itemize}
+\item \texttt{tmpfs}
+\item \texttt{objfs}
+\item \texttt{ctfs}
+\item \texttt{lofs}
+\item \texttt{procfs}
+\item \texttt{ufs}
+\item \texttt{zfs}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\begin{frame}[fragile]
+\frametitle{A Typical Ubuntu 20.04 Work Station}
+\begin{lstlisting}[basicstyle=\ttfamily\tiny]
+rms46@pamulang1:~$ df
+Filesystem      1K-blocks       Used Available Use% Mounted on
+udev              8138664          0   8138664   0% /dev
+tmpfs             1634140       1948   1632192   1% /run
+tmpfs             8170684     210348   7960336   3% /dev/shm
+tmpfs                5120          4      5116   1% /run/lock
+tmpfs             8170684          0   8170684   0% /sys/fs/cgroup
+tmpfs             1634136         76   1634060   1% /run/user/1000
+/dev/sda1           98304      33523     64781  35% /boot/efi
+/dev/sda3       286082372   78565916 207516456  28% /altfs/ntfs
+/dev/sda5        32999120    9181772  22111364  30% /altfs/linux1
+/dev/sda6        38186548   12054612  24162428  34% /altfs/linux2
+/dev/sda7       126265680   13342928 106465768  12% /
+/dev/sdb2        62216964   13238156  45788588  23% /var
+/dev/sdb3      3532259904 2605226568 747535200  78% /home
+/dev/loop0         101632     101632         0 100% /snap/core/10859
+/dev/loop1          65920      65920         0 100% /snap/gtk-common-themes/1513
+/dev/loop2          66432      66432         0 100% /snap/gtk-common-themes/1514
+/dev/loop3         678016     678016         0 100% /snap/intellij-idea-community/273
+/dev/loop4         679040     679040         0 100% /snap/intellij-idea-community/270
+/dev/loop5          52352      52352         0 100% /snap/snap-store/498
+/dev/loop6         223232     223232         0 100% /snap/gnome-3-34-1804/60
+/dev/loop7         267008     267008         0 100% /snap/kde-frameworks-5-core18/32
+/dev/loop8         166784     166784         0 100% /snap/gnome-3-28-1804/145
+/dev/loop9         102784     102784         0 100% /snap/kotlin/57
+/dev/loop10         52352      52352         0 100% /snap/snap-store/518
+/dev/loop11         56832      56832         0 100% /snap/core18/1988
+/dev/loop12         33152      33152         0 100% /snap/snapd/11107
+/dev/loop13        100736     100736         0 100% /snap/core/10823
+###########        ##### TL;DR #####         # #### #################
+/dev/loop18         56832      56832         0 100% /snap/core18/1944
+/dev/loop19        142080     142080         0 100% /snap/chromium/1506
+\end{lstlisting}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{File System Implementation}
+\begin{frame}[fragile]
+\frametitle{File Systems Implementation}
+\begin{itemize}
+\item File System Layers / Structure
+\begin{itemize}
+\item Application Programs
+\item Logical File Systems
+\item File-Organization Module
+\item Basic File Systems
+\item I/O Control
+\item Hardware Device
+\end{itemize}
+\item File System Implementation
+\item File Control Block
+\item FS In Memory Structure
+\item VFS: Virtual File Systems
+\begin{itemize}
+\item How to support multiple File Systems
+\item I.e. How to support multiple \texttt{open()/close() read()/write()} operations
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\begin{frame}[fragile]
+\frametitle{Implementation and Allocation Method}
+\begin{itemize}
+\item Directory Implementation
+\begin{itemize}
+\item Linear List
+\item Hast Table
+\end{itemize}
+\item {Allocation Method}
+\begin{itemize}
+\item Contiguous
+\item Linked
+\item Indexed
+\item Combined Scheme
+\end{itemize}
+\item Free Space Management
+\item Performance \& Efficiency
+\item Unified Buffer Cache
+\item Recovery
+\item Log Structured File System
+\end{itemize}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{File System Internals}
+\begin{frame}[fragile]
+\frametitle{File Systems Internals}
+\begin{itemize}
+\item File Systems
+\item File-System Mounting
+\item Partitions and Mounting
+\item File Sharing
+\item Virtual File Systems
+\item Remote File Systems
+\item Consistency Semantics
+\item NFS
+\end{itemize}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+\input{os03-check.tex}
+
+% 12 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{The End}
+\begin{frame}
+\frametitle{The End}
+\begin{itemize}
+\item[$\square$] This is the end of the presentation.
+\item[$\boxtimes$] This is the end of the presentation.
+\item This is the end of the presentation.
+\end{itemize}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\end{document}
+

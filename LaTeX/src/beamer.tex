@@ -1,0 +1,286 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation - LaTeX - Template Version 1.0 (10/11/12)
+% This template has been downloaded from: http://www.LaTeXTemplates.com
+% License: % CC BY-NC-SA 3.0 (http://creativecommons.org/)
+% Modified by Rahmat M. Samik-Ibrahim
+% REV316 Wed 14 Jul 2021 13:42:41 WIB
+% REV217 Tue Feb  4 15:10:30 WIB 2020
+% REV198 Wed Mar 13 16:39:02 WIB 2019
+% REV006 Mon Jan 22 19:10:41 WIB 2018
+% REV005 Mon Oct  2 14:45:07 WIB 2017
+% START  Thu Aug 25 14:15:19 WIB 2016
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% ZCZC NNNN
+\newtheorem{example}{Example}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\let\Tiny=\tiny
+\mode<presentation> {
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+%\usetheme{Boadilla}
+\usetheme{Madrid}
+% ZCZC %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \usetheme{default} \usetheme{AnnArbor} \usetheme{Antibes} \usetheme{Bergen}
+% \usetheme{Berkeley} \usetheme{Berlin} \usetheme{CambridgeUS} 
+% \usetheme{Copenhagen} \usetheme{Darmstadt} \usetheme{Dresden}
+% \usetheme{Frankfurt} \usetheme{Goettingen} \usetheme{Hannover}
+% \usetheme{Ilmenau} \usetheme{JuanLesPins} \usetheme{Luebeck}
+% \usetheme{Malmoe} \usetheme{Marburg} \usetheme{Montpellier}
+% \usetheme{PaloAlto} \usetheme{Pittsburgh} \usetheme{Rochester}
+% \usetheme{Singapore} \usetheme{Szeged} \usetheme{Warsaw}
+% NNNN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+\usecolortheme{whale}
+% ZCZC %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usecolortheme{albatross} \usecolortheme{beaver} \usecolortheme{beetle}
+%\usecolortheme{crane} \usecolortheme{dolphin} \usecolortheme{dove}
+%\usecolortheme{fly} \usecolortheme{lily} \usecolortheme{wolverine}
+% NNNN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline} 
+% To replace the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] 
+% To remove the navigation symbols from the bottom uncomment this line
+\setbeamertemplate{navigation symbols}{} 
+}
+
+\usepackage{array}       % ZCZC
+\usepackage{amssymb}     % ZCZC
+\usepackage{bold-extra}  % ZCZC
+\usepackage{booktabs}    % Allows \toprule, \midrule and \bottomrule in tables
+\usepackage{caption}
+\usepackage[T1]{fontenc} % ZCZC << >>
+\usepackage{graphicx}    % Allows including images
+\usepackage{listings}    % listing
+\usepackage{lmodern}     % ZCZC
+\usepackage{perpage}     % reset footnote per page
+\usepackage{geometry}    % ZCZC
+\usepackage{adjustbox}   % ZCZC
+\usepackage{multirow}    % ZCZC
+
+% \definecolor{links}{HTML}{2A1B81}
+\definecolor{links}{HTML}{0011FF}
+\hypersetup{colorlinks,linkcolor=,urlcolor=links}
+
+% \usepackage{xcolor}
+% \usepackage[colorlinks = true,
+%             linkcolor = blue,
+%             urlcolor  = blue,
+%             citecolor = blue,
+%             anchorcolor = blue]{hyperref}
+
+\captionsetup[table]{name=Tabel}
+\makeatletter
+\def\input@path{{src/}}
+\makeatother
+\graphicspath{{src/}}      % src directory
+\MakePerPage{footnote}     % reset page
+
+% NNNN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% % XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%% % The short title appears at the bottom of every slide, 
+%% % the full title is only on the title page
+%% \title[Judul Pendek]{Judul Panjang dan Lengkap} 
+%% \author{Cecak bin Kadal}
+%% \institute[UILA]
+%% {
+%% University of Indonesia at Lenteng Agung \\ 
+%% \medskip
+%% \textit{cecak@binKadal.com}
+%% }
+%% \date{REV00 24-Aug-2016}
+%% % \date{\today}
+%% 
+
+%% % XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%% \begin{document}
+%% \section{Judul}
+%% \begin{frame}
+%% \titlepage
+%% \end{frame}
+%% 
+%% % XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%% \section{Agenda}
+%% \begin{frame}
+%% \frametitle{Agenda}
+%% % Throughout your presentation, if you choose to use \section{} and 
+%% % \subsection{} commands, these will automatically be printed on 
+%% % this slide as an overview of your presentation
+%% \tableofcontents 
+%% \end{frame}
+%% 
+%% % XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%% \section{UUD dan Pancasila}
+%% \subsection{UUD}
+%% \begin{frame}
+%% \frametitle{Pembukaan}
+%% Bahwa sesungguhnya kemerdekaan itu ialah hak segala bangsa dan oleh 
+%% sebab itu, maka penjajahan diatas dunia harus dihapuskan karena 
+%% tidak sesuai dengan perikemanusiaan dan perikeadilan.
+%% \\~\\
+%% Atas berkat rahmat Allah Yang Maha Kuasa dan dengan didorongkan oleh 
+%% keinginan luhur, supaya berkehidupan kebangsaan yang bebas, maka 
+%% rakyat Indonesia menyatakan dengan ini kemerdekaannya.
+%% \end{frame}
+%% 
+%% % XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%% \begin{frame}
+%% \frametitle{Alenia Ketiga}
+%% Kemudian daripada itu untuk membentuk suatu pemerintah negara Indonesia 
+%% yang melindungi segenap bangsa Indonesia dan seluruh tumpah darah Indonesia 
+%% dan untuk memajukan kesejahteraan umum, mencerdaskan kehidupan bangsa, dan 
+%% ikut melaksanakan ketertiban dunia yang berdasarkan kemerdekaan, perdamaian 
+%% abadi dan keadilan sosial, maka disusunlah kemerdekaan kebangsaan Indonesia 
+%% itu dalam suatu Undang-Undang Dasar negara Indonesia, yang terbentuk dalam 
+%% suatu susunan negara Republik Indonesia yang berkedaulatan rakyat dengan 
+%% berdasar kepada:
+%% \begin{itemize}
+%% \item Ketuhanan Yang Maha Esa,
+%% \item kemanusiaan yang adil dan beradab,
+%% \item persatuan Indonesia,
+%% \item dan kerakyatan yang dipimpin oleh hikmat kebijaksanaan 
+%%       dalam permusyawaratan/ perwakilan,
+%% \item serta dengan mewujudkan suatu keadilan sosial bagi seluruh rakyat 
+%%       Indonesia.
+%% \end{itemize}
+%% \end{frame}
+%% 
+%% % XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%% \subsection{Pancasila}
+%% \begin{frame}
+%% \frametitle{Tujuh Kunci Pokok}
+%% \begin{block}{Pertama - Kedua - Ketiga}
+%% Indonesia ialah negara berdasarkan hukum.
+%% Sistem konstitusional.
+%% Kekuasaan negara tertinggi di tangan MPR.
+%% \end{block}
+%% 
+%% \begin{block}{Keempat - Kelima}
+%% Presiden adalah penyelenggara pemerintahan tertinggi di bawah MPR.
+%% Adanya pengawasan DPR.
+%% \end{block}
+%% 
+%% \begin{block}{Keenam}
+%% Menteri negara adalah pembantu presiden dan tidak bertanggung jawab 
+%% kepada DPR.
+%% \end{block}
+%% 
+%% \begin{block}{Ketujuh}
+%% Kekuasaan kepala negara tidak tak tebatas.
+%% \end{block}
+%% 
+%% \end{frame}
+%% 
+%% % XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%% \section{Rupa-rupa}
+%% \subsection{Kolom}
+%% \begin{frame}
+%% \frametitle{Kolom}
+%% % The "c" option specifies centered vertical alignment 
+%% % while the "t" option is used for top vertical alignment
+%% \begin{columns}[c] 
+%% % Left column and width
+%% \column{.45\textwidth} 
+%% \textbf{Heading}
+%% \begin{enumerate}
+%% \item Satu-satu
+%% \item Dua-dua
+%% \item Tiga-tiga
+%% \item Satu-dua-tiga
+%% \end{enumerate}
+%% 
+%% % Right column and width
+%% \column{.5\textwidth}
+%% Satu-satu~\dots{} aku sayang ibu!
+%% Dua-dua~\ldots{} juga sayang ayah!
+%% Tiga-tiga~\ldots{} sayang adik kakak!
+%% Satu-dua-tiga~\ldots{} sayang semuanya!
+%% 
+%% \end{columns}
+%% \end{frame}
+%% 
+%% % XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%% \subsection{Tabel}
+%% \begin{frame}
+%% \frametitle{Tabel}
+%% \begin{table}
+%% \begin{tabular}{l l l}
+%% \toprule
+%% \textbf{Nama} & \textbf{NPM} & \textbf{Tanggal Lahir}\\
+%% \midrule
+%% Cecak bin Kadal & 1234567890 & 1 Jan 2015 \\
+%% Aneh bin Ajaib  & 0987654321 & 31 Des 2014 \\
+%% \bottomrule
+%% \end{tabular}
+%% \caption{Keterangan Tabel}
+%% \end{table}
+%% \end{frame}
+%% 
+%% % XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%% \subsection{Teori}
+%% \begin{frame}
+%% \frametitle{Teori}
+%% \begin{theorem}[Teori Satu Batu]
+%% $E = mc^2$
+%% \end{theorem}
+%% \end{frame}
+%% 
+%% % XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%% \subsection{Verbatim}
+%% % Need to use the fragile option when verbatim is used in the slide
+%% \begin{frame}[fragile] 
+%% \frametitle{Verbatim}
+%% \begin{example}[Teori Satu Batu]
+%% \begin{verbatim}
+%% \begin{theorem}[Teori Satu Batu]
+%% $E = mc^2$
+%% \end{theorem}
+%% \end{verbatim}
+%% \end{example}
+%% \end{frame}
+%% 
+%% % XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%% \subsection{Gambar}
+%% \begin{frame}
+%% \frametitle{Gambar}
+%% \begin{figure}
+%% \includegraphics[width=0.5\linewidth]{2}
+%% \caption{Ini Gambar JPG}
+%% \end{figure}
+%% \end{frame}
+%% 
+%% % XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%% \subsection{Rujukan}
+%% % Need to use the fragile option when verbatim is used in the slide
+%% \begin{frame}[fragile] 
+%% \frametitle{Rujukan dan Kutipan}
+%% Contoh penggunaan \verb|\cite| ketika mengutip\cite{p1}.
+%% Perhatian: Beamer tidak mengerti \verb|\BibTeX|~\ldots
+%% \footnotesize{
+%%   \begin{thebibliography}{99} 
+%%   \bibitem[Smith, 2012]{p1} John Smith (2012)
+%%      \newblock Katak dalam Tempurung
+%%      \newblock \emph{Jurnal Kelapa dan Amfibi} 12(3), 45 -- 678.
+%%   \end{thebibliography}
+%% }
+%% \end{frame}
+%% 
+%% % XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%% \subsection{Selesai}
+%% \begin{frame}
+%% \Huge{\centerline{Selesai}}
+%% \end{frame}
+%% 
+%% % XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%% \end{document}

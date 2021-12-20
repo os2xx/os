@@ -1,0 +1,441 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation - LaTeX - Template Version 1.0 (10/11/12)
+% This template has been downloaded from: http://www.LaTeXTemplates.com
+% License: % CC BY-NC-SA 3.0 (http://creativecommons.org/)
+% Modified by Rahmat M. Samik-Ibrahim
+
+% REV334 Sat 28 Aug 2021 06:07:28 WIB
+% REV319 Mon 19 Jul 2021 23:57:40 WIB
+% REV295 Tue 30 Mar 2021 14:18:10 WIB
+% REV294 Sat 27 Mar 2021 09:36:10 WIB
+% REV292 Wed 24 Mar 2021 07:57:35 WIB
+% STARTX Wed 14 Sep 2016 10:48:45 WIB
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PACKAGES AND THEMES ZCZC
+\documentclass[xcolor=table, notheorems, hyperref={pdfpagelabels=false}]{beamer}
+\input{beamer.tex}
+\input{osHH.tex}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+% The short title appears at the bottom of every slide, 
+% the full title is only on the title page
+% \date{\today}
+\title[\kopikopi]
+{CSGE602055 Operating Systems \\ 
+CSF2600505 Sistem Operasi \\
+Week 05:
+Virtual Memory} 
+\author{Rahmat M. Samik-Ibrahim (ed.)}
+\date{\revision}
+\institute[UI]
+{
+University of Indonesia \\
+\medskip
+\url{https://os.vlsm.org/Slides/os05.pdf}
+\\ \texttt{Always check for the latest revision!}
+}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\begin{document}
+
+\lstset{
+basicstyle=\ttfamily\tiny, % \tiny \small \footnotesize 
+breakatwhitespace=true,
+language=C,
+columns=fullflexible,
+keepspaces=true,
+breaklines=true,
+tabsize=3, 
+showstringspaces=false,
+extendedchars=true}
+
+\section{Start}
+\begin{frame}
+\titlepage
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+\input{osII-jadwal.tex}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{Week 05}
+% \begin{frame}[allowframebreaks]
+\begin{frame}
+\frametitle{Week 05: Memory}
+% Throughout your presentation, if you choose to use \section{} and 
+% \subsection{} commands, these will automatically be printed on 
+% this slide as an overview of your presentation
+\tableofcontents 
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+\input{os05-BRP.tex}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{Virtual Memory}
+\begin{frame}
+\frametitle{Virtual Memory}
+\begin{itemize}
+\item Reference: (OSC10-ch10 demo-w05)
+\item Virtual Memory: Separation Logical from Physical.
+\item Virtual Address Space: logical view.
+\item Demand Paging
+\item Page Flags: Valid / Invalid
+\item Page Fault
+\item Demand Paging Performance
+\item Copy On Write (COW)
+\item Page Replacement Algorithm
+\begin{itemize}
+\item Reference String
+\item First-In-First-Out (FIFO)
+\item Belady Anomaly
+\item Optimal Algorithm
+\item Least Recently Used (LRU)
+\item LRU Implementation
+\item Lease Frequently Used (LFU)
+\item Most Frequently Used (MFU) 
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{Memory Allocation Algorithm}
+\begin{frame}
+\frametitle{Memory Allocation Algorithm}
+\begin{itemize}
+\item Page-Buffering Algorithms
+\item Allocation of Frames
+\item Fixed Allocation
+\item Priority Allocation
+\item Global vs. Local Allocation
+\item Non-Uniform Memory Access (NUMA)
+\item Thrashing
+\item Working-Set Model
+\item Shared Memory via Memory-Mapped I/O
+\item Kernel
+\begin{itemize}
+\item Buddy System Allocator
+\item Slab Allocator
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{TOP: Table of Processes}
+\begin{frame}[fragile]
+\frametitle{TOP: Table of Processes (12-memory.c) (01)}
+
+See also \url{https://osp4diss.vlsm.org/osp-101.html}
+
+% \begin{lstlisting}[basicstyle=\ttfamily\tiny]         % 108
+% \begin{lstlisting}[basicstyle=\ttfamily\footnotesize] %  72
+% \begin{lstlisting}[basicstyle=\ttfamily\small]        %  65
+% \begin{lstlisting}[basicstyle=\ttfamily\large]        %  54
+\begin{lstlisting}[basicstyle=\ttfamily\tiny]
+
+/*
+ * Copyright (C) 2016-2021 Rahmat M. Samik-Ibrahim
+ * http://rahmatm.samik-ibrahim.vlsm.org/
+ * This program is free script/software. This program is distributed in the 
+ * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
+ * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# INFO: TOP (Table of Processes)
+ * REV11 Tue 30 Mar 18:25:50 WIB 2021
+ * REV07 Fri 26 Mar 22:52:06 WIB 2021
+ * REV06 Thu 25 Mar 13:52:59 WIB 2021
+ * REV05 Wed 27 Feb 19:16:52 WIB 2019
+ * REV04 Mon 12 Mar 17:33:30 WIB 2018
+ * START Mon 03 Oct 09:26:51 WIB 2016
+ */
+
+#define TOKEN  "OS212W05"
+#define MSTARTS 0x125E4
+// #define MSTARTS 0x2BE5
+// #define MSTARTS 0xFE4
+// #define MSTARTS 0x3E4
+// #define MSTARTS 0x1E4
+
+#define MSIZE14 0x40609
+#define MSIZE13 0x40609
+#define MSIZE12 0x40608
+#define MSIZE11 0x40608
+#define MSIZE10 0x20FE8
+#define MSIZE09 0x20FE8
+#define MSIZE08 0x1F609
+
+\end{lstlisting}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\begin{frame}[fragile]
+\frametitle{TOP: Table of Processes (12-memory.c) (02)}
+% \begin{lstlisting}[basicstyle=\ttfamily\footnotesize]
+\begin{lstlisting}[basicstyle=\ttfamily\tiny]
+
+#define MSIZE07 0x1F609
+#define MSIZE06 0x1F608
+#define MSIZE05 0x1F608
+#define MSIZE04 0x1E609
+#define MSIZE03 0x1E609
+#define MSIZE02 0x1E609
+#define MSIZE01 0x1E608
+#define MSIZE00 0x1E608
+#define LINE   75
+#define MAXSTR 80
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
+#include <sys/types.h>
+
+typedef  unsigned char* uChrPtr;
+void     chktoken (uChrPtr token);
+
+void printLine(int line) {
+   while(line-- > 0) putchar('x');
+   putchar('\n');
+   fflush(NULL);
+}
+
+uChrPtr GlobalChar[MSTARTS];
+
+\end{lstlisting}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\begin{frame}[fragile]
+\frametitle{TOP: Table of Processes (12-memory.c) (03)}
+% \begin{lstlisting}[basicstyle=\ttfamily\tiny]
+% \begin{lstlisting}[basicstyle=\ttfamily\footnotesize]
+\begin{lstlisting}[basicstyle=\ttfamily\tiny]
+
+void main(void) {
+   int   msize[] = {MSIZE00, MSIZE01, MSIZE02, MSIZE03, MSIZE04, 
+                    MSIZE05, MSIZE06, MSIZE07, MSIZE08, MSIZE09,
+                    MSIZE10, MSIZE11, MSIZE12, MSIZE13, MSIZE14};
+   int   ii, jj;
+   int   myPID    = (int) getpid();
+   char  strSYS1[MAXSTR], strOUT[MAXSTR];
+   char* chrPTR; 
+   char* chrStr;
+
+   printLine(LINE);
+   printf("ZCZC chktoken\n");
+   chktoken(TOKEN);
+   printLine(LINE);
+
+   sprintf(strSYS1, "top -b -n 1 -p%d | tail -5", myPID);
+   system (strSYS1);
+   sprintf(strSYS1, "top -b -n 1 -p%d | tail -1", myPID);
+   printf("PART 1\n");
+   printLine(LINE);
+   for (ii=0; ii < (sizeof(msize)/sizeof(int)); ii++){
+      chrStr = malloc(msize[ii]);
+      FILE* filePtr=popen(strSYS1, "r");
+      fgets(strOUT, sizeof(strOUT)-1, filePtr);
+      pclose(filePtr);
+      strOUT[(int) strlen(strOUT)-1]='\0';
+      printf("%s [%X]\n", strOUT, msize[ii]);
+      free(chrStr);
+   }
+
+\end{lstlisting}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\begin{frame}[fragile]
+\frametitle{TOP: Table of Processes (12-memory.c) (04)}
+% \begin{lstlisting}[basicstyle=\ttfamily\tiny]
+% \begin{lstlisting}[basicstyle=\ttfamily\footnotesize]
+\begin{lstlisting}[basicstyle=\ttfamily\footnotesize]
+
+   printf("\nPART 2\n");
+   printLine(LINE);
+   for (ii=0; ii < (sizeof(msize)/sizeof(int)); ii++){
+      chrPTR = chrStr = malloc(msize[ii]);
+      for (jj=0;jj<msize[ii];jj++)
+         *chrPTR++='x';
+      FILE* filePtr=popen(strSYS1, "r");
+      fgets(strOUT, sizeof(strOUT)-1, filePtr);
+      pclose(filePtr);
+      strOUT[(int) strlen(strOUT)-1]='\0';
+      printf("%s [%X]\n", strOUT, msize[ii]);
+      free(chrStr);
+   }
+}
+
+\end{lstlisting}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\begin{frame}[fragile]
+\frametitle{TOP: Table of Processes (13-chktoken.c) (05)}
+% \begin{lstlisting}[basicstyle=\ttfamily\footnotesize]
+\begin{lstlisting}[basicstyle=\ttfamily\tiny]
+/*
+ * Copyright (C) 2021 Rahmat M. Samik-Ibrahim
+ * http://rahmatm.samik-ibrahim.vlsm.org/
+ * This program is free script/software. This program is distributed in the 
+ * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
+ * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * REV05: Tue 30 Mar 14:55:36 WIB 2021
+ * REV04: Tue 30 Mar 10:35:13 WIB 2021
+ * REV03: Tue 30 Mar 08:36:56 WIB 2021
+ * START: Mon 22 Mar 2021 16:14:36 WIB
+ *
+# INFO: chktoken(TOKEN) function
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+
+#define  MAXINPUT   256
+#define  MAXCMD     MAXINPUT
+#define  MAXOUTPUT  MAXINPUT
+#define  RESULT     4
+
+typedef           char  Chr;
+typedef           char* ChrPtr;
+typedef  unsigned char  uChr;
+typedef  unsigned char* uChrPtr;
+
+\end{lstlisting}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\begin{frame}[fragile]
+\frametitle{TOP: Table of Processes (13-chktoken.c) (05)}
+% \begin{lstlisting}[basicstyle=\ttfamily\tiny]
+% \begin{lstlisting}[basicstyle=\ttfamily\footnotesize]
+\begin{lstlisting}[basicstyle=\ttfamily\tiny]
+
+#define CMDSTRING "echo %s | sha1sum | cut -c1-4 | tr '[:lower:]' '[:upper:]' "
+void mySHA1(uChrPtr input, uChrPtr output) {
+    Chr  cmd[MAXCMD];
+    sprintf(cmd, CMDSTRING, input);
+    FILE* filePtr = popen(cmd, "r");
+    fgets(output, RESULT+1, filePtr);
+    output[RESULT]=0;
+    pclose(filePtr);
+}
+
+void getTimeStamp(uChrPtr timeStamp) {
+    time_t tt    =  time(NULL);
+    struct tm tm = *localtime(&tt);
+    sprintf(timeStamp, "%2.2d%2.2d", tm.tm_min, tm.tm_sec);
+}
+
+void     chktoken (uChrPtr token) {
+    uChr    input [MAXINPUT];
+    uChr    output[MAXOUTPUT];
+    uChr    timeStamp[] = "MMSS";
+    uChrPtr user        = getenv("USER");
+    getTimeStamp(timeStamp);
+    int     len   = strlen(timeStamp);
+    strcpy(input,timeStamp);
+    strcpy(input+len,user);
+    len          += strlen(user);
+    strcpy(input+len,token);
+    len          += strlen(token);
+    mySHA1(input,   output);
+    printf("%s %s-%s\n", user, timeStamp, output);
+}
+
+\end{lstlisting}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\begin{frame}[fragile]
+\frametitle{TOP: Table of Processes (13-chktoken) (06)}
+%\begin{lstlisting}[basicstyle=\ttfamily\footnotesize]
+\begin{lstlisting}[basicstyle=\ttfamily\tiny]
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ZCZC chktoken
+cbkadal 5257-80A5
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+MiB Mem :    986.5 total,    157.1 free,    174.2 used,    655.2 buff/cache
+MiB Swap:    488.0 total,    488.0 free,      0.0 used.    632.0 avail Mem 
+
+  PID    VIRT    RES    SHR   SWAP   CODE    DATA   USED nDRT
+  864    6000   1528   1240      0      8     948   1528    0
+PART 1
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  864    6000   1528   1240      0      8     948   1528    0 [1E608]
+  864    6000   2620   2292      0      8     948   2620    0 [1E608]
+  864    6132   2620   2292      0      8    1080   2620    0 [1E609]
+  864    6004   2620   2292      0      8     952   2620    0 [1E609]
+  864    6004   2620   2292      0      8     952   2620    0 [1E609]
+  864    6004   2620   2292      0      8     952   2620    0 [1F608]
+  864    6004   2620   2292      0      8     952   2620    0 [1F608]
+  864    6136   2620   2292      0      8    1084   2620    0 [1F609]
+  864    6136   2624   2292      0      8    1084   2624    0 [1F609]
+  864    6136   2624   2292      0      8    1084   2624    0 [20FE8]
+  864    6136   2624   2292      0      8    1084   2624    0 [20FE8]
+  864    6136   2624   2292      0      8    1084   2624    0 [40608]
+  864    6136   2624   2292      0      8    1084   2624    0 [40608]
+  864    6268   2624   2292      0      8    1216   2624    0 [40609]
+  864    6264   2624   2292      0      8    1212   2624    0 [40609]
+
+\end{lstlisting}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\begin{frame}[fragile]
+\frametitle{TOP: Table of Processes (13-chktoken) (07)}
+%\begin{lstlisting}[basicstyle=\ttfamily\footnotesize]
+\begin{lstlisting}[basicstyle=\ttfamily\tiny]
+
+PART 2
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  864    6004   2624   2292      0      8     952   2624    0 [1E608]
+  864    6004   2736   2292      0      8     952   2736    0 [1E608]
+  864    6004   2736   2292      0      8     952   2736    0 [1E609]
+  864    6004   2736   2292      0      8     952   2736    0 [1E609]
+  864    6004   2736   2292      0      8     952   2736    0 [1E609]
+  864    6004   2736   2292      0      8     952   2736    0 [1F608]
+  864    6004   2736   2292      0      8     952   2736    0 [1F608]
+  864    6136   2736   2292      0      8    1084   2736    0 [1F609]
+  864    6136   2736   2292      0      8    1084   2736    0 [1F609]
+  864    6136   2736   2292      0      8    1084   2736    0 [20FE8]
+  864    6136   2744   2292      0      8    1084   2744    0 [20FE8]
+  864    6136   2748   2292      0      8    1084   2748    0 [40608]
+  864    6136   2868   2292      0      8    1084   2868    0 [40608]
+  864    6268   2868   2292      0      8    1216   2868    0 [40609]
+  864    6268   2868   2292      0      8    1216   2868    0 [40609
+
+\end{lstlisting}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+% \begin{lstlisting}[basicstyle=\ttfamily\tiny]         % 108
+% \begin{lstlisting}[basicstyle=\ttfamily\footnotesize] %  72
+% \begin{lstlisting}[basicstyle=\ttfamily\small]        %  65
+% \begin{lstlisting}[basicstyle=\ttfamily\large]        %  54
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+\input{os05-check.tex}
+
+% 12 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{The End}
+\begin{frame}
+\frametitle{The End}
+\begin{itemize}
+\item[$\square$] This is the end of the presentation.
+\item[$\boxtimes$] This is the end of the presentation.
+\item This is the end of the presentation.
+\end{itemize}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+\end{document}
+

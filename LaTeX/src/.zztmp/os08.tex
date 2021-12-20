@@ -1,0 +1,204 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation - LaTeX - Template Version 1.0 (10/11/12)
+% This template has been downloaded from: http://www.LaTeXTemplates.com
+% License: % CC BY-NC-SA 3.0 (http://creativecommons.org/)
+% Modified by Rahmat M. Samik-Ibrahim
+
+% REV319 Mon 19 Jul 2021 23:57:40 WIB
+% REV303 Sun 02 May 2021 16:50:46 WIB
+% REV258 Tue 24 Nov 2020 09:25:10 WIB
+% REV239 Sun Sep 13 19:17:17 WIB 2020
+% REV186 Wed Jan 30 14:55:14 WIB 2019
+% STARTX Wed Sep 14 10:54:18 WIB 2016
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PACKAGES AND THEMES ZCZC
+\documentclass[xcolor=table, notheorems, hyperref={pdfpagelabels=false}]{beamer}
+\input{beamer.tex}
+\input{osHH.tex}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+% The short title appears at the bottom of every slide, 
+% the full title is only on the title page
+% \date{\today}
+\title[\kopikopi]
+{CSGE602055 Operating Systems \\ 
+CSF2600505 Sistem Operasi \\
+Week 08:
+Scheduling}
+\author{Rahmat M. Samik-Ibrahim (ed.)}
+\institute[UI]
+{
+University of Indonesia \\
+\medskip
+\url{https://os.vlsm.org/Slides/os08.pdf}
+\\ \texttt{Always check for the latest revision!}
+}
+\date{\revision}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\begin{document}
+
+\lstset{
+basicstyle=\ttfamily\tiny, % \tiny \small \footnotesize 
+breakatwhitespace=true,
+language=C,
+columns=fullflexible,
+keepspaces=true,
+breaklines=true,
+tabsize=3, 
+showstringspaces=false,
+extendedchars=true}
+\section{Start}
+\begin{frame}
+\titlepage
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+\input{osII-jadwal.tex}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{Agenda}
+\begin{frame}[fragile]
+\frametitle{Agenda}
+% Throughout your presentation, if you choose to use \section{} and 
+% \subsection{} commands, these will automatically be printed on 
+% this slide as an overview of your presentation
+\tableofcontents 
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+\input{os08-BRP.tex}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{Scheduling}
+\begin{frame}
+\frametitle{Week 08: Scheduling}
+\begin{itemize}
+\item Reference: (OSC10-ch05 demo-w08)
+\item Scheduling
+\begin{itemize}
+\item Basic Concepts
+\begin{itemize}
+\item \textbf{WARNING:} It's just a BURST
+\item IO Burst
+\item CPU Burst
+\item CPU Burst vs. Freq (See next slide)
+\end{itemize}
+\item Criteria: Utilization, throughput, \{turnaround, waiting,  response\} time.
+\item (Burst) Algorithm
+\begin{itemize}
+\item FCFS, SJF, RR, Priority, Multilevel Queue.
+\end{itemize}
+\item Preemptive / Non-preemptive (Cooperative) Scheduling
+\item I/O Bound / CPU Bound Processes
+\end{itemize}
+\item Thread Scheduling
+\begin{itemize}
+\item User-level $\rightarrow$ Process-Contention Scope (PCS): many to many/one.
+\item Kernel-level $\rightarrow$ System-Contention Scope (SCS): one to one.
+\end{itemize}
+\item Standard Linux Scheduling
+\begin{itemize}
+\item Completely Fair Scheduler (CFS).
+\item Real Time Scheduling.
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{CPU Burst: How Long (When)?}
+\begin{frame}
+\frametitle{CPU Burst: How Long (When)?}
+\begin{figure}
+\includegraphics[width=0.80\linewidth]{os08-osc9}
+\caption{Burst: Duration vs Frequency}
+\end{figure}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{MultiProcessor Schedulling}
+\begin{frame}
+\frametitle{MultiProcessor Schedulling}
+\begin{itemize}
+\item Asymmetric Multiprocessing vs. Symmetric Multiprocessing (SMP).
+\item Processor Affinity: soft vs. hard.
+\item NUMA: Non-Uniform Memory Access.
+\item Load Balancing
+\item Multicore Processors
+\item Real Time Schedulling: Soft vs. Hard.
+\item Big O Notation
+\begin{itemize}
+\item O(1)
+\item O(log N)
+\item O(N)
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{The Two State Model}
+\begin{frame}
+\frametitle{The Two State Model}
+\begin{itemize}
+\item CPU State -- I/O State -- CPU State -- \dots
+\begin{itemize}
+\item n: processes in memory.
+\item p: I/O time fraction.
+\item $ p^n $: probability n processes waiting for I/O.
+\item $ 1 - p^n $: CPU utilization of n processes.
+\item $ \left[\frac{\left(1 - p^n\right)}{n}\right] $: CPU utilization of ONE processes.
+\end{itemize}
+\item Example: $ p = 60 \% \Rightarrow $ \textbf{CPU Utilization Per Process}: $ \left[\frac{1 - \left(60\%\right)^n}{n}\right] $
+\\[10pt]
+\begin{tabular}{ | c | c | c | c | c | c | }
+\hline
+\textbf{CPU Utilization}
+&
+\multicolumn{5}{| c |}{\textbf{Multiprogramming (\%)}} \\
+\hline
+\textbf{N}
+&
+\makebox[17pt][c]{\textbf{1}}
+&
+\makebox[17pt][c]{\textbf{2}}
+&
+\makebox[17pt][c]{\textbf{3}}
+&
+\makebox[17pt][c]{\textbf{4}}
+&
+\makebox[17pt][c]{\textbf{5}}
+\\
+\hline
+\textbf{Per Process} & 40 & 32 & 26 & 21 & 18 \\
+\hline
+\end{tabular}
+\\[10pt]
+\begin{itemize}
+\item For 5 concurrent processes: \\
+If total time is 100 seconds; for each processs, the CPU time will be 18 seconds.
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+\input{os08-check.tex}
+
+% 12 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{The End}
+\begin{frame}
+\frametitle{The End}
+\begin{itemize}
+\item[$\square$] This is the end of the presentation.
+\item[$\boxtimes$] This is the end of the presentation.
+\item This is the end of the presentation.
+\end{itemize}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\end{document}
+

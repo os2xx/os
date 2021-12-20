@@ -1,0 +1,162 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation - LaTeX - Template Version 1.0 (10/11/12)
+% This template has been downloaded from: http://www.LaTeXTemplates.com
+% License: % CC BY-NC-SA 3.0 (http://creativecommons.org/)
+% Modified by Rahmat M. Samik-Ibrahim
+% REV213 Thu Jan 23 14:02:18 WIB 2020
+% REV189 Thu Feb  7 09:17:02 WIB 2019
+% REV116 Wed Feb  7 19:00:08 WIB 2018
+% REV044 Thu Apr 27 11:22:16 WIB 2017
+% STARTX Wed Aug 24 19:34:33 WIB 2016
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PACKAGES AND THEMES ZCZC
+\documentclass[xcolor=table, notheorems, hyperref={pdfpagelabels=false}]{beamer}
+\input{beamer.tex}
+\input{osHH.tex}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+% The short title appears at the bottom of every slide, 
+% the full title is only on the title page
+% \date{\today}
+\title[\kopikopi]
+{CSF2600505 Sistem Operasi \\
+CSGE602055 Operating Systems \\ 
+osXX: The Lecturer} 
+\author{Rahmat M. Samik-Ibrahim (ed.)}
+\institute[UI]
+{
+University of Indonesia\\ 
+\medskip
+\url{https://os.vlsm.org/}
+\\ \texttt{Always check for the latest revision!}
+}
+\date{\revision}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\begin{document}
+
+\lstset{
+basicstyle=\ttfamily\tiny, % \tiny \small \footnotesize 
+breakatwhitespace=true,
+language=C,
+columns=fullflexible,
+keepspaces=true,
+breaklines=true,
+tabsize=3, 
+showstringspaces=false,
+extendedchars=true}
+
+\section{Start}
+\begin{frame}
+\titlepage
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+\input{osII-jadwal.tex}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{Agenda}
+\begin{frame}
+\frametitle{Agenda}
+% Throughout your presentation, if you choose to use \section{} and 
+% \subsection{} commands, these will automatically be printed on 
+% this slide as an overview of your presentation
+\tableofcontents 
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{About and how to contact the Lecturer}
+\begin{frame}
+\frametitle{About and how to contact the Lecturer}
+\begin{itemize}
+\item Rahmat M. Samik-Ibrahim
+\item Bekerja di Universitas Indonesia: sejak 1984\footnote{%
+      MDCCXXXIV --- Universitas Goettingen didirikan: \textbf{1734}}.
+\item Pengguna GNU/Linux: sejak 1994.
+\item VauLSMorg (vlsm.org): sejak 1996.
+\item Blog: \texttt{\url{https://rahmatm.samik-ibrahim.vlsm.org/}}
+\begin{itemize}
+\item Blog: \texttt{\textbf{2016/08/panggil-saya-rahmat.html}}
+\item Blog: \texttt{\textbf{2013/10/kumpulan-hal.html}}
+\item Blog: \texttt{\textbf{2011/08/ibu-ke-pasar-membeli-ayam.html}}
+\end{itemize}
+\item (Almost) no social media!
+\begin{itemize}
+\item Page Only: No need to be ''\textbf{ADDED}''
+\item You can ''\textbf{Like}'' it, ''\textbf{Follow}'' it, or ''\textbf{Share}'' it.
+\end{itemize}
+\item \begin{tabular}{|c|}
+\hline
+For Q \& A, use WhatsApp Group \textbf{OperatingSystems}\\
+(info +62-881-456-\textbf{XXXX}) \\
+Email (Subject:\textbf{[HELP]}) operatingsystems@vlsm.org\\
+\hline
+\end{tabular}
+\end{itemize}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\begin{frame}
+\frametitle{TOP 10 REALITA}
+\begin{enumerate}
+\item Nama saya \textbf{Rahmat}. Rahmat nama saya.
+      Kalau bukan Rahmat, bukan nama saya!
+\item Jangan datang lebih lambat dari pada Pengajar!
+      Terdapat dua kesempatan untuk menyusul masuk kelas: T+15 menit dan setelah istirahat.
+\item Jangan berisik/asyik sendiri dalam kelas dan jangan main 
+      "\textit{games}" dan "\textit{chat}" dengan "\textit{gadget}" anda!
+\item Jangan lupa mempersiapkan diri untuk berpartisipasi dalam kelas!
+\item Jangan lupa membawa selembar kertas (+QRC) untuk membuat memo kuliah!
+\item Memo kuliah (+QRC) tersebut yang boleh dibawa saat UTS dan UAS.
+\item Jangan curang!
+\item Jangan meminjam peralatan selama kuis dan ujian!
+\item Jangan menghubungi Pengajar untuk masalah Administratip!
+\item Jangan menjadi "\textit{Puss in Boot}"!
+\end{enumerate}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\begin{frame}
+\frametitle{Jangan menjadi Puss In Boot}
+\begin{figure}
+\includegraphics[width=0.65\linewidth]{os00-pib}
+\caption{Ini Puss in Boot\footnote{
+   This is a fair use of a DreamWorks/Paramount Picture character.}.}
+\end{figure}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{The End (Ignore It)}
+\begin{frame}[fragile]
+\frametitle{The End (Ignore It)}
+
+\begin{block}{GAUDEAMUS IGITUR}
+Gaudeamus igitur. Iuvenes dum sumus. Post iucundam iuventutem. Post molestam senectutem. Nos habebit humus. 
+Ubi sunt qui ante nos. In mundo fuere? Vadite ad superos. Transite in inferos. Hos si vis videre. 
+\end{block}
+
+\begin{lstlisting}[basicstyle=\ttfamily\small]
+
+#include <stdio.h>
+
+void main() {
+   printf("Vita nostra brevis est. Brevi finietur.\n");
+   printf("Venit mors velociter. Rapit nos atrociter.\n");
+   printf("Nemini parcetur.\n\n");
+}
+
+\end{lstlisting}
+
+\begin{itemize}
+\item[$\square$]   Vivat academia! Vivant professores!
+\item[$\boxtimes$] Vivat membrum quodlibet; Vivant membra quaelibet;
+\item              $\lceil$ Semper sint in flore $\rfloor$.
+\end{itemize}
+
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\end{document}
+
