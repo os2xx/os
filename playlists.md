@@ -15,13 +15,13 @@ permalink: /playlists/
 | W04 |
 | [Addressing](https://youtu.be/uFj7mKNq1t0) |
 | W05 |
-| [Virtual Memory](https://youtu.be/E7pmf5pySTM) |
+| [Virtual Memory 212](https://youtu.be/E7pmf5pySTM) | [Virtual Memory 211](https://youtu.be/y0LkcoFO1jU) |
 | UTS |
-||
+| [Review 211](https://youtu.be/O0MkYkzlbes) |
 | W06 |
-| [Process](https://youtu.be/-pL2fAdb7Kw) |
+| [Process 212](https://youtu.be/-pL2fAdb7Kw) | [Process 211](https://youtu.be/fwAU6pyb6Tk) |
 | W07 |
-| [Threads & Syncs 212](https://youtu.be/Z5D3z3AzXII) | [Threads & Syncs 211](https://youtu.be/aDQJXIdv1oU) |
+| [Threads & Syncs 212](https://youtu.be/Z5D3z3AzXII) | [Threads & Syncs 211a](https://youtu.be/ewzdFxTbwBM) | [Threads & Syncs 211b](https://youtu.be/EqOwbBhMUog) | [Threads & Syncs 211c](https://youtu.be/aDQJXIdv1oU) |
 | W08 |
 | [Scheduling 212](https://youtu.be/Gzic0dI3qQc) | [Scheduling 211](https://youtu.be/jBjmzJS_jQs) |
 | W09 |
@@ -32,6 +32,8 @@ permalink: /playlists/
 | [Review 211](https://youtu.be/8UKZbzjzV4A) | [Review 212](https://youtu.be/PEFJTPxqUbo) |
 
 
+| [Virtual Memory 212](https://youtu.be/E7pmf5pySTM) | [Virtual Memory 211](https://youtu.be/y0LkcoFO1jU) |
+| UTS |
 
 * [M. Anwar Ma'sum](https://www.youtube.com/channel/UCi3sVI10RtRaVWuq1SOVaSg)
   * [SOSI-2021-2022-1](https://www.youtube.com/playlist?list=PLBXapj649rh9UKCBfJEyEUN5Ulvfq1s96)
