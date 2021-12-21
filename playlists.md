@@ -4,7 +4,34 @@ title:  "YouTube PlayLists"
 permalink: /playlists/
 ---
 
-<hr>
+| W00 |
+| [Overview](https://youtu.be/0Fa9B-HZFtY) |
+| W01 |
+| [Scripting](https://youtu.be/xFjdbPBNbto) |
+| W02 |
+| [Security](https://youtu.be/QpmAKN9j2ks) | [C Programming](https://youtu.be/F_o4mjBVbio) |
+| W03 |
+| [FS+FUSE](https://youtu.be/PBkZynNIZWk) |
+| W04 |
+| [Addressing](https://youtu.be/uFj7mKNq1t0) |
+| W05 |
+| [Virtual Memory](https://youtu.be/E7pmf5pySTM) |
+| UTS |
+||
+| W06 |
+| [Process](https://youtu.be/-pL2fAdb7Kw) |
+| W07 |
+| [Threads & Syncs 212](https://youtu.be/Z5D3z3AzXII) | [Threads & Syncs 211](https://youtu.be/aDQJXIdv1oU) |
+| W08 |
+| [Scheduling 212](https://youtu.be/Gzic0dI3qQc) | [Scheduling 211](https://youtu.be/jBjmzJS_jQs) |
+| W09 |
+| [RAID etc](https://youtu.be/UI9M2X6Z6Vs) | [Storages](https://youtu.be/8Q95UCTVIVY) |
+| W10 |
+| [I/O Prog](https://youtu.be/gh1W12_fyeQ) |
+| UAS |
+| [Review 211](https://youtu.be/8UKZbzjzV4A) | [Review 212](https://youtu.be/PEFJTPxqUbo) |
+
+
 
 * [M. Anwar Ma'sum](https://www.youtube.com/channel/UCi3sVI10RtRaVWuq1SOVaSg)
   * [SOSI-2021-2022-1](https://www.youtube.com/playlist?list=PLBXapj649rh9UKCBfJEyEUN5Ulvfq1s96)
@@ -18,4 +45,4 @@ permalink: /playlists/
 * [Week 10 OS201](https://www.youtube.com/playlist?list=PLwaskZn3rUGtRQcNL_JszJDMzD5YBp6Wz)
 * [EXTRA 201](https://www.youtube.com/playlist?list=PLwaskZn3rUGs0kC5I3X0OrzX-0jGYu1bu)
 
-
+[](https://www.youtube.com/watch?v=ewzdFxTbwBM)
