@@ -19,7 +19,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 urlweb:           "https://os.vlsm.org/"
-urlscele:         "https://scele.cs.ui.ac.id/course/view.php?id=3268"
+urlscele:         "https://scele.cs.ui.ac.id/course/view.php?id=3313"
 urllogcode:       "https://osp4diss.vlsm.org/ETC/logCodes.txt"
 urlcontact:       "TBA"
 urlgithub:        "https://github.com/os2xx/os/"
