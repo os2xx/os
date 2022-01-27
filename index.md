@@ -5,9 +5,8 @@ title:  "Operating Systems - Sistem Operasi"
 
 <br>
 ## Last Report: W00 Rev: 26-Jan-2022 00:00
-
-<br>
-
+([See Report](/Log/))
+<br id="idx00">
 {{ site.description }}
 
 <br id="idx01">
@@ -16,7 +15,7 @@ title:  "Operating Systems - Sistem Operasi"
   * Always introduce yourself! State your "GitHubAccount", "Name", "Student ID", and "OS class".
     * For assignment questions, use 
       [<span style="color:red; font-weight:bold; font-size:larger;">SCELE</span>]({{ site.urlscele }}).
-    * For grading related questions, email (Subject:[**HELP**]) operatingsystems at vlsm dot org.
+    * For grading related questions, email (Subject:[**HELP**]) lecturer at regex dot com.
 
 <br>
 # LINKS
