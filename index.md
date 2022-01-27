@@ -4,7 +4,7 @@ title:  "Operating Systems - Sistem Operasi"
 ---
 
 <br>
-## Last Report: W10 Rev: 02-Dec-2021 07:56
+## Last Report: W00 Rev: 26-Jan-2022 00:00
 
 <br>
 
