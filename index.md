@@ -15,7 +15,7 @@ title:  "Operating Systems - Sistem Operasi"
   * Always introduce yourself! State your "GitHubAccount", "Name", "Student ID", and "OS class".
     * For assignment questions, use 
       [<span style="color:red; font-weight:bold; font-size:larger;">SCELE</span>]({{ site.urlscele }}).
-    * For grading related questions, email (Subject:[**HELP**]) lecturer at regex dot com.
+    * For grading related questions, email (Subject:[**OS**]) rms46 at ui dot ac dot id
 
 <br>
 # LINKS
