@@ -5,7 +5,9 @@ title:  "Operating Systems - Sistem Operasi"
 
 <br>
 ## Last Report: W00 Rev: 26-Jan-2022 00:00
-([See Report](/Log/))
+* [See Report](/Log/)
+* [Weekly Assignments](https://osp4diss.vlsm.org/AOS.html)
+
 <br id="idx00">
 {{ site.description }}
 
