@@ -50,8 +50,8 @@ title:  "Operating Systems - Sistem Operasi"
 <br>
 # MORE LINKS
 
-| [Last Report](Log/) | [CBKadal](https://github.com/cbkadal/os212/) | [FAQ](/FAQ/) |
-| [Demos](https://github.com/UI-FASILKOM-OS/SistemOperasi/tree/master/Demos/) | [Slides](https://github.com/UI-FASILKOM-OS/SistemOperasi/tree/master/Slides/) | [OSP4DISS](https://osp4diss.vlsm.org/) | [Log Codes](https://osp4diss.vlsm.org/ETC/logCodes.txt) |
+| [Last Report](Log/) | [CBKadal OS221](https://github.com/cbkadal/os221/) | [FAQ](/FAQ/) |
+| [Demos](https://github.com/os2xx/os/tree/master/Demos/) | [Slides](https://github.com/os2xx/os/tree/master/Slides/) | [OSP4DISS](https://osp4diss.vlsm.org/) | [Log Codes](https://osp4diss.vlsm.org/ETC/logCodes.txt) |
 |        |
 | SLIDES |
 | [WEEK00](Slides/os00.pdf) | [WEEK01](Slides/os01.pdf) | [WEEK02](Slides/os02.pdf) | [WEEK03](Slides/os03.pdf) |
