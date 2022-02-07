@@ -7,6 +7,10 @@ title:  "Operating Systems - Sistem Operasi"
 ## Last Report: W00 Rev: 26-Jan-2022 00:00
 * [See Report](/Log/)
 * [Weekly Assignments](https://osp4diss.vlsm.org/AOS.html)
+* [HOW TO CONTACT the lecturer](#idx01)
+* [OS221 Schedule](#idx02)
+* [LINKS](#idx03)
+* [MORE LINKS](#idx04)
 
 <br id="idx00">
 {{ site.description }}
@@ -20,7 +24,7 @@ title:  "Operating Systems - Sistem Operasi"
     * For grading related questions, email (Subject:[**OS**]) rms46 at ui dot ac dot id
 
 <br id="idx02">
-# OS221 (Ref: OSC10)
+# OS221 Schedule (Ref: OSC10)
 
 | 08-Feb - 14-Feb | Week 00 | Overview 1, Virtualization & Scripting | Ch. 1, 2, 18. |
 | 15-Feb - 21-Feb | Week 01 | Overview 2, Virtualization & Scripting | Ch. 1, 2, 18. |
@@ -47,7 +51,7 @@ title:  "Operating Systems - Sistem Operasi"
 * [Udacity: OS Visual Metaphors](https://goo.gl/HaUk5g)
 * [YouTube: OS Playlists](/playlists/)
 
-<br>
+<br id="idx04">
 # MORE LINKS
 
 | [Last Report](Log/) | [CBKadal OS221](https://github.com/cbkadal/os221/) | [FAQ](/FAQ/) |
@@ -93,6 +97,6 @@ Semoga catatan ini akan bermanfaat di masa mendatang,
 saat sudah lupa cara menyelesaikan masalah trivia ini.<br><br>
 <div style="text-align: right;">
 <h2>Qapla!</h2>
-<a href="https://cbkadal.blogspot.com/">C. BinKadal</a><br></div>
+<a href="https://cbkadal.blogspot.com/">{{ site.author }}</a><br></div>
 <br>
 
