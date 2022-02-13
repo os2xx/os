@@ -3,7 +3,7 @@ layout: "layout"
 title: REPORT
 ---
 
-## Week: W00 Mon 14 Feb 2022 06:39:03 WIB
+## Week: W00 Mon 14 Feb 2022 06:48:00 WIB
 
 ```
 adnan-mkhtr          1 1 1  235 1
@@ -31,7 +31,7 @@ raissathahira        1 1 1  225 1
 RynatCreznan         1 0 0    0 0
 verehrungen          1 1 1  180 1
 wahibadiyatma1709    1 1 1    0 1
-wutsqo               1 1 1    0 1
+wutsqo               1 1 1  130 1
 
 ```
 
