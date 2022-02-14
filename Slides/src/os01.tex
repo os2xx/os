@@ -4,7 +4,7 @@
 % License: % CC BY-NC-SA 3.0 (http://creativecommons.org/)
 % Modified by Rahmat M. Samik-Ibrahim
 
-% REV369 Mon 14 Feb 2022 09:55:27 WIB
+% REV369 Mon 14 Feb 2022 16:20:00 WIB
 % REV363 Mon 20 Dec 2021 15:02:47 WIB
 % STARTX Wed 14 Sep 2016 10:45:19 WIB
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -63,12 +63,12 @@ extendedchars=true}
 \section{Agenda}
 \begin{frame}{Outline}
   \frametitle{Agenda}
-  \tableofcontents[sections={1-11}]
+  \tableofcontents[sections={1-}]
 \end{frame}
-\begin{frame}
-   \frametitle{Agenda (2)}
-   \tableofcontents[sections={12-}]
-\end{frame}
+% \begin{frame}
+%    \frametitle{Agenda (2)}
+%    \tableofcontents[sections={12-}]
+% \end{frame}
 
 % XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
@@ -82,22 +82,23 @@ extendedchars=true}
 \begin{table}
 \scalebox{0.8}{%
 \begin{tabular}{| c |}
-\hline \\ [1sp]
+\hline   \\ 
 Business Goal \\
-\vline \\ [1sp]
+\vline   \\ [3mm]
 Application \\
-\vline \\ [1sp]
+\vline   \\ [3mm]
 \hline
 \cellcolor{red!44} OS API \\
-\cellcolor{red!44} \vline \\ [1sp]
+\cellcolor{red!44} \vline \\ [3mm]
 \cellcolor{red!44} OS Managers and Utilities \\
-\cellcolor{red!44} \vline \\ [1sp]
+\cellcolor{red!44} \vline \\ [3mm]
 \cellcolor{red!44} OS Drivers \\
 \hline
-\vline \\ [1sp]
+\vline   \\ [3mm]
 Hypervisor \\
-\vline \\ [1sp]
-Hardware \\ [1sp]
+\vline   \\ [3mm]
+Hardware \\
+         \\
 \hline
 \end{tabular}}
 \end{table}
@@ -295,7 +296,6 @@ ln     & make a link of a file. E.g., \texttt{''ln -s file sfile''}             
 grep   & search string ''aword'' inside file.  E.g., \texttt{''grep aword file''} \\
 sort   & sort lines of text files. E.g., \texttt{''sort file1.txt''}              \\
 top    & display systems task.  E.g., \texttt{''top''}                            \\
-find   & E.g., \texttt{''find / -name minix3.iso -print''}. Find from ''/''.      \\
 \hline
 \end{tabular}
 \end{frame}
@@ -305,6 +305,7 @@ find   & E.g., \texttt{''find / -name minix3.iso -print''}. Find from ''/''.    
 \frametitle{Some Essential Command Lines (2)}
 \begin{tabular}{l l}
 \hline
+find   & E.g., \texttt{''find / -name minix3.iso -print''}. Find from ''/''.      \\
 chmod  & E.g. \texttt{''chmod 755 file''}. Change file with access mode 755.    \\
 chown  & E.g. \texttt{''chown user file''}. Change owner file to user.          \\
 chgrp  & E.g. \texttt{''chgrp other file''}. Change group file to other.        \\
@@ -321,8 +322,7 @@ date   & print or set the system date and time. E.g. \texttt{''date +\%Y''}     
 tee    & read from standard input and write to standard output and files.      \\
        & E.g. \texttt{''ls -al | tee listing.txt''}                             \\
 diff   & compare files line by line. E.g. \texttt{''diff file1.txt file2.txt''} \\
-wc     & print newline, word, and byte counts for each file.                   \\
-       & E.g. \texttt{''wc file.txt''}                                          \\
+wc     & print newline, word, and byte counts for each file.  E.g. \texttt{''wc file.txt''}  \\
 \hline
 \end{tabular}
 \end{frame}
@@ -359,31 +359,9 @@ u         & undo                         & :1,8 w! file.txt & write line 1 to 8 
 \end{frame}
 
 % XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-\section{Week 01: Assignment \#7: Update mylog.txt}
+\section{More awk, bash, regex, sed}
 \begin{frame}[fragile]
-\frametitle{Week 01: Assignment \#7: Update mylog.txt}
-\begin{itemize}
-\item \href{https://osp4diss.vlsm.org/osp-114.html}{mylog: Updating add commit push}
-\begin{itemize}
-\item With your favorite editor (perhaps ''vi''?), update file mylog.txt.
-\end{itemize}
-\item See \url{https://osp4diss.vlsm.org/ETC/logCodes.txt} for the Code list.
-\item \textbf{PUSH BACK} your repo into GitHub.com!
-\item Always remember the \textbf{4 Git Mantras}:
-\begin{lstlisting}[basicstyle=\ttfamily\footnotesize]
-git pull
-git add -A
-git commit
-git push
-\end{lstlisting}
-\item Export Guest as \texttt{Guest-01c.ova}
-\end{itemize}
-\end{frame}
-
-% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-\section{Week 01: Assignment \#8: More awk, bash, regex, sed}
-\begin{frame}[fragile]
-\frametitle{Week 01: Assignment \#8 (1): More awk, bash, regex, sed}
+\frametitle{More awk, bash, regex, sed (1/9)}
 \begin{itemize}
 \item awk
 \begin{itemize}
@@ -404,7 +382,7 @@ git push
 % ZCZC
 % XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 \begin{frame}[fragile]
-\frametitle{Week 01: Assignment \#8 (2): bash, regex, sed, and awk}
+\frametitle{More awk, bash, regex, sed (2/9)}
 \begin{itemize}
 \item $\ll$\texttt{\^{}\${}}$\gg$ --- matches a beginning-of-line + end-of-line (empty line).
 \begin{itemize}
@@ -433,19 +411,19 @@ git push
 \begin{itemize}
 \item $\ll$\texttt{a+b}$\gg$ --- matches ''ab'', ''aab'', ''aaab'', \ldots
 \end{itemize}
+\end{itemize}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\begin{frame}[fragile]
+\frametitle{More awk, bash, regex, sed (3/9)}
+\begin{itemize}
 \item $\ll$\texttt{\{\}}$\gg$ --- matches numbers in \{\}.
 \begin{itemize}
 \item $\ll$\texttt{a\{2\}}$\gg$ --- matches ''aa''.
 \item $\ll$\texttt{a\{2,5\}}$\gg$ --- matches ''aa'', ''aaa'', ''aaaa'', and ''aaaaa''.
 \item $\ll$\texttt{a\{2,\}}$\gg$ --- matches ''aa'', ''aaa'', ''aaaa'', ''aaaaa'', \ldots
 \end{itemize}
-\end{itemize}
-\end{frame}
-
-% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-\begin{frame}[fragile]
-\frametitle{Week 01: Assignment \#8 (3): bash, regex, sed, and awk}
-\begin{itemize}
 \item $\ll$\texttt{\textbackslash}$\gg$ --- escape character.
 \item $\ll$\texttt{\textbackslash}0$\gg$ --- NULL.
 \item $\ll$\texttt{\textbackslash}b$\gg$ --- word boundary.
@@ -462,7 +440,7 @@ git push
 
 % XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 \begin{frame}[fragile]
-\frametitle{Week 01: Assignment \#8 (4): bash, regex, sed, and awk}
+\frametitle{More awk, bash, regex, sed (4/9)}
 \begin{itemize}
 \item $\ll$\texttt{(\ldots)}$\gg$ --- group.
 \begin{itemize}
@@ -481,7 +459,7 @@ git push
 
 % XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 \begin{frame}[fragile]
-\frametitle{Week 01: Assignment \#8 (5): bash, regex, sed, and awk}
+\frametitle{More awk, bash, regex, sed (5/9)}
 \begin{itemize}
 \item $\ll$\texttt{[:alnum:]}$\gg$ --- alpha-numerics.
 \item $\ll$\texttt{[:alpha:]}$\gg$ --- alphabets
@@ -501,7 +479,7 @@ git push
 
 % XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 \begin{frame}[fragile]
-\frametitle{Week 01: Assignment \#8 (6): bash, regex, sed, and awk}
+\frametitle{More awk, bash, regex, sed (6/9)}
 
 \begin{verbatim}
 \b(?:(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\.){3}
@@ -509,13 +487,13 @@ git push
 \end{verbatim}
 
 \begin{figure}
-\includegraphics[width=0.86\linewidth]{os-regex1}
+\includegraphics[width=0.69\linewidth]{os-regex1}
 \end{figure}
 \end{frame}
 
 % XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 \begin{frame}[fragile]
-\frametitle{Week 01: Assignment \#8 (8): bash, regex, sed, and awk}
+\frametitle{More awk, bash, regex, sed (7/9)}
 
 \begin{verbatim}
 \b(?:(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\.){3}
@@ -523,13 +501,13 @@ git push
 \end{verbatim}
 
 \begin{figure}
-\includegraphics[width=0.86\linewidth]{os-regex2}
+\includegraphics[width=0.69\linewidth]{os-regex2}
 \end{figure}
 \end{frame}
 
 % XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 \begin{frame}[fragile]
-\frametitle{Week 01: Assignment \#8 (9): bash, regex, sed, and awk}
+\frametitle{More awk, bash, regex, sed (8/9)}
 \begin{lstlisting}[basicstyle=\ttfamily\tiny]
 
 # file.txt
@@ -568,7 +546,7 @@ HABATS: This is the last line, dude!
 % NNNN
 % XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 \begin{frame}[fragile]
-\frametitle{Week 01: Assignment \#8 (10): bash, regex, sed, and awk}
+\frametitle{More awk, bash, regex, sed (9/9)}
 \begin{itemize}
 \item \texttt{sed 'G'    file.txt} --- double space.
 \item \texttt{sed 'G;G'  file.txt} --- triple space.
@@ -582,15 +560,6 @@ HABATS: This is the last line, dude!
 \item \texttt{sed 's/Joko/Bowo/2' file.txt} --- replace the second Joko with Bowo.
 \item \texttt{sed 's/Joko/Bowo/g' file.txt} --- replace every Joko with Bowo.
 \item \texttt{sed 's/Bowo\textbackslash{}|bowo/Joko/g' file.txt} -- replace every Bowo or bowo with Joko.
-\end{itemize}
-\end{frame}
-
-% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-\section{Week 01: Assignment \#9: OSC 10}
-\begin{frame}[fragile]
-\frametitle{Week 01: Assignment \#9: OSC 10}
-\begin{itemize}
-\item Read: (OSC10 chapter 1 + chapter 2 + chapter 18)
 \end{itemize}
 \end{frame}
 
@@ -608,6 +577,4 @@ HABATS: This is the last line, dude!
 
 % XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 \end{document}
-
-
 
