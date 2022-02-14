@@ -3,15 +3,15 @@ layout: "layout"
 title: REPORT
 ---
 
-## Week: W00 Mon 14 Feb 2022 18:50:00 WIB
+## Week: W00 Tue 15 Feb 2022 00:11:57 WIB
 
 ```
 adnan-mkhtr          1 1 1  235 1
 adofauzan            1 1 1    0 1
-ahsannajmy           1 1 1   20 1
+ahsannajmy           1 1 1  300 1
 ainulmalik           1 1 1  180 1
 andrewnehemia        1 1 1  175 1
-Angling-Darma        1 1 0    0 1
+Angling-Darma        1 1 1    0 1
 annesafrina          1 1 1  230 1
 aswinamahendra19     1 1 1  265 1
 azzuhripasaribu      1 1 1    0 1
@@ -31,8 +31,8 @@ msatrioh             1 1 0    0 1
 raissathahira        1 1 1  285 1
 RynatCreznan         1 1 1  200 1
 verehrungen          1 1 1  180 1
-wahibadiyatma1709    1 1 1    0 1
-wutsqo               1 1 1  130 1
+wahibadiyatma1709    1 1 1  300 1
+wutsqo               1 1 1  250 1
 
 ```
 
