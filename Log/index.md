@@ -3,14 +3,14 @@ layout: "layout"
 title: REPORT
 ---
 
-## Week: W00 Rev: 16-Feb-2022 22:11
+## Week: W01 Rev: 24-Feb-2022 10:56
 
 001. adnan-mkhtr: [GH](https://github.com/adnan-mkhtr/os221/) [GHP](https://adnan-mkhtr.github.io/os221/) [LOG](https://adnan-mkhtr.github.io/os221/TXT/mylog.txt) [TARBALL](adnan-mkhtr.tar.bz2.txt)<br>
 002. adofauzan: [GH](https://github.com/adofauzan/os221/) [GHP](https://adofauzan.github.io/os221/) [LOG](https://adofauzan.github.io/os221/TXT/mylog.txt) [TARBALL](adofauzan.tar.bz2.txt)<br>
 003. ahsannajmy: [GH](https://github.com/ahsannajmy/os221/) [GHP](https://ahsannajmy.github.io/os221/) [LOG](https://ahsannajmy.github.io/os221/TXT/mylog.txt) [TARBALL](ahsannajmy.tar.bz2.txt)<br>
 004. ainulmalik: [GH](https://github.com/ainulmalik/os221/) [GHP](https://ainulmalik.github.io/os221/) [LOG](https://ainulmalik.github.io/os221/TXT/mylog.txt) [TARBALL](ainulmalik.tar.bz2.txt)<br>
 005. andrewnehemia: [GH](https://github.com/andrewnehemia/os221/) [GHP](https://andrewnehemia.github.io/os221/) [LOG](https://andrewnehemia.github.io/os221/TXT/mylog.txt) [TARBALL](andrewnehemia.tar.bz2.txt)<br>
-006. Angling-Darma: [GH](https://github.com/Angling-Darma/os221/) [GHP](https://Angling-Darma.github.io/os221/) [TARBALL](Angling-Darma.tar.bz2.txt)<br>
+006. Angling-Darma: [GH](https://github.com/Angling-Darma/os221/) [GHP](https://Angling-Darma.github.io/os221/) [LOG](https://Angling-Darma.github.io/os221/TXT/mylog.txt) [TARBALL](Angling-Darma.tar.bz2.txt)<br>
 007. annesafrina: [GH](https://github.com/annesafrina/os221/) [GHP](https://annesafrina.github.io/os221/) [LOG](https://annesafrina.github.io/os221/TXT/mylog.txt) [TARBALL](annesafrina.tar.bz2.txt)<br>
 008. aswinamahendra19: [GH](https://github.com/aswinamahendra19/os221/) [GHP](https://aswinamahendra19.github.io/os221/) [LOG](https://aswinamahendra19.github.io/os221/TXT/mylog.txt) [TARBALL](aswinamahendra19.tar.bz2.txt)<br>
 009. azzuhripasaribu: [GH](https://github.com/azzuhripasaribu/os221/) [GHP](https://azzuhripasaribu.github.io/os221/) [LOG](https://azzuhripasaribu.github.io/os221/TXT/mylog.txt) [TARBALL](azzuhripasaribu.tar.bz2.txt)<br>
