@@ -4,7 +4,7 @@
 % License: % CC BY-NC-SA 3.0 (http://creativecommons.org/)
 % Modified by Rahmat M. Samik-Ibrahim
 
-% REV373 Thu 10 Mar 2022 10:23:16 WIB
+% REV375 Tue 15 Mar 2022 10:27:17 WIB
 % REV372 Sun 06 Mar 2022 08:32:51 WIB
 % REV371 Mon 28 Feb 2022 10:15:10 WIB
 % REV370 Sun 20 Feb 2022 10:09:38 WIB
@@ -303,23 +303,19 @@ FFFX &    &    &    &    &    &    &    &    &    &    &    &    &    &    &    
                 &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &     \\
 \hline
                 &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &     \\
-         00000  & A0 & A1  & A2 & A3 & A4 & A5 & A6 & A7 & A8 & A9 & AA & AB & AC & AD & AE & AF \\
+         0000X  & A0 & A1  & A2 & A3 & A4 & A5 & A6 & A7 & A8 & A9 & AA & AB & AC & AD & AE & AF \\
                 &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &     \\
 \hline
                 &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &     \\
-         00010  & B0 & B1  & B2 & B3 & B4 & B5 & B6 & B7 & B8 & B9 & BA & BB & BC & BD & BE & BF \\
+         0001X  & B0 & B1  & B2 & B3 & B4 & B5 & B6 & B7 & B8 & B9 & BA & BB & BC & BD & BE & BF \\
                 &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &     \\
 \hline
                 &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &     \\
-         00020  & C0 & C1  & C2 & C3 & C4 & C5 & C6 & C7 & C8 & C9 & CA & CB & CC & CD & CE & CF \\
+         0002X  & C0 & C1  & C2 & C3 & C4 & C5 & C6 & C7 & C8 & C9 & CA & CB & CC & CD & CE & CF \\
                 &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &     \\
 \hline
                 &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &     \\
-         00030  & D0 & D1  & D2 & D3 & D4 & D5 & D6 & D7 & D8 & D9 & DA & DB & DC & DD & DE & DF \\
-                &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &     \\
-\hline
-                &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &     \\
-                &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &     \\
+         0003X  & D0 & D1  & D2 & D3 & D4 & D5 & D6 & D7 & D8 & D9 & DA & DB & DC & DD & DE & DF \\
                 &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &     \\
 \hline
                 &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &     \\
@@ -327,7 +323,11 @@ FFFX &    &    &    &    &    &    &    &    &    &    &    &    &    &    &    
                 &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &     \\
 \hline
                 &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &     \\
-         FFFF0  &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &     \\
+                &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &     \\
+                &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &     \\
+\hline
+                &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &     \\
+         FFFFX  &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &     \\
                 &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &     \\
 \hline
 \end{tabular}}
@@ -340,12 +340,16 @@ FFFX &    &    &    &    &    &    &    &    &    &    &    &    &    &    &    
 \begin{frame}
 \frametitle{Variables and File Formats}
 \begin{itemize}
-\item 8 bit Variable (eg. \texttt{int ii=10;})
+\item Variable (8 bits)
 \begin{itemize}
-\item Value  (\texttt{$10_{10}$ == 0x 0A})
-\item Logical Address (eg. \texttt{0x 0040})
-\item Meaning \& Context (Variabel \texttt{''ii''} is an integer).
-\item \texttt{[0x 0040] == 0x 0A}
+\item E.g., \texttt{int ii=10;}
+\begin{itemize}
+\item Variable Name: \texttt{'ii'}
+\item Variable Value:  \texttt{$10_{10}$ == 0x 0A}
+\item Variable Meaning \& Context:  \texttt{integer}
+\item Variable Logical Address: \texttt{0x 0040} \\
+ $\Longrightarrow$ \texttt{[0x 0040] == 0x 0A}
+\end{itemize}
 \end{itemize}
 \item Multiple Address Variable (> 1 byte size)
 \begin{itemize}
