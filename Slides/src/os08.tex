@@ -4,6 +4,7 @@
 % License: % CC BY-NC-SA 3.0 (http://creativecommons.org/)
 % Modified by Rahmat M. Samik-Ibrahim
 
+% REV377 Sun 10 Apr 2022 17:30:00 WIB
 % REV371 Mon 28 Feb 2022 10:15:10 WIB
 % REV370 Sun 20 Feb 2022 10:09:38 WIB
 % REV363 Mon 20 Dec 2021 15:02:47 WIB
@@ -75,13 +76,117 @@ extendedchars=true}
 
 \input{os08-BRP.tex}
 
-% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-\section{TBA}
-\begin{frame}[fragile]
-\frametitle{TBA}
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{Scheduling}
+\begin{frame}
+\frametitle{Week 08: Scheduling}
 \begin{itemize}
-\item TBA
+\item Reference: (OSC10-ch05 demo-w08)
+\item Scheduling
+\begin{itemize}
+\item Basic Concepts
+\begin{itemize}
+\item \textbf{WARNING:} It's just a BURST
+\item IO Burst
+\item CPU Burst
+\item CPU Burst vs. Freq (See next slide)
+\end{itemize}
+\item Criteria: Utilization, throughput, \{turnaround, waiting,  response\} time.
+\item (Burst) Algorithm
+\begin{itemize}
+\item FCFS, SJF, RR, Priority, Multilevel Queue.
+\end{itemize}
+\item Preemptive / Non-preemptive (Cooperative) Scheduling
+\item I/O Bound / CPU Bound Processes
+\end{itemize}
+\item Thread Scheduling
+\begin{itemize}
+\item User-level $\rightarrow$ Process-Contention Scope (PCS): many to many/one.
+\item Kernel-level $\rightarrow$ System-Contention Scope (SCS): one to one.
+\end{itemize}
+\item Standard Linux Scheduling
+\begin{itemize}
+\item Completely Fair Scheduler (CFS).
+\item Real Time Scheduling.
+\end{itemize}
 \end{itemize}
 \end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{CPU Burst: How Long (When)?}
+\begin{frame}
+\frametitle{CPU Burst: How Long (When)?}
+\begin{figure}
+\includegraphics[width=0.60\linewidth]{os08-osc9}
+\caption{Burst: Duration vs Frequency}
+\end{figure}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{MultiProcessor Schedulling}
+\begin{frame}
+\frametitle{MultiProcessor Schedulling}
+\begin{itemize}
+\item Asymmetric Multiprocessing vs. Symmetric Multiprocessing (SMP).
+\item Processor Affinity: soft vs. hard.
+\item NUMA: Non-Uniform Memory Access.
+\item Load Balancing
+\item Multicore Processors
+\item Real Time Schedulling: Soft vs. Hard.
+\item Big O Notation
+\begin{itemize}
+\item O(1)
+\item O(log N)
+\item O(N)
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{The Two State Model}
+\begin{frame}
+\frametitle{The Two State Model}
+\begin{itemize}
+\item CPU State -- I/O State -- CPU State -- \dots
+\begin{itemize}
+\item n: processes in memory.
+\item p: I/O time fraction.
+\item $ p^n $: probability n processes waiting for I/O.
+\item $ 1 - p^n $: CPU utilization of n processes.
+\item $ \left[\frac{\left(1 - p^n\right)}{n}\right] $: CPU utilization of ONE processes.
+\end{itemize}
+\item Example: $ p = 60 \% \Rightarrow $ \textbf{CPU Utilization Per Process}: $ \left[\frac{1 - \left(60\%\right)^n}{n}\right] $
+\\[10pt]
+\begin{tabular}{ | c | c | c | c | c | c | }
+\hline
+\textbf{CPU Utilization}
+&
+\multicolumn{5}{| c |}{\textbf{Multiprogramming (\%)}} \\
+\hline
+\textbf{N}
+&
+\makebox[17pt][c]{\textbf{1}}
+&
+\makebox[17pt][c]{\textbf{2}}
+&
+\makebox[17pt][c]{\textbf{3}}
+&
+\makebox[17pt][c]{\textbf{4}}
+&
+\makebox[17pt][c]{\textbf{5}}
+\\
+\hline
+\textbf{Per Process} & 40 & 32 & 26 & 21 & 18 \\
+\hline
+\end{tabular}
+\\[10pt]
+\begin{itemize}
+\item For 5 concurrent processes: \\
+If total time is 100 seconds; for each processs, the CPU time will be 18 seconds.
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 \end{document}
 
