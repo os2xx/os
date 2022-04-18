@@ -96,7 +96,7 @@ terutama jika memiliki solusi alternatif.
 Semoga catatan ini akan bermanfaat di masa mendatang,
 saat sudah lupa cara menyelesaikan masalah trivia ini.<br><br>
 <div style="text-align: right;">
-<h2>Qapla!</h2>
+<h2>This is the Way!</h2>
 <a href="https://cbkadal.blogspot.com/">{{ site.author }}</a><br></div>
 <br>
 
