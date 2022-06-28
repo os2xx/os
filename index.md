@@ -46,7 +46,7 @@ title:  "Operating Systems - Sistem Operasi"
 * [Operating System Concepts 10ed. Slides](https://www.os-book.com/OS10/slide-dir/)
 * [Introduction to GNU/Linux](https://osp4diss.vlsm.org/Welcome2GNULinux.html) ---
   Study some Command Lines, Editor, Regular Expression (regex), and String Processing. 
-  * [From Students for Students](https://osp4diss.vlsm.org/osp-127.html).
+  * [From Students for Students](https://osp4diss.vlsm.org/osp-127.html) ---
     Links from previous semesters.
   * [More GNU/Linux](https://osp4diss.vlsm.org/osp-115.html) ---
     There are too many "GNU/Linux" sites around, do your own GSGS!
