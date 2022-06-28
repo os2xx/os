@@ -32,7 +32,7 @@ title:  "Operating Systems - Sistem Operasi"
 | 01-Mar - 09 Mar | Week 03 | File System & FUSE | Ch. 13, 14, 15. |
 | 10-Mar - 16 Mar | Week 04 | Addressing, Shared Lib, & Pointer | Ch. 9. |
 | 17-Mar - 23 Mar | Week 05 | Virtual Memory | Ch. 10. |
-| | | | |
+||
 | 12-Apr - 18 Apr | Week 06 | Concurrency: Processes & Threads | Ch. 3, 4. |
 | 19-Apr - 25 Apr | Week 07 | Synchronization & Deadlock | Ch. 6, 7, 8. |
 | 26-Apr - 09 May | Week 08 | Scheduling + W06/W07 | Ch. 5. |
@@ -46,8 +46,10 @@ title:  "Operating Systems - Sistem Operasi"
 * [Operating System Concepts 10ed. Slides](https://www.os-book.com/OS10/slide-dir/)
 * [Introduction to GNU/Linux](https://osp4diss.vlsm.org/Welcome2GNULinux.html) ---
   Study some Command Lines, Editor, Regular Expression (regex), and String Processing. 
-* [More GNU/Linux](https://osp4diss.vlsm.org/osp-115.html) ---
-  There are too many "GNU/Linux" sites around, do your own GSGS!
+  * [From Students for Students](https://osp4diss.vlsm.org/osp-127.html).
+    Links from previous semesters.
+  * [More GNU/Linux](https://osp4diss.vlsm.org/osp-115.html) ---
+    There are too many "GNU/Linux" sites around, do your own GSGS!
 * [Udacity: OS Visual Metaphors](https://goo.gl/HaUk5g)
 * [YouTube: OS Playlists](/playlists/)
 
