@@ -24,20 +24,21 @@ title:  "Operating Systems - Sistem Operasi"
     * For grading related questions, email (Subject:[**OS**]) rms46 at ui dot ac dot id
 
 <br id="idx02">
-# OS221 Schedule (Ref: OSC10)
+# OS222 Schedule (Ref: OSC10)
 
-| 08-Feb - 14-Feb | Week 00 | Overview 1, Virtualization & Scripting | Ch. 1, 2, 18. |
-| 15-Feb - 21-Feb | Week 01 | Overview 2, Virtualization & Scripting | Ch. 1, 2, 18. |
-| 22-Feb - 28-Feb | Week 02 | Security, Protection, Privacy, & C-language. | Ch. 16, 17. |
-| 01-Mar - 09 Mar | Week 03 | File System & FUSE | Ch. 13, 14, 15. |
-| 10-Mar - 16 Mar | Week 04 | Addressing, Shared Lib, & Pointer | Ch. 9. |
-| 17-Mar - 23 Mar | Week 05 | Virtual Memory | Ch. 10. |
-||
-| 12-Apr - 18 Apr | Week 06 | Concurrency: Processes & Threads | Ch. 3, 4. |
-| 19-Apr - 25 Apr | Week 07 | Synchronization & Deadlock | Ch. 6, 7, 8. |
-| 26-Apr - 09 May | Week 08 | Scheduling + W06/W07 | Ch. 5. |
-| 10-May - 16 May | Week 09 | Storage, Firmware, Bootloader, & Systemd | Ch. 11. |
-| 17-May - 23 May | Week 10 | I/O & Programming | Ch. 12. |
+| tba. | Week 00 | Overview 1, Virtualization & Scripting | Ch. 1, 2, 18. |
+| tba. | Week 01 | Overview 2, Virtualization & Scripting | Ch. 1, 2, 18. |
+| tba. | Week 02 | Security, Protection, Privacy, & C-language. | Ch. 16, 17. |
+| tba. | Week 03 | File System & FUSE | Ch. 13, 14, 15. |
+| tba. | Week 04 | Addressing, Shared Lib, & Pointer | Ch. 9. |
+| tba. | Week 05 | Virtual Memory | Ch. 10. |
+| tba. | MIDTERM |
+| tba. | Week 06 | Concurrency: Processes & Threads | Ch. 3, 4. |
+| tba. | Week 07 | Synchronization & Deadlock | Ch. 6, 7, 8. |
+| tba. | Week 08 | Scheduling + W06/W07 | Ch. 5. |
+| tba. | Week 09 | Storage, Firmware, Bootloader, & Systemd | Ch. 11. |
+| tba. | Week 10 | I/O & Programming | Ch. 12. |
+| tba. | FINAL   |
 
 <br id="idx03">
 # LINKS
@@ -56,7 +57,7 @@ title:  "Operating Systems - Sistem Operasi"
 <br id="idx04">
 # MORE LINKS
 
-| [Last Report](Log/) | [CBKadal OS221](https://github.com/cbkadal/os221/) | [FAQ](/FAQ/) |
+| [Last Report](Log/) | [CBKadal OS222](https://github.com/cbkadal/os222/) | [FAQ](/FAQ/) |
 | [Demos](https://github.com/os2xx/os/tree/master/Demos/) | [Slides](https://github.com/os2xx/os/tree/master/Slides/) | [OSP4DISS](https://osp4diss.vlsm.org/) | [Log Codes](https://osp4diss.vlsm.org/ETC/logCodes.txt) |
 |        |
 | SLIDES |

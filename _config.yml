@@ -1,5 +1,5 @@
 title: Operating Systems - Sistem Operasi
-version:     "0437---30-Jun-2022"
+version:     "0438---11-Jul-2022"
 copyright:   "2018-2022"
 description: This is the Operating System course site,
       a GitHub Page, hosted at GitHub.com (thank you!).
@@ -19,7 +19,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 urlweb:           "https://os.vlsm.org/"
-urlscele:         "https://scele.cs.ui.ac.id/course/view.php?id=3313"
+urlscele:         "https://scele.cs.ui.ac.id/course/view.php?id=3398"
 urllogcode:       "https://osp4diss.vlsm.org/ETC/logCodes.txt"
 urlcontact:       "TBA"
 urlgithub:        "https://github.com/os2xx/os/"
