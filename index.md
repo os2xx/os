@@ -8,6 +8,7 @@ title:  "Operating Systems - Sistem Operasi"
 * [See Report](/Log/)
 * [Weekly Assignments](https://osp4diss.vlsm.org/AOS.html)
 * [HOW TO CONTACT the lecturer](#idx01)
+* [OS222 SCELE]({{ site.urlscele }})
 * [OS222 Schedule](#idx02)
 * [LINKS](#idx03)
 * [MORE LINKS](#idx04)
