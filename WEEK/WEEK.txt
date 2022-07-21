@@ -11,5 +11,5 @@
 | 14-Nov-2022 | Week 08 | Scheduling + W06/W07 | Ch. 5. |
 | 21-Nov-2022 | Week 09 | Storage, Firmware, Bootloader, & Systemd | Ch. 11. |
 | 28-Nov-2022 | Week 10 | I/O & Programming | Ch. 12. |
-| 12-Dec-2022 | FINAL   |
+| 12-Dec-2022 | FINAL   | |
 
