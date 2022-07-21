@@ -28,6 +28,20 @@ title:  "Operating Systems - Sistem Operasi"
 # OS222 Schedule (Ref: OSC10)
 [](ZCZC)
 
+| tba. | Week 00 | Overview 1, Virtualization & Scripting | Ch. 1, 2, 18. |
+| tba. | Week 01 | Overview 2, Virtualization & Scripting | Ch. 1, 2, 18. |
+| tba. | Week 02 | Security, Protection, Privacy, & C-language. | Ch. 16, 17. |
+| tba. | Week 03 | File System & FUSE | Ch. 13, 14, 15. |
+| tba. | Week 04 | Addressing, Shared Lib, & Pointer | Ch. 9. |
+| tba. | Week 05 | Virtual Memory | Ch. 10. |
+| tba. | MIDTERM |
+| tba. | Week 06 | Concurrency: Processes & Threads | Ch. 3, 4. |
+| tba. | Week 07 | Synchronization & Deadlock | Ch. 6, 7, 8. |
+| tba. | Week 08 | Scheduling + W06/W07 | Ch. 5. |
+| tba. | Week 09 | Storage, Firmware, Bootloader, & Systemd | Ch. 11. |
+| tba. | Week 10 | I/O & Programming | Ch. 12. |
+| tba. | FINAL   |
+
 [](NNNN)
 <br id="idx03">
 # LINKS

@@ -7,6 +7,6 @@
 
 sed -i "s/^## Last.*/$(sed "s/Week/Last Report/" Log/index.md | grep "^## ")/" index.md
 grep "^## L" index.md | head -1
-sed '/^\[\](ZCZC/,/NNNN/{//p;d;}'  index.md > zold-index.md
-sed '/^\[\](ZCZC/ r WEEK/WEEK.txt' zold-index.md
+sed '/^\[\](ZCZC/,/NNNN/{//p;d;}'  index.md      > zold-index.md
+sed '/^\[\](ZCZC/ r WEEK/WEEK.txt' zold-index.md > index.md
 
