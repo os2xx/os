@@ -43,6 +43,7 @@ title:  "Operating Systems - Sistem Operasi"
 | 12-Dec-2022 | FINAL   |
 
 [](NNNN)
+#### note: This schedule is not fix yet!
 <br id="idx03">
 # LINKS
 
