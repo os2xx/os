@@ -29,18 +29,18 @@ title:  "Operating Systems - Sistem Operasi"
 [](ZCZC)
 
 | 29-Aug-2022 | Week 00 | Overview 1, Virtualization & Scripting | Ch. 1, 2, 18. |
-| 29-Aug-2022 | Week 01 | Overview 2, Virtualization & Scripting | Ch. 1, 2, 18. |
-| 29-Aug-2022 | Week 02 | Security, Protection, Privacy, & C-language. | Ch. 16, 17. |
-| 29-Aug-2022 | Week 03 | File System & FUSE | Ch. 13, 14, 15. |
-| 29-Aug-2022 | Week 04 | Addressing, Shared Lib, & Pointer | Ch. 9. |
-| 29-Aug-2022 | Week 05 | Virtual Memory | Ch. 10. |
-| 29-Aug-2022 | MIDTERM |
-| 29-Aug-2022 | Week 06 | Concurrency: Processes & Threads | Ch. 3, 4. |
-| 29-Aug-2022 | Week 07 | Synchronization & Deadlock | Ch. 6, 7, 8. |
-| 29-Aug-2022 | Week 08 | Scheduling + W06/W07 | Ch. 5. |
-| 29-Aug-2022 | Week 09 | Storage, Firmware, Bootloader, & Systemd | Ch. 11. |
-| 29-Aug-2022 | Week 10 | I/O & Programming | Ch. 12. |
-| 29-Aug-2022 | FINAL   |
+| 05-Sep-2022 | Week 01 | Overview 2, Virtualization & Scripting | Ch. 1, 2, 18. |
+| 12-Sep-2022 | Week 02 | Security, Protection, Privacy, & C-language. | Ch. 16, 17. |
+| 19-Sep-2022 | Week 03 | File System & FUSE | Ch. 13, 14, 15. |
+| 26-Sep-2022 | Week 04 | Addressing, Shared Lib, & Pointer | Ch. 9. |
+| 03-Oct-2022 | Week 05 | Virtual Memory | Ch. 10. |
+| 17-Oct-2022 | MIDTERM |
+| 31-Oct-2022 | Week 06 | Concurrency: Processes & Threads | Ch. 3, 4. |
+| 07-Nov-2022 | Week 07 | Synchronization & Deadlock | Ch. 6, 7, 8. |
+| 14-Nov-2022 | Week 08 | Scheduling + W06/W07 | Ch. 5. |
+| 21-Nov-2022 | Week 09 | Storage, Firmware, Bootloader, & Systemd | Ch. 11. |
+| 28-Nov-2022 | Week 10 | I/O & Programming | Ch. 12. |
+| 12-Dec-2022 | FINAL   |
 
 [](NNNN)
 <br id="idx03">
