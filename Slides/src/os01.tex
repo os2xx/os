@@ -3,11 +3,13 @@
 % This template has been downloaded from: http://www.LaTeXTemplates.com
 % License: % CC BY-NC-SA 3.0 (http://creativecommons.org/)
 % Modified by Rahmat M. Samik-Ibrahim
-% REV381: Wed 29 Jun 2022 14:00
 
-% REV369 Mon 14 Feb 2022 16:20:00 WIB
-% REV363 Mon 20 Dec 2021 15:02:47 WIB
-% STARTX Wed 14 Sep 2016 10:45:19 WIB
+% REV386: Thu 28 Jul 2022 10:00
+% REV385: Fri 22 Jul 2022 17:00
+% REV381: Wed 29 Jun 2022 14:00
+% REV369: Mon 14 Feb 2022 16:00
+% REV363: Mon 20 Dec 2021 15:00
+% STARTX: Wed 14 Sep 2016 10:00
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % PACKAGES AND THEMES 
@@ -76,33 +78,70 @@ extendedchars=true}
 \input{os01-BRP.tex}
 
 % XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-\section{Week 01: Review 2}
+\section{OSC10 (Silberschatz) Chapter 18: Virtual Machines}
 \begin{frame}[fragile]
-\frametitle{The Operating System}
+\frametitle{OSC10 (Silberschatz) Chapter 18: Virtual Machines}
+\begin{itemize}
+  \item OSC10 Chapter 18
+  \begin{itemize}
+    \item Overview
+    \item History
+    \item Benefits and Features
+    \item Building Blocks
+    \item Types of Virtual Machines and Their Implementations
+    \item Virtualization and Operating-System Components
+    \item Examples
+  \end{itemize}
+  \vfill \null
+\end{itemize}
+\vfill \null
+\end{frame}
 
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{What defines an Operating System? (The Three Layers Model)}
+\begin{frame}[fragile]
+\frametitle{What defines an Operating System? (The Three Layers Model)}
+\textbf{URL:} {\footnotesize \url{https://rahmatm.samik-ibrahim.vlsm.org/2021/07/what-defines-operating-system.html}}
+\begin{multicols}{2}
 \begin{table}
 \scalebox{0.8}{%
 \begin{tabular}{| c |}
-\hline   \\ 
+\hline \\ [1pt]
 Business Goal \\
-\vline   \\ [3mm]
+\vline \\ [1pt]
 Application \\
-\vline   \\ [3mm]
+\vline \\ [1pt]
 \hline
 \cellcolor{red!44} OS API \\
-\cellcolor{red!44} \vline \\ [3mm]
+\cellcolor{red!44} \vline \\ [1pt]
 \cellcolor{red!44} OS Managers and Utilities \\
-\cellcolor{red!44} \vline \\ [3mm]
+\cellcolor{red!44} \vline \\ [1pt]
 \cellcolor{red!44} OS Drivers \\
 \hline
-\vline   \\ [3mm]
-Hypervisor \\
-\vline   \\ [3mm]
-Hardware \\
-         \\
+\vline \\ [1pt]
+(Hypervisor) \\
+\vline \\ [1pt]
+Hardware \\ [1pt]
 \hline
 \end{tabular}}
 \end{table}
+  \vfill \null
+\columnbreak
+  \begin{itemize}
+    \item The Three Layers Model
+  \begin{itemize}
+    \item An Operating System is between your Application and your Hardware (or Hypervisor).
+  \begin{itemize}
+    \item OS API: Application Programming Interface
+    \item OS Resources Managers and Utilities: Process, Scheduler, Dispatcher,
+             (Virtual) Memory, Disk, I/O, Network, Security, Protection, etc.
+    \item OS Device Drivers: controls devices
+  \end{itemize}
+    \item Remember that your future "\textbf{Business Goal}" may not directly relate to an Operating System at all!
+  \end{itemize}
+  \end{itemize}
+  \vfill \null
+\end{multicols}
 \end{frame}
 
 % XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
