@@ -1,5 +1,5 @@
 
-| 29-Jun-2022 | Week 00 | Overview 1, Virtualization & Scripting | Ch. 1, 2, 18. |
+| 29-Aug-2022 | Week 00 | Overview 1, Virtualization & Scripting | Ch. 1, 2, 18. |
 | 05-Sep-2022 | Week 01 | Overview 2, Virtualization & Scripting | Ch. 1, 2, 18. |
 | 12-Sep-2022 | Week 02 | Security, Protection, Privacy, & C-language. | Ch. 16, 17. |
 | 19-Sep-2022 | Week 03 | File System & FUSE | Ch. 13, 14, 15. |
