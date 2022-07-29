@@ -18,7 +18,7 @@ title:  "Operating Systems - Sistem Operasi"
 
 <br id="idx01">
 # HOW TO CONTACT the lecturer
-  * No [Puss in Boots face](pib.jpg), please!
+  * No [Puss in Boots face](https://rahmatm.samik-ibrahim.vlsm.org/2013/12/puss-in-boots.html), please!
   * Always introduce yourself! State your "GitHubAccount", "Name", "Student ID", and "OS class".
     * For assignment questions, use 
       [<span style="color:red; font-weight:bold; font-size:larger;">SCELE</span>]({{ site.urlscele }}).
