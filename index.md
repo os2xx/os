@@ -26,6 +26,7 @@ title:  "Operating Systems - Sistem Operasi"
 
 <br id="idx02">
 # OS222 Schedule (Ref: OSC10)
+#### note: This schedule is not fixed yet!
 [](ZCZC)
 
 | 29-Aug-2022 | Week 00 | Overview 1, Virtualization & Scripting | Ch. 1, 2, 18. |
@@ -43,7 +44,6 @@ title:  "Operating Systems - Sistem Operasi"
 | 12-Dec-2022 | FINAL   | |
 
 [](NNNN)
-#### note: This schedule is not fix yet!
 <br id="idx03">
 # LINKS
 

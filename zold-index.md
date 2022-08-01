@@ -26,9 +26,9 @@ title:  "Operating Systems - Sistem Operasi"
 
 <br id="idx02">
 # OS222 Schedule (Ref: OSC10)
+#### note: This schedule is not fixed yet!
 [](ZCZC)
 [](NNNN)
-#### note: This schedule is not fix yet!
 <br id="idx03">
 # LINKS
 
