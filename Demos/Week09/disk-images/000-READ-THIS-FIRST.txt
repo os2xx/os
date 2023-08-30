@@ -1,0 +1,72 @@
+# INFO: Read This First! ==== ========= =========
+# Version: Sun 06 Aug 2023 12:00
+cat $0; exit 0;
+========= ========= ========= ========= ========= ========= ========= =========
+These files are available at GitHub.com:
+https://github.com/os2xx/os/tree/master/Demos/
+
+!!!!!!!!! !!!!!!!!! !!!!!!!!! !!!!!!!!! !!!!!!!!! !!!!!!!!! !!!!!!!!! !!!!!!!!!
+========= ========= ========= ========= ========= ========= ========= =========
+
+DISK IMAGES
+===========
+
+1) See also these following URLs
+================================
+
+https://www.gnu.org/software/mtools/manual/mtools.pdf
+https://stackoverflow.com/questions/22385189/add-files-to-vfat-image-without-mounting
+
+
+2) Let's create dummy file "zzzz.txt"
+=====================================
+echo "This is a dummy file" > zzzz.txt
+ls -al
+cat zzzz.txt
+
+
+3) Let's create and format image "test.img"
+===========================================
+   
+mformat -i test.img -C -T 4096 -s 512 -h 1 -v TEST
+mcopy   -i test.img zzzz.txt ::yyyy.txt
+mdir    -i test.img 
+mtype   -i test.img ::yyyy.txt 
+
+
+4) Standard 1.44 MB Disket Image
+================================
+
+mformat -i zzzzDisket.img -C -f 1440 -v Disket_1440
+mdir    -i zzzzDisket.img
+
+
+5) Large Image (33MB)
+=====================
+
+dd if=/dev/zero of=vfat32.img bs=1M count=33
+mkfs.vfat -F 32 -v vfat32.img
+mdir            -i vfat32.img
+
+
+6) Delete Image(s)
+==================
+
+rm -f test.img vfat32.img zzzzDisket.img zzzz.txt
+
+
+[000-READ-THIS-FIRST.txt] Read This First! ==== ========= =========
+# REV21: Sun 06 Aug 2023 11:00
+# REV19: Fri 16 Sep 2022 15:00
+# REV17: Wed 24 Mar 2021 18:00
+# REV16: Mon 14 Sep 2020 21:00
+# REV07: Wed 13 Mar 2019 14:00
+# START: Tue 20 Feb 2018 09:00
+
+# Copyright (C) 2018-2023 BinKadal, Sdn. Bhd.
+# This free document is distributed in the hope that it will be 
+# useful, but WITHOUT ANY WARRANTY; without even the implied 
+# warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+# THANK YOU: See file Demos/ZADMIN/zaTHANK-YOU.txt
+

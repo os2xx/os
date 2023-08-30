@@ -1,0 +1,13 @@
+#!/bin/bash
+# REV04: Tue 31 Jan 2023 17:00 rms46
+# REV03: Thu 21 Jul 2022 13:00 rms46
+# REV02: Mon 11 Oct 2021 11:00 ana117
+# REV01: Mon 11 Oct 2021 06:00 rms46
+# REV00: Thu 08 Jul 2021 10:00 rms46
+# START: 2021
+
+sed -i "s/^## Last.*/$(sed "s/Week/Last Report/" Log/index.md | grep "^## ")/" index.md
+grep "^## L" index.md | head -1
+sed '/^\[\](ZCZC/,/NNNN/{//p;d;}'  index.md      > zold-index.md
+sed '/^\[\](ZCZC/ r WEEK/WEEK.txt' zold-index.md > index.md
+

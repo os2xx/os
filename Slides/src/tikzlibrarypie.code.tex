@@ -1,0 +1,493 @@
+% SPDX-License-Identifier: GPL-2.0-only OR LPPL-1.3c
+\RequirePackage{scalefnt}
+
+%
+% Utilities
+%
+
+\def\pgfpie@ifx#1#2{%
+  \ifx#1#2%
+    \expandafter\pgfutil@firstoftwo
+  \else
+    \expandafter\pgfutil@secondoftwo
+  \fi}
+
+\def\pgfpie@ifdim#1#2#3{%
+  \ifdim\dimexpr#1\relax#2\dimexpr#3\relax
+    \expandafter\pgfutil@firstoftwo
+  \else
+    \expandafter\pgfutil@secondoftwo
+  \fi}
+
+\def\pgfpie@ifnum#1#2#3{%
+  \ifnum\numexpr#1\relax#2\numexpr#3\relax
+    \expandafter\pgfutil@firstoftwo
+  \else
+    \expandafter\pgfutil@secondoftwo
+  \fi}
+
+\def\pgfpie@ifodd#1{%
+  \ifodd\numexpr#1\relax
+    \expandafter\pgfutil@firstoftwo
+  \else
+    \expandafter\pgfutil@secondoftwo
+  \fi}
+
+\def\pgfpie@newif#1{%
+  \csname newif\expandafter\endcsname\csname ifpgfpie@#1\endcsname
+  \expandafter\def\csname pgfpie@if#1\expandafter\endcsname\expandafter{%
+    \csname ifpgfpie@#1\endcsname
+      \expandafter\pgfutil@firstoftwo
+    \else
+      \expandafter\pgfutil@secondoftwo
+    \fi}%
+}
+
+%
+% Constants for text comparison
+%
+
+\def\pgfpie@text@inside{inside}
+\def\pgfpie@text@legend{legend}
+\def\pgfpie@sum@c{100}
+\def\pgfpie@sum@auto{auto}
+
+% args:
+% #1: begin angle
+% #2: end angle
+% #3: number
+% #4: label
+% #5: explode
+% #6: fill color
+% #7: radius
+% #8: center
+\def\pgfpie@slice#1#2#3#4#5#6#7#8{%
+  \pgfmathparse{0.5*(#1)+0.5*(#2)}
+  \let\pgfpie@midangle\pgfmathresult
+
+  \path (#8) -- ++({\pgfpie@midangle}:{#5}) coordinate (pgfpie@O);
+
+  \pgfmathparse{(#7)+(#5)}
+  \let\pgfpie@radius\pgfmathresult
+  
+  % slice
+  \draw[line join=round,fill={#6},\pgfpie@style] (pgfpie@O) -- ++({#1}:{#7}) arc ({#1}:{#2}:{#7}) -- cycle;
+
+  \pgfpie@ifchangedirection{%
+    \pgfmathparse{min(((#1)-(#2)-10)/110*(-0.3),0)}
+  }{%
+    \pgfmathparse{min(((#2)-(#1)-10)/110*(-0.3),0)}
+  }%
+  
+  \pgfmathparse{(max(\pgfmathresult,-0.5) + 0.8)*(#7)}
+  \let\pgfpie@innerpos\pgfmathresult
+
+  \pgfpie@ifx\pgfpie@text\pgfpie@text@inside{%
+    % label and number together
+    \path (pgfpie@O) -- ++({\pgfpie@midangle}:{\pgfpie@innerpos}) node[align=center]
+    {\pgfpie@scalefont{#3}\pgfpie@labeltext{#4}\\\pgfpie@numbertext{#3}};
+  }{%
+    % label
+    \pgfpie@ifhidelabel{}{%
+      \pgfpie@iflegend{}{%
+        \path (pgfpie@O) -- ++ ({\pgfpie@midangle}:{\pgfpie@radius})
+        node[inner sep=0, \pgfpie@text={\pgfpie@midangle:#4}]{};
+      }%
+    }%
+
+    % number
+    \path (pgfpie@O) -- ++({\pgfpie@midangle}:{\pgfpie@innerpos}) node
+    {\pgfpie@scalefont{#3}\pgfpie@numbertext{#3}};
+  }%
+}
+
+\def\pgfpie@findColor#1{%
+  \pgfmathparse{int(mod(#1,\the\pgfpie@colorLength))}%
+  \let\pgfpie@ci\pgfmathresult
+  \foreach \pgfpie@c [count=\pgfpie@j from 0] in \pgfpie@color {%
+    \pgfpie@ifnum{\pgfpie@j}{=}{\pgfpie@ci}{%
+      \xdef\pgfpie@thecolor{\pgfpie@c}%
+      \breakforeach
+    }{}%
+  }
+}
+
+\def\pgfpie@findExplode#1{%
+  \pgfmathparse{int(mod(#1,\the\pgfpie@explodeLength))}%
+  \let\pgfpie@ei\pgfmathresult
+  \foreach \pgfpie@e [count=\pgfpie@j from 0] in \pgfpie@explode {%
+    \pgfpie@ifnum{\pgfpie@j}{=}{\pgfpie@ei}{%
+      \xdef\pgfpie@theexplode{\pgfpie@e}%
+      \breakforeach
+    }{}%
+  }%
+}
+
+% #1: bottom left point
+% #2: size
+% #3: number
+% #4: color
+% #5: text
+\def\pgfpie@square#1#2#3#4#5{%
+  \pgfpie@ifx\pgfpie@text\pgfpie@text@inside{%
+    \draw[fill={#4},\pgfpie@style] (#1) rectangle node[align=center]
+    {\pgfpie@scalefont{#3}\pgfpie@labeltext{#5}\\\pgfpie@numbertext{#3}} ++(#2);
+  }{%
+    \draw[fill={#4},\pgfpie@style] (#1) rectangle node
+    {\pgfpie@scalefont{#3}\pgfpie@numbertext{#3}} ++(#2);
+  }%
+}
+
+% #1: pos
+% #2: radius
+% #3: number
+% #4: color
+% $5: style
+% $6: label
+\def\pgfpie@cloud#1#2#3#4#5#6{%
+  \draw[fill=#4, #5] (#1) circle[radius=#2];
+  \pgfpie@ifx\pgfpie@text\pgfpie@text@inside{%
+    \node[align=center] at (#1) {\pgfpie@scalefont{#3}\pgfpie@labeltext{#6}\\\pgfpie@numbertext{#3}};
+  }{%
+    \node at (#1) {\pgfpie@scalefont{#3}\pgfpie@numbertext{#3}};
+  }%
+}
+
+\newdimen\pgfpie@angleEnd
+\newcount\pgfpie@explodeLength
+\newcount\pgfpie@colorLength
+\newcount\pgfpie@sliceLength
+
+\pgfqkeys{/pgfpie}{%
+  .search also={/tikz,/pgf},
+  explode/.store in=\pgfpie@explode,
+  color/.store in=\pgfpie@color,
+  radius/.store in=\pgfpie@radius,
+  pos/.store in=\pgfpie@pos,
+  style/.store in=\pgfpie@style,
+  before number/.store in=\pgfpie@beforenumber,
+  after number/.code={%
+    \def\pgfpie@afternumber{#1}%
+    \def\pgfpie@late@afternumber{}%
+  },
+  text/.store in=\pgfpie@text,
+  sum/.code={%
+    \def\pgfpie@sum{#1}%
+    \pgfpie@ifx\pgfpie@sum\pgfpie@sum@c{%
+      \def\pgfpie@late@afternumber{\def\pgfpie@afternumber{\%}}%
+    }{%
+      \def\pgfpie@late@afternumber{}%
+    }%
+  },
+  rotate/.store in=\pgfpie@rotate,
+}
+
+\pgfpie@newif{polar}
+\pgfqkeys{/pgfpie}{polar/.is if=pgfpie@polar}
+
+\pgfpie@newif{legend}
+
+\pgfpie@newif{changedirection}
+\pgfqkeys{/pgfpie}{change direction/.is if=pgfpie@changedirection}
+
+\pgfpie@newif{square}
+\pgfqkeys{/pgfpie}{square/.is if=pgfpie@square}
+
+\pgfpie@newif{cloud}
+\pgfqkeys{/pgfpie}{cloud/.is if=pgfpie@cloud}
+
+\pgfpie@newif{scalefont}
+\pgfqkeys{/pgfpie}{scale font/.is if=pgfpie@scalefont}
+\def\pgfpie@scalefont#1{%
+  \pgfpie@ifscalefont{%
+    \pgfmathparse{(#1) / (\pgfpie@sum) * 3 + 0.9}%
+    \scalefont{\pgfmathresult}%
+  }{}%
+}
+
+\pgfpie@newif{hidenumber}
+\pgfqkeys{/pgfpie}{hide number/.is if=pgfpie@hidenumber}
+\def\pgfpie@numbertext#1{%
+  \pgfpie@ifhidenumber{}{%
+    \pgfpie@beforenumber#1\pgfpie@afternumber
+  }%
+}
+
+\pgfpie@newif{hidelabel}
+\pgfqkeys{/pgfpie}{hide label/.is if=pgfpie@hidelabel}
+\def\pgfpie@labeltext#1{\pgfpie@ifhidelabel{}{#1}}
+
+\tikzaddtikzonlycommandshortcutlet{\pie}{\pgfpie@pie}%
+
+\def\pgfpie@pie{%
+  \pgfutil@ifnextchar[{\pgfpie@@pie}{\pgfpie@@pie[]}%
+}
+
+\def\pgfpie@@pie[#1]#2{%
+  \scope[%
+    % to be compatible with "babel" lib
+    handle active characters in nodes=false,
+    % load default parameters
+    /pgfpie/.cd,
+    explode=0,
+    color={blue!60, cyan!60, yellow!60, orange!60, red!60,
+      blue!60!cyan!60, cyan!60!yellow!60, red!60!cyan!60,
+      red!60!blue!60, orange!60!cyan!60},
+    radius=3,
+    pos={0,0},
+    style={thick},
+    before number=,
+    after number=,
+    text=label,
+    sum=100,
+    rotate=0,
+    change direction=false,
+    polar=false,
+    square=false,
+    cloud=false,
+    scale font=false,
+    hide number=false,
+    hide label=false,
+    every pie/.try,%
+    % load user's parameters
+    #1]
+
+  % add percentage automatically
+  \pgfpie@late@afternumber
+
+  % legend or not
+  \pgfpie@ifx\pgfpie@text\pgfpie@text@legend{%
+    \pgfpie@legendtrue
+  }{%
+    \pgfpie@legendfalse
+  }%
+
+  % handle sum
+  \pgfpie@ifx\pgfpie@sum\pgfpie@sum@auto{%
+    % sum all input
+    \xdef\pgfpie@sum{0}%
+    \foreach \pgfpie@p/\pgfpie@t in {#2} {%
+      \pgfmathparse{(\pgfpie@sum) + (\pgfpie@p)}%
+      \xdef\pgfpie@sum{\pgfmathresult}%
+    }%
+  }{}%
+
+  % init counters
+  \global\pgfpie@explodeLength=0
+  \foreach \pgfpie@e in \pgfpie@explode {%
+    \global\advance\pgfpie@explodeLength by 1
+  }%
+
+  \global\pgfpie@colorLength=0
+  \foreach \pgfpie@c in \pgfpie@color {%
+    \global\advance\pgfpie@colorLength by 1
+  }%
+  
+  \pgfmathsetlength{\pgfpie@angleEnd}{0}%
+
+  \global\pgfpie@sliceLength=0
+  \foreach \pgfpie@p/\pgfpie@e in {#2} {%
+    \global\advance\pgfpie@sliceLength by 1
+  }%
+
+  \pgfpie@ifsquare{%
+    \pgfpie@pie@square{#2}%
+    }{\pgfpie@ifcloud{\pgfpie@pie@cloud{#2}%
+      }{\pgfpie@pie@circle{#2}}}
+
+  % legend
+  \pgfpie@ifhidelabel{}{%
+    \pgfpie@iflegend{%
+      \pgfpie@legend{#2}%
+  }{}}%
+  \endscope
+}
+
+\def\pgfpie@pie@square#1{%
+  \pgfmathparse{(\pgfpie@radius)*2}
+  \xdef\pgfpie@verticalLength{\pgfmathresult}
+  \xdef\pgfpie@horizontalLength{\pgfmathresult}
+  \path (\pgfpie@pos) -- ++({-\pgfpie@radius},{-\pgfpie@radius}) coordinate (pgfpie@start);
+  \pgfmathparse{(\pgfpie@verticalLength) * (\pgfpie@horizontalLength) / (\pgfpie@sum)}
+  \let\pgfpie@squareUnit\pgfmathresult
+
+  % drawing loop
+  \foreach \pgfpie@p/\pgfpie@t [count=\pgfpie@i from 0] in {#1}
+  {
+    \pgfpie@findColor{\pgfpie@i}
+
+    \pgfpie@ifdim{\pgfpie@verticalLength cm}{>}{\pgfpie@horizontalLength cm}{%
+      \pgfmathparse{(\pgfpie@p) * (\pgfpie@squareUnit) / (\pgfpie@horizontalLength)}
+      \let\pgfpie@height\pgfmathresult
+      
+      \pgfpie@square{pgfpie@start}{\pgfpie@horizontalLength,\pgfpie@height}
+      {\pgfpie@p}
+      {\pgfpie@thecolor}
+      {\pgfpie@t}
+      %label
+      \pgfpie@iflegend{}{%
+        \pgfpie@ifx\pgfpie@text\pgfpie@text@inside{}{%
+          \pgfpie@ifhidelabel{}{%
+            \path (pgfpie@start) -- ++({\pgfpie@horizontalLength},{\pgfpie@height*0.5})
+            node[inner sep=0, \pgfpie@text={0:{\pgfpie@t}}]{};
+          }%
+        }%
+      }%
+
+      \pgfmathparse{\pgfpie@verticalLength - \pgfpie@height}
+      \xdef\pgfpie@verticalLength{\pgfmathresult}
+      \path (pgfpie@start) -- ++(0, \pgfpie@height) coordinate (pgfpie@start);
+    }{%
+      \pgfmathparse{(\pgfpie@p) * (\pgfpie@squareUnit) / (\pgfpie@verticalLength)}%
+      \let\pgfpie@width\pgfmathresult
+
+      \pgfpie@square{pgfpie@start}{\pgfpie@width,\pgfpie@verticalLength}
+      {\pgfpie@p}
+      {\pgfpie@thecolor}
+      {\pgfpie@t}
+      %label
+      \pgfpie@iflegend{}{%
+        \pgfpie@ifx\pgfpie@text\pgfpie@text@inside{}{%
+          \pgfpie@ifhidelabel{}{%
+            \path (pgfpie@start) -- ++({\pgfpie@width*0.5},{\pgfpie@verticalLength})
+            node[inner sep=0, \pgfpie@text={90:{\pgfpie@t}}]{};
+          }%
+        }%
+      }%
+
+      \pgfmathparse{(\pgfpie@horizontalLength) - (\pgfpie@width)}%
+      \xdef\pgfpie@horizontalLength{\pgfmathresult}%
+      \path (pgfpie@start) -- ++({\pgfpie@width},0) coordinate (pgfpie@start);
+    }%
+  }%
+}
+
+\def\pgfpie@pie@cloud#1{%
+  % drawing loop
+  \foreach \pgfpie@p/\pgfpie@t [count=\pgfpie@i from 0] in {#1}
+  {
+    % find explode
+    \pgfpie@findExplode{\pgfpie@i}
+    \def\pgfpie@cloudGap{(\pgfpie@theexplode) + 0.1}
+    \pgfmathparse{sqrt((\pgfpie@p) / (\pgfpie@sum)) * (\pgfpie@radius)}
+    \let\pgfpie@cloudR\pgfmathresult
+    \pgfpie@ifnum{\pgfpie@i}{=}{0}{%
+      % first cloud
+      \coordinate (pgfpie@O) at (\pgfpie@pos);
+      \xdef\pgfpie@cloudRone{\pgfpie@cloudR}
+      \xdef\pgfpie@cloudExtendDir{180+(\pgfpie@rotate)}
+    }{\pgfpie@ifnum{\pgfpie@i}{=}{1}{%
+      % second cloud
+      \xdef\pgfpie@cloudRtwo{\pgfpie@cloudR}
+      \xdef\pgfpie@cloudExtendDir{45+(\pgfpie@rotate)}
+      \path (pgfpie@O) -- ++({\pgfpie@cloudExtendDir}:{(\pgfpie@cloudRone)+(\pgfpie@cloudGap)+(\pgfpie@cloudRtwo)}) coordinate (pgfpie@O);
+    }{%
+      % next cloud
+      \pgfmathparse{(\pgfpie@cloudRone)+(\pgfpie@cloudGap)+(\pgfpie@cloudRtwo)}
+      \let\pgfpie@la\pgfmathresult
+      \pgfmathparse{(\pgfpie@cloudRone)+(\pgfpie@cloudGap)+(\pgfpie@cloudR)}
+      \let\pgfpie@lb\pgfmathresult
+      \pgfmathparse{(\pgfpie@cloudRtwo)+(\pgfpie@cloudGap)+(\pgfpie@cloudR)}
+      \let\pgfpie@lc\pgfmathresult
+      \pgfmathparse{(\pgfpie@la)^2+(\pgfpie@lc)^2-(\pgfpie@lb)^2}
+      \let\pgfpie@tmp\pgfmathresult
+      \pgfmathparse{180 - acos((\pgfpie@tmp) / 2 / (\pgfpie@la) / (\pgfpie@lc))}
+      \let\pgfpie@cloudRot\pgfmathresult
+      \pgfpie@ifodd{\pgfpie@i}{%
+        \pgfmathparse{-(\pgfpie@cloudRot)}
+        \let\pgfpie@cloudRot\pgfmathresult
+      }{}%
+      \pgfmathparse{(\pgfpie@cloudExtendDir) - (\pgfpie@cloudRot)}
+      \xdef\pgfpie@cloudExtendDir{\pgfmathresult}
+      \path (pgfpie@O) -- ++({\pgfpie@cloudExtendDir}:{\pgfpie@lc}) coordinate (pgfpie@O);
+      \xdef\pgfpie@cloudRone{\pgfpie@cloudRtwo}
+      \xdef\pgfpie@cloudRtwo{\pgfpie@cloudR}
+    }}%
+
+    % find color
+    \pgfpie@findColor{\pgfpie@i}
+
+    \pgfpie@cloud{pgfpie@O}{\pgfpie@cloudR}{\pgfpie@p}
+    {\pgfpie@thecolor}{\pgfpie@style}{\pgfpie@t}
+
+    % label
+    \pgfpie@iflegend{}{%
+      \pgfpie@ifx\pgfpie@text\pgfpie@text@inside{}{%
+        \pgfpie@ifhidelabel{}{%
+          \path (pgfpie@O) -- ++({\pgfpie@cloudExtendDir}:{\pgfpie@cloudR})
+          node[inner sep=0, \pgfpie@text={\pgfpie@cloudExtendDir:{\pgfpie@t}}] {};
+        }%
+      }%
+    }%
+  }%
+}
+
+\def\pgfpie@pie@circle#1{%
+  \pgfpie@ifpolar{%
+    \xdef\pgfpie@maxValue{0}
+    \foreach \pgfpie@p/\pgfpie@e in {#1} {
+      \pgfmathparse{\pgfpie@p}%
+      \pgfpie@ifdim{\pgfpie@maxValue pt}{<}{\pgfmathresult pt}{%
+        \xdef\pgfpie@maxValue{\pgfpie@p}
+      }{}%
+    }
+    \pgfmathparse{(\pgfpie@sum) / \the\pgfpie@sliceLength}
+    \xdef\pgfpie@polarangle{\pgfmathresult}
+    \pgfmathparse{(\pgfpie@radius) / sqrt(\pgfpie@maxValue)}
+    \xdef\pgfpie@polarRadiusUnit{\pgfmathresult}
+  }{%
+    \xdef\pgfpie@theradius{\pgfpie@radius}%
+  }
+
+  \pgfpie@ifchangedirection{%
+    \pgfmathsetlength{\pgfpie@angleEnd}{\pgfpie@sum}
+  }{}%
+  \xdef\pgfpie@angleBegin{\the\pgfpie@angleEnd}
+  % drawing loop
+  \foreach \pgfpie@p/\pgfpie@t [count=\pgfpie@i from 0] in {#1}
+  {
+    \pgfmathsetlength{\pgfpie@angleEnd}{\pgfpie@angleBegin}
+    \pgfpie@ifpolar{%
+      % Polar area diagram
+      \pgfmathaddtolength{\pgfpie@angleEnd}{\pgfpie@polarangle}
+      \pgfmathparse{sqrt(\pgfpie@p) * (\pgfpie@polarRadiusUnit)}
+      \xdef\pgfpie@theradius{\pgfmathresult}
+    }{%
+      % normal pie
+      \pgfpie@ifchangedirection{%
+        \pgfmathaddtolength{\pgfpie@angleEnd}{-(\pgfpie@p)}
+      }{%
+        \pgfmathaddtolength{\pgfpie@angleEnd}{\pgfpie@p}
+      }%
+    }%
+
+    % find explode
+    \pgfpie@findExplode{\pgfpie@i}
+
+    % find color
+    \pgfpie@findColor{\pgfpie@i}
+    \pgfpie@slice{(\pgfpie@angleBegin)/(\pgfpie@sum)*360+(\pgfpie@rotate)}
+    {\the\pgfpie@angleEnd/(\pgfpie@sum)*360+(\pgfpie@rotate)}
+    {\pgfpie@p}
+    {\pgfpie@t}
+    {\pgfpie@theexplode}
+    {\pgfpie@thecolor}
+    {\pgfpie@theradius}
+    {\pgfpie@pos}
+    \xdef\pgfpie@angleBegin{\the\pgfpie@angleEnd}
+  }
+}
+
+\def\pgfpie@legend#1{%
+  \coordinate[xshift=0.8cm,
+  yshift={(\the\pgfpie@sliceLength*0.5+1)*0.5cm}] (pgfpie@legendpos) at
+  (current bounding box.east);
+
+  \scope[node distance=0.5cm]
+    \foreach \pgfpie@p/\pgfpie@t [count=\pgfpie@i from 0] in {#1}
+    {
+      \pgfpie@findColor{\pgfpie@i}
+      \node[draw, fill={\pgfpie@thecolor}, \pgfpie@style, below of={pgfpie@legendpos}, label={0:{\pgfpie@t}}] (pgfpie@legendpos) {};
+    }
+  \endscope
+}

@@ -1,0 +1,500 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation - LaTeX - Template Version 1.0 (10/11/12)
+% This template has been downloaded from: http://www.LaTeXTemplates.com
+% License: % CC BY-NC-SA 3.0 (http://creativecommons.org/)
+% Modified by Rahmat M. Samik-Ibrahim
+
+% REV319 Mon 19 Jul 2021 23:57:40 WIB
+% REV305 Sun 16 May 2021 23:53:19 WIB
+% REV259 Mon 30 Nov 2020 22:40:21 WIB
+% REV239 Sun Sep 13 19:17:17 WIB 2020
+% REV202 Wed Apr 24 13:18:00 WIB 2019
+% STARTX Wed Sep 14 10:46:44 WIB 2016
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PACKAGES AND THEMES ZCZC
+\documentclass[xcolor=table, notheorems, hyperref={pdfpagelabels=false}]{beamer}
+\input{beamer.tex}
+\input{osHH.tex}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+% The short title appears at the bottom of every slide, 
+% the full title is only on the title page
+% \date{\today}
+\title[\kopikopi]
+{CSGE602055 Operating Systems \\ 
+CSF2600505 Sistem Operasi \\
+Week 09:
+Storage, Firmware, Bootloader, \& Systemd}
+\author{Rahmat M. Samik-Ibrahim (ed.)}
+\institute[UI]
+{
+University of Indonesia \\
+\medskip
+\url{https://os.vlsm.org/Slides/os09.pdf}
+\\ \texttt{Always check for the latest revision!}
+}
+\date{\revision}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\begin{document}
+
+\lstset{
+basicstyle=\ttfamily\tiny, % \tiny \small \footnotesize 
+breakatwhitespace=true,
+language=C,
+columns=fullflexible,
+keepspaces=true,
+breaklines=true,
+tabsize=3,
+showstringspaces=false,
+extendedchars=true}
+
+\section{Start}
+\begin{frame}
+\titlepage
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+\input{osII-jadwal.tex}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{Agenda}
+\begin{frame}{Outline}
+  \frametitle{Agenda}
+  \tableofcontents[sections={1-10}]
+\end{frame}
+\begin{frame}
+   \frametitle{Agenda (2)}
+   \tableofcontents[sections={11-}]
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+\input{os09-BRP.tex}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{Storage, Firmware, Bootloader, \& Systemd}
+\begin{frame}
+\frametitle{Storage, Firmware, Bootloader, \& Systemd}
+\begin{itemize}
+\item Reference: (OSC10-ch11)
+\item Storage Capacity (2019)\footnote{Subject to change}
+\begin{itemize}
+\item Legacy 3.5'' Floppy Disk (1.4MB) -- obsolete?
+\begin{itemize}
+\item SuperDisk (up to 240 MB) --- never took off.
+\end{itemize}
+\item 4.7'' Compact Disc (700MB) -- obsolete?
+\begin{itemize}
+\item 4.7'' Digital Versatile Disc (up to 9GB) -- ?
+\item 4.7'' Blu Ray (up to 128 GB) $\Rightarrow$ DVD++.
+\end{itemize}
+\item Tape Cartridge (up to 15TB)
+\begin{itemize}
+\item Robotic System (up to 250 PB per unit)
+\item NASA, Google, Microsoft are still using this!
+\item Cheap but slow.
+\end{itemize}
+\item Hard Disk Drives (up to 16 TB).
+\begin{itemize}
+\item From Perpendicular Magnetic Recording to \\
+      Shingled Magnetic Recording technology (+25\% -- writing problems).
+\item Mechanical Disk Arm Scheduling (Until When?).
+\end{itemize}
+\item Solid-State Disks (up to 16 TB).
+\begin{itemize}
+\item SSD Price \texttt{>} HDD Price.
+\item Write Speed \texttt{>{}>} Read Speed.
+\item (What is a) Flash Disk?
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\begin{frame}
+\frametitle{Storage Failure Rates}
+\begin{itemize}
+\item MTTDL: Mean Time To Data Loss
+\item MTTF: Mean Time To Failure
+\item BackBlaze (Cloud Backup Services)
+\end{itemize}
+\begin{figure}
+\includegraphics[width=0.80\linewidth]{os-extreme-tech}
+\caption{BackBlaze --- Failure Rates of 25000 DISKS}
+\end{figure}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{Storage Management}
+\begin{frame}
+\frametitle{Storage Management}
+\begin{itemize}
+\item Attached-Storage.
+\begin{itemize}
+\item Host-Attached Storage: via I/O.
+\item Network-Attached Storage (NAS): via distributed FileSystem.
+\item Storage Area Network (SAN): dedicated Network.
+\end{itemize}
+\item Formating
+\begin{itemize}
+\item Low Level (Physical)
+\item High Level (FileSystem)
+\end{itemize}
+\item Boot Block
+\item Disk Partition
+\begin{itemize}
+\item ''MBR''-scheme
+\begin{itemize}
+\item upto 4 primary partition
+\item upto 2 TB disk
+\end{itemize}
+\item ''GPT''-scheme
+\begin{itemize}
+\item ''unlimited'' partition
+\item ''unlimited'' disk
+\item redundancy
+\end{itemize}
+\end{itemize}
+\item Swap Space Management: On Partition or FileSystem?
+\end{itemize}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{RAID}
+\begin{frame}
+\frametitle{RAID: Redundant Array of In* Disks}
+\begin{itemize}
+\item RAID 0, 1, 5, 6, 10, 100
+\item Note (\url{http://www.commodore.ca/windows/raid5/raid5.htm}):
+\begin{itemize}
+\item RAID was created to enhance data performance, reliability and availability.
+\item Striping, parity checking and mirroring are three primary functions of
+      RAID systems.
+\item RAID performs its functions transparent to the operating system.
+\item Systems are typically defined by ranks consisting of five disks each
+      connected to one or two Disk Array Controllers.
+\item Different RAID levels provide varying degrees of speed and data protection.
+\end{itemize}
+\item Problems with RAID
+\item Stable-Storage Implementation
+\end{itemize}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\begin{frame}
+\frametitle{BIOS, Boot, \& Systemd}
+\begin{itemize}
+\item Firmware
+\begin{itemize}
+\item BIOS: Basic Input Output System.
+\item UEFI: Unified Extensible Firmware Interface.
+\item ACPI: Advanced Configuration and Power Interface.
+\end{itemize}
+\item Operating System (Boot) Loader
+\begin{itemize}
+\item BOOTMGT: Windows Bootmanager / Bootloader.
+\item LILO:  Linux Loader.
+\item GRUB:  GRand Unified Bootloader.
+\end{itemize}
+\item Operating System Initialization
+\begin{itemize}
+\item Init (legacy)
+\item UpStart
+\item Systemd
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+% 8 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{Legacy BIOS}
+\begin{frame}
+\frametitle{Legacy BIOS}
+\begin{itemize}
+\item Check Settings.
+\item Initialize CPU \& RAM.
+\item POST: Power-On Self-Test.
+\item Initialize ports, LANS, etc.
+\item Load a Boot Loader.
+\item Handover to the Boot Loader.
+\item Provides "Native" (obsolete) Drivers only (not loadable).
+\item Provides "INT" services .
+\item Limitation.
+\begin{itemize}
+\item Technology of 1970s.
+\item 16 bits software.
+\item 20 bits address space (1 MB).
+\item 31 bits disk space (2 TB).
+\end{itemize}
+\end{itemize}
+
+
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\begin{frame}
+\frametitle{BIOS}
+\begin{figure}
+\includegraphics[width=0.6\linewidth]{os03-BIOS}
+\caption{BIOS}
+\end{figure}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{UEFI}
+\begin{frame}
+\frametitle{UEFI}
+\begin{itemize}
+\item A Firmware Specification, not an Implementation!
+\item No (INT) service after boot.
+\item HII: Human Interface Infrastructure.
+\item Protected Mode.
+\item Flexible.
+\begin{itemize}
+\item Technology of 2000s.
+\item writen in C.
+\item (third party) loadable drivers and tools.
+\item Emulate Legacy BIOS transition (MBR block, INT service).
+\item UEFI Shell: environment shell for diagnostic (no need for DOS).
+\end{itemize}
+\item Problems
+\begin{itemize}
+\item Who controls the Hardware?
+\item Is ''Secure Boot'' a good thing?
+\item How about a \textbf{NASTY/LOCKING/TROJAN} UEFI implementation?
+\item Different \textbf{DRIVERS}.
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\begin{frame}
+\frametitle{UEFI}
+\begin{figure}
+\includegraphics[width=0.8\linewidth]{os03-UEFI.jpg}
+\caption{UEFI}
+\end{figure}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\begin{frame}
+\frametitle{UEFI Boot}
+\begin{figure}
+\includegraphics[width=0.7\linewidth]{os03-Jarlstrom-2014-PI-Boot-Phases-tianocore-org}
+\caption{UEFI Boot Process\footnote{
+Source Jarslstrom - 2014 - www.tianocore.org}.}
+\end{figure}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{Operating System (Boot) Loader}
+\begin{frame}
+\frametitle{Operating System (Boot) Loader}
+\begin{itemize}
+\item General
+\begin{itemize}
+\item How/Where to start the operating system?
+\item What to do?
+\item How many ways to boot?
+\item How many types of OS?
+\end{itemize}
+\item Disk Partition
+\begin{itemize}
+\item MBR: Master Boot Record (1983).
+\item GPT: GUID (Globally Unique Identifiers) Partition Table (2010s).
+\end{itemize}
+\item GRUB: GRand Unified Boot system
+\begin{itemize}
+\item Stage 1: a small boot.img inside the MBR.
+\item Stage 1.5 (core.img): FileSystem drivers after MBR.
+\item Stage 2: Kernel Selection: Windows, Linux, BSD, etc. 
+\end{itemize}
+\item GRUB2
+\begin{itemize}
+\item More flexible than GRUB legacy.
+\item More automated than GRUB legacy.
+\item Accept MBR and GPT.
+\item Stage 1.5 (core.img): generated from diskboot.img.
+\item No 1024 cylinder restriction.
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{GRUB Map}
+\begin{frame}
+\frametitle{GRUB Map}
+\begin{figure}
+\includegraphics[width=0.8\linewidth]{os03-Shmuel-Csaba-Otto-Traian-2013-GRUB.jpg}
+\caption{GRUB\footnote{Source Shmuel Csaba Otto Traian 2013}.}
+\end{figure}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{init (SYSV legacy)}
+\begin{frame}
+\frametitle{init (SYSV legacy)}
+\begin{itemize}
+\item File: \texttt{/etc/inittab}.
+\item Folders: \texttt{/etc/rcX.d} --- X = runlevel.
+\begin{itemize}
+\item Seven (7) different runlevels: 
+\begin{itemize}
+\item 0 (shutdown).
+\item 1 (single-user/admin).
+\item 2 (multi-user non net).
+\item 3 (standard).
+\item 4 (N/A).
+\item 5 (3+GUI).
+\item 6 (reboot).
+\end{itemize}
+\item SXX-YYY: Start
+\item KXX-YYY: Kill.
+\end{itemize}
+\item One script at a time in order.
+\item dependency is set manually.
+\end{itemize}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{UpStart - Ubuntu}
+\begin{frame}
+\frametitle{UpStart - Ubuntu}
+\begin{itemize}
+\item Developer: Ubuntu.
+\item Folder: \texttt{/etc/init/}.
+\item Control: \texttt{initctl}.
+\begin{itemize}
+\item \texttt{initctl list} -- listing all processes managed by upstart.
+\end{itemize}
+\item better support for hotplug devices.
+\item cleaner service management.
+\item faster service management.
+\item asynchronous.
+\end{itemize}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{The All New "systemd"}
+\begin{frame}
+\frametitle{The All New "systemd"}
+\begin{itemize}
+\item Replaces (SYSV) init and UpStart.
+\begin{itemize}
+\item better concurency handling: Faster!
+\item better dependencies handling: No more "S(tarts)" and "K(ills)".
+\item better crash handling: automatic restart option.
+\item better security: group protection from anyone including superusers.
+\item simpler config files: reliable and clean scripts.
+\item hotplug: dynamic start/stop.
+\item supports legacy systems (init).
+\item overhead reducing.
+\item unified management way for all distros.
+\item bloated: doing more with more resources.
+\item linux specific: NOT portable.
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{systemctl}
+\begin{frame}[fragile]
+\frametitle{systemctl 01}
+\begin{lstlisting}[basicstyle=\ttfamily\small]
+for II in      \
+   'systemctl list-unit-files | head -8; echo "(...)";
+       systemctl list-unit-files| tail -8' \
+   'systemd-analyze blame | wc -l; echo "===";
+       systemd-analyze blame | head -15' \
+   'systemctl --full  | wc -l; echo "===";
+       systemctl --full  | head -10' \
+   'systemctl list-units  | wc -l; echo "===";
+       systemctl list-units  | head -10' \
+   'systemctl list-units |grep .service|wc -l;echo "===";
+       systemctl list-units|grep .service|head -10' \
+   'systemctl list-units  | grep ssh.service' \
+   'systemctl status ssh.service' \
+   'systemctl is-enabled ssh' \
+   'journalctl' \
+   'journalctl -b' \
+do
+...
+\end{lstlisting}
+
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\begin{frame}[fragile]
+\frametitle{systemctl 02}
+\begin{figure}
+\includegraphics[width=.93\linewidth]{os-systemd01.jpg}
+\caption{bash a1-some-systemd-command-lines}
+\end{figure}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\begin{frame}[fragile]
+\frametitle{systemctl 03}
+\begin{figure}
+\includegraphics[width=.93\linewidth]{os-systemd02.jpg}
+\caption{systemctl list-unit-files}
+\end{figure}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\begin{frame}[fragile]
+\frametitle{systemctl 04}
+\begin{figure}
+\includegraphics[width=.93\linewidth]{os-systemd03.jpg}
+\caption{systemd-analyze blame}
+\end{figure}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\begin{frame}[fragile]
+\frametitle{systemctl 05}
+\begin{figure}
+\includegraphics[width=.93\linewidth]{os-systemd04.jpg}
+\caption{systemctl --full; systemctl list-units}
+\end{figure}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\begin{frame}[fragile]
+\frametitle{systemctl 06}
+\begin{figure}
+\includegraphics[width=.93\linewidth]{os-systemd05.jpg}
+\caption{systemctl status ssh.service}
+\end{figure}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\begin{frame}[fragile]
+\frametitle{systemctl 07}
+\begin{figure}
+\includegraphics[width=.93\linewidth]{os-systemd06.jpg}
+\caption{systemctl is-enabled ssh}
+\end{figure}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+\input{os09-check.tex}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\section{The End}
+\begin{frame}
+\frametitle{The End}
+\begin{itemize}
+\item[$\square$] This is the end of the presentation.
+\item[$\boxtimes$] This is the end of the presentation.
+\item This is the end of the presentation.
+\end{itemize}
+\end{frame}
+
+% XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+\end{document}
+

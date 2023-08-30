@@ -1,0 +1,8 @@
+pdfbuild/
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+.aux
+Gemfile.lock
