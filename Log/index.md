@@ -3,7 +3,7 @@ layout: "layout"
 title: REPORT
 ---
 
-## Week: W00 Rev: 30-Aug-2023 23:07
+## Week: W00 Rev: 31-Aug-2023 09:28
 
 To Get CBKADAL`s TARBALL:
 
@@ -15,12 +15,12 @@ wget -c https://cbkadal.github.io/os232/SandBox/cbkadal.tar.xz
 001. Abbilville: [GH](https://github.com/Abbilville/os232/) [GHP](https://Abbilville.github.io/os232/) [LOG](https://Abbilville.github.io/os232/TXT/mylog.txt) [TARBALL](Abbilville.tar.bz2.txt)<br>
 002. adamGhavi: [GH](https://github.com/adamGhavi/os232/) [GHP](https://adamGhavi.github.io/os232/) [LOG](https://adamGhavi.github.io/os232/TXT/mylog.txt) [TARBALL](adamGhavi.tar.bz2.txt)<br>
 003. AdamMoh: [GH](https://github.com/AdamMoh/os232/) [GHP](https://AdamMoh.github.io/os232/) [LOG](https://AdamMoh.github.io/os232/TXT/mylog.txt) [TARBALL](AdamMoh.tar.bz2.txt)<br>
-004. adhan-857: [TARBALL](adhan-857.tar.bz2.txt)<br>
+004. adhan-857: [GH](https://github.com/adhan-857/os232/) [GHP](https://adhan-857.github.io/os232/) [LOG](https://adhan-857.github.io/os232/TXT/mylog.txt) [TARBALL](adhan-857.tar.bz2.txt)<br>
 005. adi-himawan: [TARBALL](adi-himawan.tar.bz2.txt)<br>
 006. adipppp: [GH](https://github.com/adipppp/os232/) [TARBALL](adipppp.tar.bz2.txt)<br>
 007. Akmal76: [GH](https://github.com/Akmal76/os232/) [GHP](https://Akmal76.github.io/os232/) [LOG](https://Akmal76.github.io/os232/TXT/mylog.txt) [TARBALL](Akmal76.tar.bz2.txt)<br>
 008. AkubaruF: [GH](https://github.com/AkubaruF/os232/) [GHP](https://AkubaruF.github.io/os232/) [LOG](https://AkubaruF.github.io/os232/TXT/mylog.txt) [TARBALL](AkubaruF.tar.bz2.txt)<br>
-009. aldenluthfi: [TARBALL](aldenluthfi.tar.bz2.txt)<br>
+009. aldenluthfi: [GH](https://github.com/aldenluthfi/os232/) [TARBALL](aldenluthfi.tar.bz2.txt)<br>
 010. alfian-f: [GH](https://github.com/alfian-f/os232/) [GHP](https://alfian-f.github.io/os232/) [LOG](https://alfian-f.github.io/os232/TXT/mylog.txt) [TARBALL](alfian-f.tar.bz2.txt)<br>
 011. alifbintang1: [GH](https://github.com/alifbintang1/os232/) [GHP](https://alifbintang1.github.io/os232/) [LOG](https://alifbintang1.github.io/os232/TXT/mylog.txt) [TARBALL](alifbintang1.tar.bz2.txt)<br>
 012. Alvinzhafif: [GH](https://github.com/Alvinzhafif/os232/) [GHP](https://Alvinzhafif.github.io/os232/) [LOG](https://Alvinzhafif.github.io/os232/TXT/mylog.txt) [TARBALL](Alvinzhafif.tar.bz2.txt)<br>
@@ -42,14 +42,14 @@ wget -c https://cbkadal.github.io/os232/SandBox/cbkadal.tar.xz
 028. cyrilladrian: [GH](https://github.com/cyrilladrian/os232/) [TARBALL](cyrilladrian.tar.bz2.txt)<br>
 029. daffagrahito: [GH](https://github.com/daffagrahito/os232/) [GHP](https://daffagrahito.github.io/os232/) [LOG](https://daffagrahito.github.io/os232/TXT/mylog.txt) [TARBALL](daffagrahito.tar.bz2.txt)<br>
 030. daffarafi: [GH](https://github.com/daffarafi/os232/) [GHP](https://daffarafi.github.io/os232/) [LOG](https://daffarafi.github.io/os232/TXT/mylog.txt) [TARBALL](daffarafi.tar.bz2.txt)<br>
-031. DaWanAnOnli: [GH](https://github.com/DaWanAnOnli/os232/) [TARBALL](DaWanAnOnli.tar.bz2.txt)<br>
+031. DaWanAnOnli: [GH](https://github.com/DaWanAnOnli/os232/) [GHP](https://DaWanAnOnli.github.io/os232/) [LOG](https://DaWanAnOnli.github.io/os232/TXT/mylog.txt) [TARBALL](DaWanAnOnli.tar.bz2.txt)<br>
 032. DevandraR: [GH](https://github.com/DevandraR/os232/) [GHP](https://DevandraR.github.io/os232/) [LOG](https://DevandraR.github.io/os232/TXT/mylog.txt) [TARBALL](DevandraR.tar.bz2.txt)<br>
 033. DhafinFK: [TARBALL](DhafinFK.tar.bz2.txt)<br>
 034. dimashn04: [GH](https://github.com/dimashn04/os232/) [GHP](https://dimashn04.github.io/os232/) [LOG](https://dimashn04.github.io/os232/TXT/mylog.txt) [TARBALL](dimashn04.tar.bz2.txt)<br>
 035. divieurora: [GH](https://github.com/divieurora/os232/) [GHP](https://divieurora.github.io/os232/) [LOG](https://divieurora.github.io/os232/TXT/mylog.txt) [TARBALL](divieurora.tar.bz2.txt)<br>
 036. DwikyAhmad: [GH](https://github.com/DwikyAhmad/os232/) [GHP](https://DwikyAhmad.github.io/os232/) [LOG](https://DwikyAhmad.github.io/os232/TXT/mylog.txt) [TARBALL](DwikyAhmad.tar.bz2.txt)<br>
 037. edbert2397: [GH](https://github.com/edbert2397/os232/) [GHP](https://edbert2397.github.io/os232/) [LOG](https://edbert2397.github.io/os232/TXT/mylog.txt) [TARBALL](edbert2397.tar.bz2.txt)<br>
-038. eryawww: [GH](https://github.com/eryawww/os232/) [TARBALL](eryawww.tar.bz2.txt)<br>
+038. eryawww: [GH](https://github.com/eryawww/os232/) [GHP](https://eryawww.github.io/os232/) [LOG](https://eryawww.github.io/os232/TXT/mylog.txt) [TARBALL](eryawww.tar.bz2.txt)<br>
 039. evelynphs: [TARBALL](evelynphs.tar.bz2.txt)<br>
 040. fadhilmuh: [GH](https://github.com/fadhilmuh/os232/) [GHP](https://fadhilmuh.github.io/os232/) [TARBALL](fadhilmuh.tar.bz2.txt)<br>
 041. fahmi-ramadhan: [GH](https://github.com/fahmi-ramadhan/os232/) [GHP](https://fahmi-ramadhan.github.io/os232/) [LOG](https://fahmi-ramadhan.github.io/os232/TXT/mylog.txt) [TARBALL](fahmi-ramadhan.tar.bz2.txt)<br>
@@ -105,7 +105,7 @@ wget -c https://cbkadal.github.io/os232/SandBox/cbkadal.tar.xz
 091. matthewhjt: [GH](https://github.com/matthewhjt/os232/) [GHP](https://matthewhjt.github.io/os232/) [LOG](https://matthewhjt.github.io/os232/TXT/mylog.txt) [TARBALL](matthewhjt.tar.bz2.txt)<br>
 092. Metry630: [GH](https://github.com/Metry630/os232/) [GHP](https://Metry630.github.io/os232/) [LOG](https://Metry630.github.io/os232/TXT/mylog.txt) [TARBALL](Metry630.tar.bz2.txt)<br>
 093. mhmdhaekal: [GH](https://github.com/mhmdhaekal/os232/) [GHP](https://mhmdhaekal.github.io/os232/) [LOG](https://mhmdhaekal.github.io/os232/TXT/mylog.txt) [TARBALL](mhmdhaekal.tar.bz2.txt)<br>
-094. MightyZanark: [GH](https://github.com/MightyZanark/os232/) [TARBALL](MightyZanark.tar.bz2.txt)<br>
+094. MightyZanark: [GH](https://github.com/MightyZanark/os232/) [GHP](https://MightyZanark.github.io/os232/) [LOG](https://MightyZanark.github.io/os232/TXT/mylog.txt) [TARBALL](MightyZanark.tar.bz2.txt)<br>
 095. mmalkindi: [GH](https://github.com/mmalkindi/os232/) [GHP](https://mmalkindi.github.io/os232/) [LOG](https://mmalkindi.github.io/os232/TXT/mylog.txt) [TARBALL](mmalkindi.tar.bz2.txt)<br>
 096. mnqrt: [TARBALL](mnqrt.tar.bz2.txt)<br>
 097. MRadhityaUtomo: [GH](https://github.com/MRadhityaUtomo/os232/) [GHP](https://MRadhityaUtomo.github.io/os232/) [TARBALL](MRadhityaUtomo.tar.bz2.txt)<br>
@@ -121,13 +121,13 @@ wget -c https://cbkadal.github.io/os232/SandBox/cbkadal.tar.xz
 107. Not0nline: [GH](https://github.com/Not0nline/os232/) [TARBALL](Not0nline.tar.bz2.txt)<br>
 108. novrizair: [TARBALL](novrizair.tar.bz2.txt)<br>
 109. Nsyay: [GH](https://github.com/Nsyay/os232/) [GHP](https://Nsyay.github.io/os232/) [LOG](https://Nsyay.github.io/os232/TXT/mylog.txt) [TARBALL](Nsyay.tar.bz2.txt)<br>
-110. NtapSlur: [TARBALL](NtapSlur.tar.bz2.txt)<br>
+110. NtapSlur: [GH](https://github.com/NtapSlur/os232/) [GHP](https://NtapSlur.github.io/os232/) [LOG](https://NtapSlur.github.io/os232/TXT/mylog.txt) [TARBALL](NtapSlur.tar.bz2.txt)<br>
 111. patrickSevans123: [GH](https://github.com/patrickSevans123/os232/) [GHP](https://patrickSevans123.github.io/os232/) [LOG](https://patrickSevans123.github.io/os232/TXT/mylog.txt) [TARBALL](patrickSevans123.tar.bz2.txt)<br>
 112. PeakFiction: [GH](https://github.com/PeakFiction/os232/) [GHP](https://PeakFiction.github.io/os232/) [LOG](https://PeakFiction.github.io/os232/TXT/mylog.txt) [TARBALL](PeakFiction.tar.bz2.txt)<br>
 113. pershyfon: [GH](https://github.com/pershyfon/os232/) [GHP](https://pershyfon.github.io/os232/) [LOG](https://pershyfon.github.io/os232/TXT/mylog.txt) [TARBALL](pershyfon.tar.bz2.txt)<br>
 114. qoqon: [GH](https://github.com/qoqon/os232/) [GHP](https://qoqon.github.io/os232/) [LOG](https://qoqon.github.io/os232/TXT/mylog.txt) [TARBALL](qoqon.tar.bz2.txt)<br>
 115. rachelzn: [GH](https://github.com/rachelzn/os232/) [TARBALL](rachelzn.tar.bz2.txt)<br>
-116. rafizia: [GH](https://github.com/rafizia/os232/) [GHP](https://rafizia.github.io/os232/) [TARBALL](rafizia.tar.bz2.txt)<br>
+116. rafizia: [GH](https://github.com/rafizia/os232/) [GHP](https://rafizia.github.io/os232/) [LOG](https://rafizia.github.io/os232/TXT/mylog.txt) [TARBALL](rafizia.tar.bz2.txt)<br>
 117. RafliMahesa: [GH](https://github.com/RafliMahesa/os232/) [GHP](https://RafliMahesa.github.io/os232/) [LOG](https://RafliMahesa.github.io/os232/TXT/mylog.txt) [TARBALL](RafliMahesa.tar.bz2.txt)<br>
 118. raihanakbr: [GH](https://github.com/raihanakbr/os232/) [TARBALL](raihanakbr.tar.bz2.txt)<br>
 119. raisaafadilla: [TARBALL](raisaafadilla.tar.bz2.txt)<br>
@@ -145,7 +145,7 @@ wget -c https://cbkadal.github.io/os232/SandBox/cbkadal.tar.xz
 131. riozulfandy: [TARBALL](riozulfandy.tar.bz2.txt)<br>
 132. RobertBenyamin: [GH](https://github.com/RobertBenyamin/os232/) [GHP](https://RobertBenyamin.github.io/os232/) [LOG](https://RobertBenyamin.github.io/os232/TXT/mylog.txt) [TARBALL](RobertBenyamin.tar.bz2.txt)<br>
 133. rxa15: [GH](https://github.com/rxa15/os232/) [GHP](https://rxa15.github.io/os232/) [LOG](https://rxa15.github.io/os232/TXT/mylog.txt) [TARBALL](rxa15.tar.bz2.txt)<br>
-134. RyanAfzal: [GH](https://github.com/RyanAfzal/os232/) [TARBALL](RyanAfzal.tar.bz2.txt)<br>
+134. RyanAfzal: [GH](https://github.com/RyanAfzal/os232/) [GHP](https://RyanAfzal.github.io/os232/) [LOG](https://RyanAfzal.github.io/os232/TXT/mylog.txt) [TARBALL](RyanAfzal.tar.bz2.txt)<br>
 135. rzapriono: [GH](https://github.com/rzapriono/os232/) [GHP](https://rzapriono.github.io/os232/) [LOG](https://rzapriono.github.io/os232/TXT/mylog.txt) [TARBALL](rzapriono.tar.bz2.txt)<br>
 136. samuelcodingjourney: [GH](https://github.com/samuelcodingjourney/os232/) [TARBALL](samuelcodingjourney.tar.bz2.txt)<br>
 137. SamuelFarrel: [GH](https://github.com/SamuelFarrel/os232/) [GHP](https://SamuelFarrel.github.io/os232/) [LOG](https://SamuelFarrel.github.io/os232/TXT/mylog.txt) [TARBALL](SamuelFarrel.tar.bz2.txt)<br>
@@ -167,10 +167,12 @@ wget -c https://cbkadal.github.io/os232/SandBox/cbkadal.tar.xz
 153. tiffanyadisuryo: [GH](https://github.com/tiffanyadisuryo/os232/) [GHP](https://tiffanyadisuryo.github.io/os232/) [LOG](https://tiffanyadisuryo.github.io/os232/TXT/mylog.txt) [TARBALL](tiffanyadisuryo.tar.bz2.txt)<br>
 154. TomoriNow: [GH](https://github.com/TomoriNow/os232/) [GHP](https://TomoriNow.github.io/os232/) [LOG](https://TomoriNow.github.io/os232/TXT/mylog.txt) [TARBALL](TomoriNow.tar.bz2.txt)<br>
 155. tvadhisti: [GH](https://github.com/tvadhisti/os232/) [TARBALL](tvadhisti.tar.bz2.txt)<br>
-156. venedictchen: [GH](https://github.com/venedictchen/os232/) [GHP](https://venedictchen.github.io/os232/) [LOG](https://venedictchen.github.io/os232/TXT/mylog.txt) [TARBALL](venedictchen.tar.bz2.txt)<br>
-157. vinkakniv: [GH](https://github.com/vinkakniv/os232/) [GHP](https://vinkakniv.github.io/os232/) [LOG](https://vinkakniv.github.io/os232/TXT/mylog.txt) [TARBALL](vinkakniv.tar.bz2.txt)<br>
-158. VirgilliaYeala: [GH](https://github.com/VirgilliaYeala/os232/) [GHP](https://VirgilliaYeala.github.io/os232/) [LOG](https://VirgilliaYeala.github.io/os232/TXT/mylog.txt) [TARBALL](VirgilliaYeala.tar.bz2.txt)<br>
-159. Vv-kK: [GH](https://github.com/Vv-kK/os232/) [GHP](https://Vv-kK.github.io/os232/) [LOG](https://Vv-kK.github.io/os232/TXT/mylog.txt) [TARBALL](Vv-kK.tar.bz2.txt)<br>
-160. WinotoHasyim: [TARBALL](WinotoHasyim.tar.bz2.txt)<br>
-161. yhogaa: [TARBALL](yhogaa.tar.bz2.txt)<br>
+156. uripsubagyo: [GH](https://github.com/uripsubagyo/os232/) [GHP](https://uripsubagyo.github.io/os232/) [LOG](https://uripsubagyo.github.io/os232/TXT/mylog.txt) [TARBALL](uripsubagyo.tar.bz2.txt)<br>
+157. venedictchen: [GH](https://github.com/venedictchen/os232/) [GHP](https://venedictchen.github.io/os232/) [LOG](https://venedictchen.github.io/os232/TXT/mylog.txt) [TARBALL](venedictchen.tar.bz2.txt)<br>
+158. vinkakniv: [GH](https://github.com/vinkakniv/os232/) [GHP](https://vinkakniv.github.io/os232/) [LOG](https://vinkakniv.github.io/os232/TXT/mylog.txt) [TARBALL](vinkakniv.tar.bz2.txt)<br>
+159. VirgilliaYeala: [GH](https://github.com/VirgilliaYeala/os232/) [GHP](https://VirgilliaYeala.github.io/os232/) [LOG](https://VirgilliaYeala.github.io/os232/TXT/mylog.txt) [TARBALL](VirgilliaYeala.tar.bz2.txt)<br>
+160. Vv-kK: [GH](https://github.com/Vv-kK/os232/) [GHP](https://Vv-kK.github.io/os232/) [LOG](https://Vv-kK.github.io/os232/TXT/mylog.txt) [TARBALL](Vv-kK.tar.bz2.txt)<br>
+161. WinotoHasyim: [TARBALL](WinotoHasyim.tar.bz2.txt)<br>
+162. yhogaa: [TARBALL](yhogaa.tar.bz2.txt)<br>
+163. zuhdynadhif: [TARBALL](zuhdynadhif.tar.bz2.txt)<br>
 
