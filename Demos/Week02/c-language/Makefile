@@ -1,14 +1,15 @@
-# REV10 Mon Oct 12 11:25:56 WIB 2020
-# REV08 Tue Dec 10 10:39:18 WIB 2019
-# REV04 Tue Sep 25 12:03:44 WIB 2018
-# START Tue Sep 13 11:44:18 WIB 2016
+# REV19: Wed 13 Sep 2023 05:00
+# REV10: Mon 12 Oct 2020 11:00
+# REV08: Tue 10 Dec 2019 10:00
+# REV04: Tue 25 Sep 2018 12:00
+# START: Tue 13 Sep 2016 11:00
 
 # INFO: With this "Makefile", just run:
 # INFO:                     make
 
 CC            = gcc
 CPP           = cpp
-CFLAGS        = -std=gnu99
+CFLAGS        = -std=gnu18
 LDFLAGS       = 
 CPPFLAGS      =
 DEPFLAGS      = -MM -MT $(@:.d=.o) 

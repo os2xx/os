@@ -1,5 +1,5 @@
 # INFO: Read This First! ==== ========= =========
-# Version: Sun 06 Aug 2023 12:00
+# Version: Wed 13 Sep 2023 05:00
 cat $0; exit 0;
 ========= ========= ========= ========= ========= ========= ========= =========
 These files are available at GitHub.com:
@@ -27,7 +27,7 @@ Just run: make
                   To run:   ./75-191
 [     76-os192.c] UAS 2019-2 (final term)
                   To run:   ./76-192
-# REV21: Sun 06 Aug 2023 11:00
+# REV22: Wed 13 Sep 2023 05:00
 # REV19: Fri 16 Sep 2022 15:00
 # REV17: Wed 24 Mar 2021 18:00
 # REV16: Mon 14 Sep 2020 21:00
