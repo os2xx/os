@@ -1,9 +1,11 @@
-# REV02: Mon Oct 12 11:09:19 WIB 2020
-# REV01: Thu Mar 12 10:06:45 WIB 2020
-# START: Sun Jan 26 13:34:59 WIB 2020
+#!/bin/bash
+# REV03: Sun 17 Sep 2023 08:00
+# REV02: Mon 12 Oct 2020 11:00
+# REV01: Thu 12 Mar 2020 10:00
+# START: Sun 26 Jan 2020 13:00
 # FileName: 20-uts201
 
-# Copyright (C) 2020-2022 BinKadal, Sdn. Bhd.
+# Copyright (C) 2020-2023 BinKadal, Sdn. Bhd.
 # This free document is distributed in the hope that it will be 
 # useful, but WITHOUT ANY WARRANTY; without even the implied 
 # warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
