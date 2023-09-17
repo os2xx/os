@@ -1,12 +1,12 @@
 /*
- * Copyright (C) 2016-2020 Rahmat M. Samik-Ibrahim
- * http://rahmatm.samik-ibrahim.vlsm.org/
+ * Copyright (C) 2016-2023 BinKadal, Sdn. Bhd.
  * This program is free script/software. This program is distributed in the 
  * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 # INFO: Week02 printf() examples.
- * REV01 Sun Feb 23 16:41:33 WIB 2020
- * START Tue Dec 10 10:58:24 WIB 2019
+ * REV02: Sun 17 Sep 2023 09:00
+ * REV01: Sun 23 Feb 2020 16:00
+ * START: Tue 10 Dec 2019 10:00
  */
 
 #include <stdio.h>

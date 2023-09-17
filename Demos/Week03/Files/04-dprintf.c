@@ -1,13 +1,13 @@
 /*
- * Copyright (C) 2019 - 2021 Rahmat M. Samik-Ibrahim
- * http://rahmatm.samik-ibrahim.vlsm.org/
+ * Copyright (C) 2019-2023 BinKadal, Sdn. Bhd.
  * This program is free script/software. This program is distributed in the 
  * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 # INFO: dprintf() prints to a file descriptor (int fd).
- * REV02 Sun 21 Mar 2021 00:11:29 WIB
- * REV01 Sun 23 Feb 2020 16:38:33 WIB
- * START Mon 28 Jan 2019 10:03:57 WIB
+ * REV03: Sun 17 Sep 2023 09:00
+ * REV02: Sun 21 Mar 2021 00:00
+ * REV01: Sun 23 Feb 2020 16:00
+ * START: Mon 28 Jan 2019 10:00
  */
 
 #include <fcntl.h>

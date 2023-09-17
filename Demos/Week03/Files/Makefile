@@ -1,16 +1,22 @@
-# REV20 Fri  2 Apr 07:15:45 WIB 2021
-# REV19 Tue 30 Mar 10:28:55 WIB 2021
-# REV18 Mon 22 Mar 23:11:59 WIB 2021
-# REV17 Sun 23 Feb 16:57:39 WIB 2020
-# REV16 Mon 28 Jan 19:03:30 WIB 2019
-# START Tue 13 Sep 11:44:18 WIB 2016
+#!/bin/bash
+# REV21: Sun 17 Sep 2023 08:00
+# REV20: Fri  2 Apr 2021 07:00
+# REV19: Tue 30 Mar 2021 10:00
+# REV17: Sun 23 Feb 2020 16:00
+# REV16: Mon 28 Jan 2019 19:00
+# START: Tue 13 Sep 2016 11:00
+
+# Copyright (C) 2018-2023 BinKadal, Sdn. Bhd.
+# This program is free script/software. This program is distributed in the hope 
+# that it will be useful, but WITHOUT ANY WARRANTY; without even the implied 
+# warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 # INFO: With this "Makefile", just run:
 # INFO:                     make
 
 CC            = gcc
 CPP           = cpp
-CFLAGS        = -std=gnu99
+CFLAGS        = -std=gnu18
 LDFLAGS       = 
 CPPFLAGS      =
 DEPFLAGS      = -MM -MT $(@:.d=.o) 
