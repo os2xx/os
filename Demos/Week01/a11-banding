@@ -1,11 +1,12 @@
 #!/bin/bash
-# REV12: Sun Feb 23 15:36:04 WIB 2020
-# REV11: Thu Feb  6 22:35:34 WIB 2020
-# REV10: Mon Aug 27 20:09:17 WIB 2018
-# REV04: Mon Sep 11 14:51:36 WIB 2017
-# START: Xxx Xxx XX XX:XX:XX XXX 2009
+# REV19: Sun 17 Sep 2023 08:00
+# REV12: Sun 23 Feb 2020 15:00
+# REV11: Thu  6 Feb 2020 22:00
+# REV10: Mon 27 Aug 2018 20:00
+# REV04: Mon 11 Sep 2017 14:00
+# START: Thu  1 Jan 2009 00:00
 
-# Copyright (C) 2009-2022 BinKadal, Sdn. Bhd.
+# Copyright (C) 2009-2023 BinKadal, Sdn. Bhd.
 # This program is free script/software. This program is distributed in the hope 
 # that it will be useful, but WITHOUT ANY WARRANTY; without even the implied 
 # warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.

@@ -1,14 +1,15 @@
 /*
- * Copyright (C) 2015-2020 Rahmat M. Samik-Ibrahim
- * http://rahmatm.samik-ibrahim.vlsm.org/
+ * Copyright (C) 2015-2023 BinKadal, Sdn. Bhd.
  * This program is free script/software. This program is distributed in the 
  * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- * REV08 Sun Feb 23 16:28:49 WIB 2020
- * REV07 Wed Feb 27 19:56:19 WIB 2019
- * REV05 Wed Aug 29 20:55:23 WIB 2018
- * REV02 Sun Oct 16 20:50:26 WIB 2016
- * START Xxx Xxx XX XX:XX:XX WIB 2015
+
+ * REV09: Sun 17 Sep 2023 08:00
+ * REV08: Sun 23 Feb 2020 16:00
+ * REV07: Wed 27 Feb 2019 19:00
+ * REV05: Wed 29 Aug 2018 20:00
+ * REV02: Sun 16 Oct 2016 20:00
+ * START: Thu  1 Jan 2015 00:00
 
  * === umask() ===
 # INFO: int open(const char* pathname, int FLAGS, mode_t MODE);

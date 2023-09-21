@@ -1,14 +1,15 @@
 /*
- * Copyright (C) 2016 - 2020 Rahmat M. Samik-Ibrahim
- * http://rahmatm.samik-ibrahim.vlsm.org/
- * This program is free script/software. This program is distributed in the 
- * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
+ * Copyright (C) 2016-2023 BinKadal, Sdn. Bhd.
+ * This program is free script/software. This program is distributed in the
+ * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- * REV05 Sun Feb 23 16:33:55 WIB 2020
- * REV04 Thu Jan 17 14:32:25 WIB 2019
- * REV03 Wed Aug 29 20:55:23 WIB 2018
- * REV02 Thu Oct  5 10:17:47 WIB 2017
- * START Tue Sep 27 12:07:42 WIB 2016
+
+ * REV06: Sun 17 Sep 2023 08:00
+ * REV05: Sun 23 Feb 2020 16:00
+ * REV04: Thu 17 Jan 2019 14:00
+ * REV03: Wed 29 Aug 2018 20:00
+ * REV02: Thu  5 Oct 2017 10:00
+ * START: Tue 27 Sep 2016 12:00
  *
 # INFO: Compare: File Pointer (FP) vs File Descriptor (FD)
  *
