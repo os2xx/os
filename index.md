@@ -38,7 +38,7 @@ title:  "Operating Systems - Sistem Operasi"
 | 16-Oct-2023 | MIDTERM | (16-24 Oct) | TBA |
 | 31-Oct-2023 | Week 06 | Concurrency: Processes & Threads | Ch. 3, 4. |
 | 07-Nov-2023 | Week 07 | Synchronization & Deadlock | Ch. 6, 7, 8. |
-| 14-Nov-2023 | Week 08 | Scheduling + W06/W07 | Ch. 5. (ONLINE) |
+| 14-Nov-2023 | Week 08 | Scheduling + W06/W07 | Ch. 5. |
 | 21-Nov-2023 | Week 09 | Storage, Firmware, Bootloader, & Systemd | Ch. 11. |
 | 28-Nov-2023 | Week 10 | I/O & Programming | Ch. 12. |
 | 13-Dec-2023 | FINAL   | (13-22 Dec) | TBA |
