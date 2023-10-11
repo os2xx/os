@@ -12,6 +12,9 @@ wget -c https://cbkadal.github.io/os232/SandBox/cbkadal.tar.xz
 
 ```
 
+Remember: HOST=USER=GROUP=HOME=CMOUN2=cbkadal (but you are NOT cbkadal!)
+
+
 001. Abbilville: [GH](https://github.com/Abbilville/os232/) [GHP](https://Abbilville.github.io/os232/) [LOG](https://Abbilville.github.io/os232/TXT/mylog.txt) [TARBALL](Abbilville.tar.xz.txt)<br>
 002. adamGhavi: [GH](https://github.com/adamGhavi/os232/) [GHP](https://adamGhavi.github.io/os232/) [LOG](https://adamGhavi.github.io/os232/TXT/mylog.txt) [TARBALL](adamGhavi.tar.xz.txt)<br>
 003. AdamMoh: [GH](https://github.com/AdamMoh/os232/) [GHP](https://AdamMoh.github.io/os232/) [LOG](https://AdamMoh.github.io/os232/TXT/mylog.txt) [TARBALL](AdamMoh.tar.xz.txt)<br>
