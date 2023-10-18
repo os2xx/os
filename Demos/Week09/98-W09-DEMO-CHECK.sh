@@ -1,11 +1,17 @@
 #!/bin/bash
-# REV03: Tue 02 May 2023 17:00
-# REV02: Sun 16 Apr 2023 02:00
-# REV01: Mon 14 Nov 2022 03:00
+# REV06: Wed 18 Oct 2023 11:00
+# REV05: Sun 17 Sep 2023 08:00
 # START: Mon 07 Nov 2022 19:00
 
+# Copyright (C) 2018-2023 BinKadal, Sdn. Bhd.
+# This program is free script/software. This program is distributed in the hope 
+# that it will be useful, but WITHOUT ANY WARRANTY; without even the implied 
+# warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+# INFO: DEMO
+
 WEEK="09"
-DATE0="01-MAY-2023"
+DATE0="19-NOV-2023"
 RESULT="$HOME/RESULT/W$WEEK/"
 REPORT="$RESULT/WEEK$WEEK-DEMO-CHECK.txt"
 IAM="DEMOCHECK $(echo $(whoami)W$WEEK$(hostname)|tr 'A-Za-z' 'N-ZA-Mn-za-m')"
@@ -34,4 +40,8 @@ touch $REPORT
 STAMP=$(stamp)
 
 fecho $IAM
+
+
+
+
 

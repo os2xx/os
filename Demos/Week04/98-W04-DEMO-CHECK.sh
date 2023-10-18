@@ -1,9 +1,6 @@
 #!/bin/bash
-# REV06: Mon 25 Sep 2023 11:00
+# REV06: Wed 18 Oct 2023 11:00
 # REV05: Sun 17 Sep 2023 08:00
-# REV04: Mon 11 Sep 2023 20:00
-# REV03: Tue 02 May 2023 17:00
-# REV01: Mon 14 Nov 2022 03:00
 # START: Mon 07 Nov 2022 19:00
 
 # Copyright (C) 2018-2023 BinKadal, Sdn. Bhd.
@@ -14,7 +11,7 @@
 # INFO: DEMO
 
 WEEK="04"
-DATE0="25-Sep-2023"
+DATE0="24-Sep-2023"
 RESULT="$HOME/RESULT/W$WEEK/"
 REPORT="$RESULT/WEEK$WEEK-DEMO-CHECK.txt"
 IAM="DEMOCHECK $(echo $(whoami)W$WEEK$(hostname)|tr 'A-Za-z' 'N-ZA-Mn-za-m')"
@@ -43,4 +40,8 @@ touch $REPORT
 STAMP=$(stamp)
 
 fecho $IAM
+
+
+
+
 
