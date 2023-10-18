@@ -35,7 +35,7 @@ title:  "Operating Systems - Sistem Operasi"
 | 19-Sep-2023 | Week 03 | File System & FUSE | Ch. 13, 14, 15. |
 | 26-Sep-2023 | Week 04 | Addressing, Shared Lib, & Pointer | Ch. 9. |
 | 05-Oct-2023 | Week 05 | Virtual Memory | Ch. 10. |
-| 18-Oct-2023 | MIDTERM | 18-Oct-2023 | 13:00-15:30 |
+| 18-Oct-2023 | MIDTERM | Gedung Baru (New Bldg) A6-09 | 13:00-15:30 |
 | 31-Oct-2023 | Week 06 | Concurrency: Processes & Threads | Ch. 3, 4. |
 | 07-Nov-2023 | Week 07 | Synchronization & Deadlock | Ch. 6, 7, 8. |
 | 14-Nov-2023 | Week 08 | Scheduling + W06/W07 | Ch. 5. |
