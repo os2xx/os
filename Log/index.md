@@ -3,7 +3,7 @@ layout: "layout"
 title: REPORT
 ---
 
-## Week: W04 Rev: 08-Oct-2023 11:03
+## Week: W05 Rev: 19-Oct-2023 10:37
 
 To Get CBKADAL`s TARBALL:
 
@@ -11,6 +11,7 @@ To Get CBKADAL`s TARBALL:
 wget -c https://cbkadal.github.io/os232/SandBox/cbkadal.tar.xz
 
 ```
+
 
 Remember: HOST=USER=GROUP=HOME=CMOUN2=cbkadal (but you are NOT cbkadal!)
 
