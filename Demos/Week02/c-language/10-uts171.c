@@ -4,9 +4,10 @@
  * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 # INFO: UTS 2017-1 (midterm)
- * REV05 Fri Feb  7 01:34:44 WIB 2020
- * REV04 Wed Feb 27 19:10:33 WIB 2019
- * START Thu Mar 30 12:13:58 WIB 2017
+ * REV06: Thu 26 Oct 2023 19:00
+ * REV05: Fri 07 Feb 2020 01:00
+ * REV04: Wed 27 Feb 2019 19:00
+ * START: Thu 30 Mar 2017 12:00
  */
 
 #include <stdio.h>

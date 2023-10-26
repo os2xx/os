@@ -1,11 +1,12 @@
 /*
- * Copyright (C) 2016-2022 BinKadal, Sdn. Bhd.
+ * Copyright (C) 2016-2023 BinKadal, Sdn. Bhd.
  * This program is free script/software. This program is distributed in the 
  * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
 # INFO: About variable "envp" in main().
- * REV05 Fri Feb  7 01:29:46 WIB 2020
- * REV04 Tue Sep 25 11:55:22 WIB 2018
- * START Tue Sep 13 12:11:09 WIB 2016
+ * REV06: Thu 26 Oct 2023 19:00
+ * REV05: Fri 07 Feb 2020 01:00
+ * REV04: Tue 25 Sep 2018 11:00
+ * START: Tue 13 Sep 2016 12:00
  */
 
 #include <stdio.h>

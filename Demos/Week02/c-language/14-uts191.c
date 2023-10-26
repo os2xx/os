@@ -1,11 +1,12 @@
 /*
- * Copyright (C) 2019-2022 BinKadal, Sdn. Bhd.
+ * Copyright (C) 2019-2023 BinKadal, Sdn. Bhd.
  * This program is free script/software. This program is distributed in the 
  * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 # INFO: UTS 2019-1 (midterm)
- * REV02 Fri Feb  7 01:36:54 WIB 2020
- * START Mon Mar 24 23:47:00 WIB 2019
+ * REV03: Thu 26 Oct 2023 19:00
+ * REV02: Fri 07 Feb 2020 01:00
+ * START: Mon 24 Mar 2019 23:00
  */
 
 // Rahmat M. Samik-Ibrahim 

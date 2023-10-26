@@ -1,14 +1,15 @@
 /*
- * Copyright (C) 2016-2022 BinKadal, Sdn. Bhd.
+ * Copyright (C) 2016-2023 BinKadal, Sdn. Bhd.
  * This program is free script/software. This program is distributed in the 
  * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 # INFO: Abount variables "argv" and "argc" in function main().
 # INFO:                   run with an argument: ./04-argc-argv arg1 arg2 arg3
- * REV04 Fri Feb  7 01:27:07 WIB 2020
- * REV03 Tue Dec 10 07:31:38 WIB 2019
- * REV02 Tue Aug 28 13:31:19 WIB 2018
- * START Tue Sep 13 12:11:09 WIB 2016
+ * REV05: Thu 26 Oct 2023 19:00
+ * REV04: Fri 07 Feb 2020 01:00
+ * REV03: Tue 10 Dec 2019 07:00
+ * REV02: Tue 28 Aug 2018 13:00
+ * START: Tue 13 Sep 2016 12:00
  *
  * TAKE NOTE(BA)
  * In the beginning this program defined a main method with argc and argv as parameters

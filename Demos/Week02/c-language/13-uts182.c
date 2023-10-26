@@ -1,12 +1,13 @@
 /*
- * Copyright (C) 2018-2022 BinKadal, Sdn. Bhd.
+ * Copyright (C) 2018-2023 BinKadal, Sdn. Bhd.
  * This program is free script/software. This program is distributed in the 
  * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 # INFO: UTS 2018-1 (midterm)
- * REV02 Fri Feb  7 01:36:13 WIB 2020
- * REV01 Thu Jan 17 13:51:44 WIB 2019
- * START Xxx Xxx XX XX:XX:XX XXX 2018
+ * REV03: Thu 26 Oct 2023 19:00
+ * REV02: Fri 07 Feb 2018 01:00
+ * REV01: Thu 17 Jan 2019 13:00
+ * START: Mon 01 Jan 2018 00:00
  * NOTE: ASCII 61H = a; 62H = b
  */
 

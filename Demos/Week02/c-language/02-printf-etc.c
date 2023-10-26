@@ -1,13 +1,14 @@
 /*
- * Copyright (C) 2016-2022 BinKadal, Sdn. Bhd.
+ * Copyright (C) 2016-2023 BinKadal, Sdn. Bhd.
  * This program is free script/software. This program is distributed in the 
  * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 # INFO: More printf() examples.
- * REV05 Fri Feb  7 01:25:27 WIB 2020
- * REV04 Fri Jan 25 17:22:31 WIB 2019
- * REV02 Tue Aug 28 13:31:19 WIB 2018
- * START Thu Sep 15 11:47:10 WIB 2016
+ * REV06: Thu 26 Oct 2023 19:00
+ * REV05: Fri Feb  7 2020 01:00
+ * REV04: Fri Jan 25 2019 17:00
+ * REV02: Tue Aug 28 2018 13:00
+ * START: Thu Sep 15 2016 11:00
  */
 
 #include <stdio.h>

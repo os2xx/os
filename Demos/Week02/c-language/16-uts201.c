@@ -1,13 +1,14 @@
 /*
- * Copyright (C) 2020-2022 BinKadal, Sdn. Bhd.
+ * Copyright (C) 2020-2023 BinKadal, Sdn. Bhd.
  * http://rahmatm.samik-ibrahim.vlsm.org/
  * This program is free script/software. This program is distributed in the
  * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 # INFO: UTS 2020-1 (midterm)
- * REV02 Mon Oct 12 11:28:15 WIB 2020
- * REV01 Thu Mar 12 10:16:24 WIB 2020
- * START Tue Mar 10 15:01:58 WIB 2020
+ * REV03: Thu 26 Oct 2023 19:00
+ * REV02: Mon 12 Oct 2020 11:00
+ * REV01: Thu 12 Mar 2020 10:00
+ * START: Tue 10 Mar 2020 15:00
  */
 
 #include <stdio.h>
