@@ -1,12 +1,12 @@
 /*
- * Copyright (C) 2019-2020 Rahmat M. Samik-Ibrahim
- * http://rahmatm.samik-ibrahim.vlsm.org/
+ * Copyright (C) 2019-2023 BinKadal, Sdn. Bhd.
  * This program is free script/software. This program is distributed in the 
  * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 # INFO: UTS 2019-2 (midterm)
- * REV01: Sun Feb 23 16:59:31 WIB 2020
- * START: Mon Oct 21 20:30:00 WIB 2019
+ * REV02: Thu 26 Oct 2023 20:00
+ * REV01: Sun 23 Feb 2020 16:00
+ * START: Mon 21 Oct 2019 20:00
  */
 /* 
 This Clue #1 - Clue #5:

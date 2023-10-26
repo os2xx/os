@@ -1,14 +1,14 @@
 /*
- * Copyright (C) 2016-2020 Rahmat M. Samik-Ibrahim
- * http://rahmatm.samik-ibrahim.vlsm.org/
+ * Copyright (C) 2016-2023 BinKadal, Sdn. Bhd.
  * This program is free script/software. This program is distributed in the 
  * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 # INFO: TBA
- * REV04: Sun Feb 23 16:59:31 WIB 2020
- * REV03: Tue Aug 28 18:40:36 WIB 2018
- * REV02: Wed Oct  4 21:37:22 WIB 2017
- * START: Tue Sep 27 18:55:30 WIB 2016
+ * REV05: Thu 26 Oct 2023 20:00
+ * REV04: Sun 23 Feb 2020 16:00
+ * REV03: Tue 28 Aug 2018 18:00
+ * REV02: Wed 04 Oct 2017 21:00
+ * START: Tue 27 Sep 2016 18:00
  */
 
 #include <stdio.h>

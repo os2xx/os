@@ -1,14 +1,14 @@
 /*
- * Copyright (C) 2017-2020 Rahmat M. Samik-Ibrahim
- * http://rahmatm.samik-ibrahim.vlsm.org/
+ * Copyright (C) 2017-2023 BinKadal, Sdn. Bhd.
  * This program is free script/software. This program is distributed in the 
  * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 # INFO: UTS 2017-1 (midterm)
- * REV03: Wed Feb 26 20:28:03 WIB 2020
- * REV02: Sun Feb 23 16:59:31 WIB 2020
- * REV01: Thu Jan 17 16:12:18 WIB 2019
- * START: Thu Mar 30 18:27:30 WIB 2017
+ * REV04: Thu 26 Oct 2023 20:00
+ * REV03: Wed 26 Feb 2020 20:00
+ * REV02: Sun 23 Feb 2020 16:00
+ * REV01: Thu 17 Jan 2019 16:00
+ * START: Thu 30 Mar 2017 18:00
 
  * INT is 32 bit little endian
  * 41H='A'; 42H='B'; 43H='C"; 44H='D'

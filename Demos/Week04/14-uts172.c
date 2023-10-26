@@ -1,14 +1,14 @@
 /*
- * Copyright (C) 2017-2020 Rahmat M. Samik-Ibrahim
- * http://rahmatm.samik-ibrahim.vlsm.org/
+ * Copyright (C) 2017-2023 BinKadal, Sdn. Bhd.
  * This program is free script/software. This program is distributed in the 
  * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 # INFO: UTS 2017-2 (midterm)
- * REV03: Sun Feb 23 16:59:31 WIB 2020
- * REV02 Wed Feb 27 19:19:35 WIB 2019
- * REV01 Thu Apr 12 20:46:48 WIB 2018
- * START Mon Oct 16 21:15:03 WIB 2017
+ * REV04: Thu 26 Oct 2023 20:00
+ * REV03: Sun 23 Feb 2020 16:00
+ * REV02: Wed 27 Feb 2019 19:00
+ * REV01: Thu 12 Apr 2018 20:00
+ * START: Mon 16 Oct 2017 21:00
  */
 
 #include <stdio.h>
