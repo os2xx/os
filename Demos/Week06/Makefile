@@ -1,14 +1,15 @@
-# REV08 Mon Dec  9 16:57:42 WIB 2019
-# REV07 Tue Apr  2 09:40:27 WIB 2019
-# REV06 Mon Feb 11 15:27:05 WIB 2019
-# REV04 Wed Nov  1 13:30:30 WIB 2017
-# START Mon Oct 24 09:18:34 WIB 2016
+# REV09: Fri 27 Oct 2023 07:00
+# REV08: Mon Dec  9 2019 16:00
+# REV07: Tue Apr  2 2019 09:00
+# REV06: Mon Feb 11 2019 15:00
+# REV04: Wed Nov  1 2017 13:00
+# START: Mon Oct 24 2016 09:00
 # DEMOFILES=\
 # 	demo-file1.txt \
 # 	demo-file2.txt \
 
 CC='gcc'
-CFLAGS='-std=c99'
+CFLAGS='-std=gnu18'
  
 P00=00-show-pid
 P01=01-fork
