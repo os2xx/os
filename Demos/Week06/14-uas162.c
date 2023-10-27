@@ -1,14 +1,14 @@
 /*
- * Copyright (C) 2016-2020 Rahmat M. Samik-Ibrahim
- * http://rahmatm.samik-ibrahim.vlsm.org/
+ * Copyright (C) 2016-2023 BinKadal, Sdn. Bhd.
  * This program is free script/software. This program is distributed in the 
  * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- * REV08 Tue Mar 24 16:40:28 WIB 2020
- * REV07 Wed Feb 27 19:16:01 WIB 2019
- * REV06 Wed Aug 29 16:11:46 WIB 2018
- * REV03 Wed Nov  1 14:00:40 WIB 2017
- * START Sun Dec 04 00:00:00 WIB 2016
+ * REV09: Fri 27 Oct 2023 18:00
+ * REV08: Tue 24 Mar 2020 16:00
+ * REV07: Wed 27 Feb 2019 19:00
+ * REV06: Wed 29 Aug 2018 16:00
+ * REV03: Wed 01 Nov 2017 14:00
+ * START: Sun 04 Dec 2016 00:00
  *
  * wait()     =  suspends until its child terminates. 
  * fflush()   =  flushes the user-space buffers.

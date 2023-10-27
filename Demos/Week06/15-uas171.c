@@ -1,14 +1,14 @@
 /*
- * Copyright (C) 2005-2020 Rahmat M. Samik-Ibrahim
- * http://rahmatm.samik-ibrahim.vlsm.org/
+ * Copyright (C) 2005-2023 BinKadal, Sdn. Bhd.
  * This program is free script/software. This program is distributed in the 
  * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- * REV07 Tue Mar 24 16:41:30 WIB 2020
- * REV06 Wed Aug 29 16:11:46 WIB 2018
- * REV03 Mon Oct 30 15:10:10 WIB 2017
- * REV00 Wed May  3 17:07:09 WIB 2017
- * START 2005
+ * REV08: Fri 27 Oct 2023 19:00
+ * REV07: Tue 24 Mar 2020 16:00
+ * REV06: Wed 29 Aug 2018 16:00
+ * REV03: Mon 30 Oct 2017 15:00
+ * REV00: Wed 03 May 2017 17:00
+ * START: Sat 01 Jan 2005 00:00
  *
  * fflush(NULL): flushes all open output streams
  * fork():       creates  a new process by cloning

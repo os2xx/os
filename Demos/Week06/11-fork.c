@@ -1,13 +1,13 @@
 /*
- * Copyright (C) 2016-2020 Rahmat M. Samik-Ibrahim
- * http://rahmatm.samik-ibrahim.vlsm.org/
+ * Copyright (C) 2016-2023 BinKadal, Sdn. Bhd.
  * This program is free script/software. This program is distributed in the 
  * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- * REV07 Tue Mar 24 16:36:21 WIB 2020
- * REV06 Wed Aug 29 16:11:46 WIB 2018
- * REV02 Mon Oct 30 20:27:24 WIB 2017
- * START Mon Oct 24 09:42:05 WIB 2016
+ * REV08: Fri 27 Oct 2023 18:00
+ * REV07: Tue 24 Mar 2020 16:00
+ * REV06: Wed 29 Aug 2018 16:00
+ * REV02: Mon 30 Oct 2017 20:00
+ * START: Mon 24 Oct 2016 09:00
  */
 
 #define  LOOP   3
