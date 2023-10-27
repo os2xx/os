@@ -1,19 +1,18 @@
 /*
- * Copyright (C) 2016-2021 Rahmat M. Samik-Ibrahim
- * http://rahmatm.samik-ibrahim.vlsm.org/
+ * Copyright (C) 2016-2023 BinKadal, Sdn. Bhd.
  * This program is free script/software. This program is distributed in the 
  * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 # INFO: TOP (Table of Processes)
- * REV11 Fri  2 Apr 07:51:05 WIB 2021
- * REV10 Tue 30 Mar 18:03:18 WIB 2021
- * REV07 Fri 26 Mar 22:52:06 WIB 2021
- * REV06 Thu 25 Mar 13:52:59 WIB 2021
- * REV05 Wed 27 Feb 19:16:52 WIB 2019
- * START Mon 03 Oct 09:26:51 WIB 2016
+ * REV19: Fri 27 Oct 2023 07:00
+ * REV10: Tue 30 Mar 2021 18:00
+ * REV07: Fri 26 Mar 2021 22:00
+ * REV06: Thu 25 Mar 2021 13:00
+ * REV05: Wed 27 Feb 2021 19:00
+ * START: Mon 03 Oct 2021 09:00
  */
 
-#define TOKEN  "OS211W05"
+#define TOKEN  "OS232W05"
 // #define MSTARTS 0x16BE5
 #define MSTARTS 0x16BE4
 // #define MSTARTS 0xDE5

@@ -1,13 +1,13 @@
 /*
- * Copyright (C) 2021 Rahmat M. Samik-Ibrahim
- * http://rahmatm.samik-ibrahim.vlsm.org/
+ * Copyright (C) 2016-2023 BinKadal, Sdn. Bhd.
  * This program is free script/software. This program is distributed in the 
  * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- * REV05: Tue 30 Mar 14:55:36 WIB 2021
- * REV04: Tue 30 Mar 10:35:13 WIB 2021
- * REV03: Tue 30 Mar 08:36:56 WIB 2021
- * START: Mon 22 Mar 2021 16:14:36 WIB
+ * REV06: Fri 27 Oct 2023 07:00
+ * REV05: Tue 30 Mar 2021 14:00
+ * REV04: Tue 30 Mar 2021 10:00
+ * REV03: Tue 30 Mar 2021 08:00
+ * START: Mon 22 Mar 2021 16:00
  *
 # INFO: chktoken(TOKEN) function
  */
