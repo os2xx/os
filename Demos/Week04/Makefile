@@ -1,6 +1,6 @@
+# REV19: Sat 28 Oct 2023 18:00
 # REV16: Thu 26 Oct 2023 19:00
 # REV15: Fri 02 Apr 2021 07:00
-# REV14: Mon 12 Oct 2020 11:00
 # REV11: Thu 17 Jan 2019 15:00
 # REV10: Thu 04 Oct 2018 10:00
 # START: Tue 13 Sep 2016 11:00
@@ -30,6 +30,7 @@ P16=16-uts182
 P17=17-uts191
 P18=18-uts192
 P19=19-uts201
+P20=20-uts222
 
 
 EXECS= \
@@ -53,6 +54,7 @@ EXECS= \
         $(P17) \
         $(P18) \
         $(P19) \
+        $(P20) \
 
 
 DEMOFILES=\
@@ -130,6 +132,9 @@ $(P18): $(P18).c
 
 $(P19): $(P19).c
 	$(CC) -std=gnu18 $(P19).c -o $(P19)
+
+$(P20): $(P20).c
+	$(CC) -std=gnu18 $(P20).c -o $(P20)
 
 clean:
 	rm -f ${EXECS} 
