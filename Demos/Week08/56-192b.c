@@ -1,5 +1,5 @@
 /*
- Copyright 2019-2020 Rahmat M. Samik-Ibrahim
+ Copyright (C) 2019-2023 BinKadal, Sdn. Bhd.
  You are free to SHARE (copy and 
  redistribute the material in any medium
  or format) and to ADAPT (remix, 
@@ -11,9 +11,10 @@
  warranty of MERCHANTABILITY or FITNESS 
  FOR A PARTICULAR PURPOSE.
 
- * REV02 Wed Mar 25 12:16:00 WIB 2020
- * REV01 XXX Dec 15 15:05:00 WIB 2019
- * START XXX Dec 09 16:28:00 WIB 2019
+ * REV03: Sat 28 Oct 2023 12:00
+ * REV02: Wed 25 Mar 2020 12:00
+ * REV01: Sun 15 Dec 2019 15:00
+ * START: Mon 09 Dec 2019 16:00
 
 # INFO: UAS 2019-2 (final term)
 # INFO:                   Run from: ./54-192a

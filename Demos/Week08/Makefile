@@ -1,12 +1,12 @@
-# REV07 Wed Mar 25 10:53:41 WIB 2020
-# REV06 Tue May  7 20:44:12 WIB 2019
-# REV05 Wed Apr 24 21:09:27 WIB 2019
-# REV04 Wed Nov 14 20:38:35 WIB 2018
-# REV03 Tue May  1 20:35:45 DST 2018
-# START Wed Apr 18 20:55:24 WIB 2018
+# REV08: Sat 28 Oct 2023 12:00
+# REV07: Wed 25 Mar 2020 10:00
+# REV05: Wed 24 Apr 2019 21:00
+# REV04: Wed 14 Nov 2018 20:00
+# REV03: Tue 01 May 2018 20:00
+# START: Wed 18 Apr 2018 20:00
 
 CC=gcc
-CFLAGS=-std=gnu11 -pthread
+CFLAGS=-std=gnu18 -pthread
 
 P10=10-create-file
 P11=11-create-mmap

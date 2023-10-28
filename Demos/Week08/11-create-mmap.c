@@ -1,13 +1,14 @@
 /*
- * Copyright (C) 2018-2020 Rahmat M. Samik-Ibrahim
+ * Copyright (C) 2018-2023 BinKadal, Sdn. Bhd.
  * You are free to SHARE (copy and redistribute the material in any medium or 
  * format) and to ADAPT (remix, transform, and build upon the material for any 
  * purpose, even commercially).  This program is distributed in the hope that 
  * it will be useful, but WITHOUT ANY WARRANTY; without even the implied 
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- * REV02 Sat Apr 11 17:30:55 WIB 2020
- * REV01 Thu Nov 15 11:16:22 WIB 2018
- * START Wed Nov 14 20:30:05 WIB 2018
+ * REV03: Sat 28 Oct 2023 12:00
+ * REV02: Sat 11 Apr 2020 17:00
+ * REV01: Thu 15 Nov 2018 11:00
+ * START: Wed 14 Nov 2018 20:00
  */
 
 #include <stdio.h>
