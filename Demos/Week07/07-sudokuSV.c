@@ -1,17 +1,17 @@
 /*
- * Copyright (C) 2015 M. Anwar Ma'sum and R.M. Samik-Ibrahim
- * Copyright (C) 2016-2020 Rahmat M. Samik-Ibrahim
- * http://rahmatm.samik-ibrahim.vlsm.org/
+ * Copyright (C) 2015 M. Anwar Ma'sum
+ * Copyright (C) 2016-2023 BinKadal, Sdn. Bhd.
  * This program is free script/software. This program is distributed in the 
  * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * SSV: Sudoku Solution Validator 
  *
- * REV05 Tue Mar 24 19:09:55 WIB 2020
- * REV04 Wed Aug 29 18:40:08 WIB 2018
- * REV03 Tue Apr 17 09:35:23 WIB 2018
- * REV01 Wed Nov  2 11:20:30 WIB 2016
- * REV00 Xxx Sep 29 XX:XX:XX UTC 2015
+ * REV06: Sat 28 Oct 2023 10:00
+ * REV05: Tue 24 Mar 2020 19:00
+ * REV04: Wed 29 Aug 2018 18:00
+ * REV03: Tue 17 Apr 2018 09:00
+ * REV01: Wed 02 Nov 2016 11:00
+ * REV00: Tue 29 Sep 2015 00:00
  */
 
 #include <stdio.h> 

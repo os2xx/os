@@ -1,13 +1,12 @@
 /*
- * (c) 2011-2020 Rahmat M. Samik-Ibrahim -- This is free software
- * Feel free to copy and/or modify and/or distribute it, 
+ * Copyright (C) 2011-2023 BinKadal, Sdn. Bhd.
  * provided this notice, and the copyright notice, are preserved. 
- * REV05 Mon Apr 13 08:01:58 WIB 2020
- * REV04 Wed Mar 25 08:58:08 WIB 2020
- * REV03 Wed Aug 29 18:46:36 WIB 2018
- * REV02 Tue Nov  7 20:15:16 WIB 2017
- * REV01 Wed Nov  2 11:49:55 WIB 2016
- * START Xxx Mar 30 02:13:01 UTC 2011
+ * REV06: Sat 28 Oct 2023 12:00
+ * REV05: Mon 13 Apr 2020 08:00
+ * REV03: Wed 29 Aug 2018 18:00
+ * REV02: Tue 07 Nov 2017 20:00
+ * REV01: Wed 02 Nov 2016 11:00
+ * START: Wed 30 Mar 2011 02:00
  */
 
 #include <pthread.h>

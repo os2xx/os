@@ -1,14 +1,14 @@
 /*
- * Copyright (C) 2011-2020 Rahmat M. Samik-Ibrahim (2017-1)
- * http://rahmatm.samik-ibrahim.vlsm.org/
+ * Copyright (C) 2017-2023 BinKadal, Sdn. Bhd.
  * This program is free script/software. This program is distributed in the 
  * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- * REV06 Wed Mar 25 08:44:31 WIB 2020
- * REV05 Wed Aug 29 18:42:16 WIB 2018
- * REV04 Tue Apr 17 09:25:59 WIB 2018
- * REV01 Wed May 17 17:02:37 WIB 2017
- * START Wed May  3 12:58:28 WIB 2017
+ * REV07: Sat 28 Oct 2023 12:00
+ * REV06: Wed 25 Mar 2020 08:00
+ * REV05: Wed 29 Aug 2018 18:00
+ * REV04: Tue 17 Apr 2018 09:00
+ * REV01: Wed 17 May 2017 17:00
+ * START: Wed 03 May 2017 12:00
  *
  * sem_init(), sem_wait(), sem_post(): semaphore
  * sleep(X): sleep X seconds

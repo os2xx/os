@@ -1,14 +1,15 @@
-# (c) 2011-2017 Rahmat M. Samik-Ibrahim -- This is free software
+# Copyright (C) 2011-2023 BinKadal, Sdn. Bhd.
 # Feel free to copy and/or modify and/or distribute it, 
 # provided this notice, and the copyright notice, are preserved. 
 #
-# REV06 Thu Apr 12 20:48:58 WIB 2018
-# REV02 Fri Apr 28 19:11:50 WIB 2017
-# REV00 Xxx Sep 30 XX:XX:XX UTC 2015
-# START Xxx Mar 30 02:13:01 UTC 2011
+# REV07: Sat 28 Oct 2023 12:00
+# REV06: Thu 12 Apr 2018 20:00
+# REV02: Fri 28 Apr 2017 19:00
+# REV00: Wed 30 Sep 2015 00:00
+# START: Wed 30 Mar 2011 00:00
 
 CC=gcc
-CCOPT=-std=gnu99
+CCOPT=-std=gnu18
 CCLNK=-pthread -lrt
  
 P00=00-thread

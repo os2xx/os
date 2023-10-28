@@ -1,11 +1,12 @@
 /*
- * (c) 2011-2018 Rahmat M. Samik-Ibrahim -- This is free software
+ * Copyright (C) 2011-2023 BinKadal, Sdn. Bhd.
  * Feel free to copy and/or modify and/or distribute it, 
  * provided this notice, and the copyright notice, are preserved. 
- * REV04 Wed Aug 29 18:47:14 WIB 2018
- * REV03 Tue Nov  7 19:51:39 WIB 2017
- * REV02 Mon Nov  7 14:33:08 WIB 2016
- * START Xxx Mar 30 02:13:01 UTC 2011
+ * REV05: Sat 28 Oct 2023 10:00
+ * REV04: Wed 29 Aug 2018 18:00
+ * REV03: Tue 07 Nov 2017 19:00
+ * REV02: Mon 07 Nov 2016 14:00
+ * START: Wed 30 Mar 2011 02:00
  */
 
 #include <semaphore.h>
