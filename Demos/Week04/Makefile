@@ -31,6 +31,7 @@ P17=17-uts191
 P18=18-uts192
 P19=19-uts201
 P20=20-uts222
+P21=21-uts232
 
 
 EXECS= \
@@ -55,6 +56,7 @@ EXECS= \
         $(P18) \
         $(P19) \
         $(P20) \
+        $(P21) \
 
 
 DEMOFILES=\
@@ -135,6 +137,9 @@ $(P19): $(P19).c
 
 $(P20): $(P20).c
 	$(CC) -std=gnu18 $(P20).c -o $(P20)
+
+$(P21): $(P21).c
+	$(CC) -std=gnu18 $(P21).c -o $(P21)
 
 clean:
 	rm -f ${EXECS} 
