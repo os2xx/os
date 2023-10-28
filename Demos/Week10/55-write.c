@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015-2022 BinKadal, Sdn. Bhd.
+ * Copyright (C) 2015-2023 BinKadal, Sdn. Bhd.
  * This program is free script/software. This program is distributed in the 
  * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
@@ -15,11 +15,12 @@
  * yang maksudnya adalah pointernya lompat ke huruf ke 32
  * Sehingga ketika menulis lg, akan dimulai pada huruf ke 33
  *
- * REV06 Tue Nov 26 11:39:10 WIB 2019
- * REV05 Wed Aug 29 20:55:23 WIB 2018
- * REV04 Wed Oct 18 17:54:25 WIB 2017
- * REV02 Thu Mar  9 21:21:28 WIB 2017
- * START Xxx Apr 25 XX:XX:XX WIB 2015
+ * REV07: Sat 28 Oct 2023 12:00
+ * REV06: Tue 26 Nov 2019 11:00
+ * REV05: Wed 29 Aug 2018 20:00
+ * REV04: Wed 18 Oct 2017 17:00
+ * REV02: Thu 09 Mar 2017 21:00
+ * START: Sat 25 Apr 2015 00:00
  * USE "hexdump FILE1"
  */
 

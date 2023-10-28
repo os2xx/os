@@ -1,10 +1,10 @@
 /*
- * Copyright (C) 2021-2022 BinKadal, Sdn. Bhd.
+ * Copyright (C) 2021-2023 BinKadal, Sdn. Bhd.
  * This program is free script/software. This program is distributed in the 
  * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- * REV00 Wed 24 Nov 2021 15:50:00 AM WIB
- * START Wed 24 Nov 2021 08:17:37 AM WIB
+ * REV01: Sat 28 Oct 2023 13:00
+ * START: Wed 24 Nov 2021 08:00
  */
 
 #include <stdio.h>

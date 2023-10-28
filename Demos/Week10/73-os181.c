@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018-2022 BinKadal, Sdn. Bhd.
+ * Copyright (C) 2018-2023 BinKadal, Sdn. Bhd.
  * You are free to SHARE (copy and 
  * redistribute the material in any medium
  * or format) and to ADAPT (remix, 
@@ -11,10 +11,11 @@
  * warranty of MERCHANTABILITY or FITNESS 
  * FOR A PARTICULAR PURPOSE.
  *
- * REV06 Wed Mar 25 16:52:55 WIB 2020
- * REV05 Tue Nov 26 11:39:10 WIB 2019
- * REV03 Wed Aug 29 20:55:23 WIB 2018
- * START Thu Mar 30 16:56:54 WIB 2017
+ * REV07: Sat 28 Oct 2023 13:00
+ * REV06: Wed 25 Mar 2020 16:00
+ * REV05: Tue 26 Nov 2019 11:00
+ * REV03: Wed 29 Aug 2018 20:00
+ * START: Thu 30 Mar 2017 16:00
 
 # INFO: UAS 2018-1 (final term)
 # INFO:                   To run:   ./73-181

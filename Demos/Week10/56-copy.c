@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015-2022 BinKadal, Sdn. Bhd.
+ * Copyright (C) 2015-2023 BinKadal, Sdn. Bhd.
  * This program is free script/software. This program is distributed in the 
  * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
@@ -22,10 +22,11 @@
  * Contohnya: ./56-copy test.txt test2.txt 
  * (test.txt harus ada dibuat terlebih dahulu dahulu atau akan error)
  *
- * REV04 Tue Nov 26 11:39:10 WIB 2019
- * REV03 Wed Aug 29 20:55:23 WIB 2018
- * REV01 Mon Oct  2 16:23:50 WIB 2017
- * START Tue Apr 25 XX:XX:XX WIB 2015
+ * REV05: Sat 28 Oct 2023 12:00
+ * REV04: Tue 26 Nov 2019 11:00
+ * REV03: Wed 29 Aug 2018 20:00
+ * REV01: Mon 02 Oct 2017 16:00
+ * START: Sat 25 Apr 2015 00:00
  * USE "cmp file1 file2"
  */
 

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2016-2022 BinKadal, Sdn. Bhd.
+ * Copyright (C) 2016-2023 BinKadal, Sdn. Bhd.
  * This program is free script/software. This program is distributed in the 
  * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
@@ -10,10 +10,11 @@
  * putchar(char) writes a character (an unsigned char)
  * specified by the argument char to stdout
  *
- * REV04 Tue Nov 26 11:35:03 WIB 2019
- * REV03 Wed Aug 29 20:55:23 WIB 2018
- * REV02 Thu Oct  5 10:17:47 WIB 2017
- * START Mon Sep 26 18:23:45 WIB 2016
+ * REV05: Sat 28 Oct 2023 12:00
+ * REV04: Tue 26 Nov 2019 11:00
+ * REV03: Wed 29 Aug 2018 20:00
+ * REV02: Thu 05 Oct 2017 10:00
+ * START: Mon 26 Sep 2016 18:00
  */
 
 #include <stdio.h>
@@ -23,3 +24,4 @@ void main (void) {
    putchar(cc); 
    putchar('\n');
 }
+

@@ -1,14 +1,14 @@
 /*
- * Copyright (C) 2015-2022 BinKadal, Sdn. Bhd.
+ * Copyright (C) 2005-2023 BinKadal, Sdn. Bhd.
  * This program is free script/software. This program is distributed in the 
  * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- * REV05 Tue Nov 26 11:39:10 WIB 2019
- * REV04 Wed Aug 29 20:55:23 WIB 2018
- * REV03 Mon Mar  5 20:13:04 WIB 2018
- * REV02 Mon Oct  2 16:25:44 WIB 2017
- * REV01 Sun Oct 16 20:53:09 WIB 2016
- * START Xxx Xxx XX XX:XX:XX WIB 2005
+ * REV06: Sat 28 Oct 2023 12:00
+ * REV05: Tue 26 Nov 2019 11:00
+ * REV03: Mon 05 Mar 2018 20:00
+ * REV02: Mon 02 Oct 2017 16:00
+ * REV01: Sun 16 Oct 2016 20:00
+ * START: Sat 01 Jan 2005 00:00
  */
 
 #define FILE1 "demo-fileA.txt"

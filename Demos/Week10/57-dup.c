@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2016-2022 BinKadal, Sdn. Bhd.
+ * Copyright (C) 2016-2023 BinKadal, Sdn. Bhd.
  * This program is free script/software. This program is distributed in the 
  * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
@@ -15,12 +15,12 @@
  * if succesful, dup() returns a new file descriptor
  * if unsucessful, dup() returs -1 and sets errno to EBADF or EMFILE
  * 
- * REV07 Tue Nov 26 11:39:10 WIB 2019
- * REV06 Wed Aug 29 20:55:23 WIB 2018
- * REV05 Mon Oct  2 16:24:19 WIB 2017
- * REV04 Thu Mar  9 21:22:10 WIB 2017
- * REV02 Sun Oct 16 20:51:34 WIB 2016
- * START Xxx Apr 25 XX:XX:XX WIB 2015
+ * REV08: Sat 28 Oct 2023 12:00
+ * REV07: Tue 26 Nov 2019 11:00
+ * REV06: Wed 29 Aug 2018 20:00
+ * REV05: Mon 02 Oct 2017 16:00
+ * REV02: Sun 16 Oct 2016 20:00
+ * START: Sat 25 Apr 2015 00:00
  *
  * dup(fd) duplicates fd
  * fd2=dup(fd1)  <---> dup2(fd1, fd2)

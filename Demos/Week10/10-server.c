@@ -1,11 +1,12 @@
 /*
- * Copyright (C) 2007-2022 BinKadal, Sdn. Bhd.
+ * Copyright (C) 2007-2023 BinKadal, Sdn. Bhd.
  * This program is free script/software. This program is distributed in the 
  * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- * REV02 Sun May  3 07:53:26 WIB 2020
- * REV01 Wed Aug 29 20:52:29 WIB 2018
- * START Xxx Xxx XX XX:XX:XX UTC 2007
+ * REV03: Sat 28 Oct 2023 12:00
+ * REV02: Sun 03 May 2020 07:00
+ * REV01: Wed 29 Aug 2018 20:00
+ * START: Mon 01 Jan 2007 00:00
  */
 
 char pesan[]="[FROM SERVER] ACK MESSAGE...\n";

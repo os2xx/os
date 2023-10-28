@@ -1,15 +1,14 @@
 /*
  * Copyright (C) 2007 Tadeus Prastowo
- * Copyright (C) 2017-2022 BinKadal, Sdn. Bhd.
- * This program is free script/software. This program is distributed in the 
- * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
+ * Copyright (C) 2007-2023 BinKadal, Sdn. Bhd.
+ * This program is free script/software. This program is distributed in the
+ * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- * REV04 Sun May  3 07:59:57 WIB 2020
- * REV03 Wed Feb 27 19:21:44 WIB 2019
- * REV02 Wed Aug 29 20:54:25 WIB 2018
- * REV01 Wed Nov  8 20:00:02 WIB 2017
- * START 2007
- *
+ * REV03: Sat 28 Oct 2023 12:00
+ * REV02: Sun 03 May 2020 07:00
+ * REV01: Wed 29 Aug 2018 20:00
+ * START: Mon 01 Jan 2007 00:00
+
  * This program serves as both a client and a server. Three modes of
  * operation are available:
  *  - initiating mode

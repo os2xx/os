@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015-2022 BinKadal, Sdn. Bhd.
+ * Copyright (C) 2015-2023 BinKadal, Sdn. Bhd.
  * This program is free script/software. This program is distributed in the 
  * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
@@ -16,11 +16,12 @@
  * read/write permission for the file's group (S_IRGRP and S_IWGRP),
  * read permission for users other than the file owner
  *
- * REV06 Tue Nov 26 11:37:12 WIB 2019
- * REV05 Wed Aug 29 20:55:23 WIB 2018
- * REV04 Wed Oct 18 17:49:39 WIB 2017
- * REV02 Sun Oct 16 20:50:26 WIB 2016
- * START Xxx Xxx XX XX:XX:XX WIB 2015
+ * REV07: Sat 28 Oct 2023 12:00
+ * REV06: Tue 26 Nov 2019 11:00
+ * REV05: Wed 29 Aug 2018 20:00
+ * REV04: Wed 18 Oct 2017 17:00
+ * REV02: Sun 16 Oct 2016 20:00
+ * START: Thu 01 Jan 2015 00:00
 
  * === umask() ===
  * int open(const char* pathname, int flags, mode_t mode);

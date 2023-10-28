@@ -1,13 +1,14 @@
 /*
- * Copyright (C) 2015-2022 BinKadal, Sdn. Bhd.
+ * Copyright (C) 2015-2023 BinKadal, Sdn. Bhd.
  * This program is free script/software. This program is distributed in the 
  * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- * REV07 Tue May  7 18:46:12 WIB 2019
- * REV06 Wed Aug 29 20:55:23 WIB 2018
- * REV04 Thu Mar  9 21:22:36 WIB 2017
- * REV02 Sun Oct 16 20:52:15 WIB 2016
- * START Xxx Apr 25 XX:XX:XX WIB 2015
+ * REV08: Sat 28 Oct 2023 12:00
+ * REV07: Tue 07 May 2019 18:00
+ * REV06: Wed 29 Aug 2018 20:00
+ * REV04: Thu 09 Mar 2017 21:00
+ * REV02: Sun 16 Oct 2016 20:00
+ * START: Sat 25 Apr 2015 00:00
  *
  * fd2=dup2(fd1, NEWFD)
  *

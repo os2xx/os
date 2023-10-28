@@ -1,13 +1,14 @@
 /*
- * Copyright (C) 2017-2022 BinKadal, Sdn. Bhd.
+ * Copyright (C) 2017-2023 BinKadal, Sdn. Bhd.
  * This program is free script/software. This program is distributed in the 
  * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
- * REV05 Wed Mar 25 16:15:21 WIB 2020
- * REV04 Tue Nov 26 11:39:10 WIB 2019
- * REV02 Fri May 18 14:02:12 WIB 2018
- * START Wed Oct 18 18:20:27 WIB 2017
+ * REV06: Sat 28 Oct 2023 13:00
+ * REV05: Wed 25 Mar 2020 16:00
+ * REV04: Tue 26 Nov 2019 11:00
+ * REV02: Fri 18 May 2018 14:00
+ * START: Wed 18 Oct 2017 18:00
 
 # INFO: UAS 2017-2 (final term)
 # INFO:                   To run:   ./72-172
