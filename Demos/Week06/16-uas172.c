@@ -1,10 +1,10 @@
 /*
- * (c) 2017-2020 Rahmat M. Samik-Ibrahim
- * http://rahmatm.samik-ibrahim.vlsm.org/
+ * Copyright (C) 2017-2023 BinKadal, Sdn. Bhd.
  * This is free software.
- * REV03 Tue Mar 24 16:42:16 WIB 2020
- * REV02 Mon Dec 11 17:46:01 WIB 2017
- * START Sun Dec  3 18:00:08 WIB 2017
+ * REV04: Sat 28 Oct 2023 10:00
+ * REV03: Tue 24 Mar 2020 16:00
+ * REV02: Mon 11 Dec 2017 17:00
+ * START: Sun 03 Dec 2017 18:00
  */
 
 #include <stdio.h>
