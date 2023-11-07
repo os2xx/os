@@ -3,7 +3,7 @@ layout: "layout"
 title: REPORT
 ---
 
-## Week: W05 Rev: 27-Oct-2023 08:13
+## Week: W06 Rev: 07-Nov-2023 20:52
 
 To Get CBKADAL`s TARBALL:
 
@@ -75,7 +75,7 @@ Remember: HOST=USER=GROUP=HOME=CMOUN2=cbkadal (but you are NOT cbkadal!)
 057. fathonidf: [GH](https://github.com/fathonidf/os232/) [GHP](https://fathonidf.github.io/os232/) [LOG](https://fathonidf.github.io/os232/TXT/mylog.txt) [TARBALL](fathonidf.tar.xz.txt)<br>
 058. FBimo: [GH](https://github.com/FBimo/os232/) [GHP](https://FBimo.github.io/os232/) [LOG](https://FBimo.github.io/os232/TXT/mylog.txt) [TARBALL](FBimo.tar.xz.txt)<br>
 059. febrian-irv: [GH](https://github.com/febrian-irv/os232/) [GHP](https://febrian-irv.github.io/os232/) [LOG](https://febrian-irv.github.io/os232/TXT/mylog.txt) [TARBALL](febrian-irv.tar.xz.txt)<br>
-060. Fec16: [GH](https://github.com/Fec16/os232/) [GHP](https://Fec16.github.io/os232/) [LOG](https://Fec16.github.io/os232/TXT/mylog.txt) [TARBALL](Fec16.tar.xz.txt)<br>
+060. Fec16: [TARBALL](Fec16.tar.xz.txt)<br>
 061. ferdinandraja: [GH](https://github.com/ferdinandraja/os232/) [GHP](https://ferdinandraja.github.io/os232/) [LOG](https://ferdinandraja.github.io/os232/TXT/mylog.txt) [TARBALL](ferdinandraja.tar.xz.txt)<br>
 062. fiardiel: [GH](https://github.com/fiardiel/os232/) [GHP](https://fiardiel.github.io/os232/) [LOG](https://fiardiel.github.io/os232/TXT/mylog.txt) [TARBALL](fiardiel.tar.xz.txt)<br>
 063. fikririsyad: [GH](https://github.com/fikririsyad/os232/) [GHP](https://fikririsyad.github.io/os232/) [LOG](https://fikririsyad.github.io/os232/TXT/mylog.txt) [TARBALL](fikririsyad.tar.xz.txt)<br>
