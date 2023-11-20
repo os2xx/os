@@ -41,7 +41,7 @@ title:  "Operating Systems - Sistem Operasi"
 | 14-Nov-2023 | Week 08 | Scheduling + W06/W07 | Ch. 5. |
 | 21-Nov-2023 | Week 09 | Storage, Firmware, Bootloader, & Systemd | Ch. 11. |
 | 28-Nov-2023 | Week 10 | I/O & Programming | Ch. 12. |
-| 13-Dec-2023 | FINAL   | (13-22 Dec) | TBA |
+| 19-Dec-2023 | FINAL   | Gedung Baru (New Bldg) TBA | 13:00-15:30 |
 
 [](NNNN)
 [&#x213C;](#)<br id="idx03">
