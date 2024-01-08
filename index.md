@@ -29,19 +29,19 @@ title:  "Operating Systems - Sistem Operasi"
 #### This schedule is subject to change!
 [](ZCZC)
 
-| 29-Aug-2023 | Week 00 | Overview 1, Virtualization & Scripting | Ch. 1, 2, 18. |
-| 05-Sep-2023 | Week 01 | Overview 2, Virtualization & Scripting | Ch. 1, 2, 18. |
-| 12-Sep-2023 | Week 02 | Security, Protection, Privacy, & C-language. | Ch. 16, 17. |
-| 19-Sep-2023 | Week 03 | File System & FUSE | Ch. 13, 14, 15. |
-| 26-Sep-2023 | Week 04 | Addressing, Shared Lib, & Pointer | Ch. 9. |
-| 05-Oct-2023 | Week 05 | Virtual Memory | Ch. 10. |
-| 18-Oct-2023 | MIDTERM | Gedung Baru (New Bldg) A6-09 | 13:00-15:30 |
-| 31-Oct-2023 | Week 06 | Concurrency: Processes & Threads | Ch. 3, 4. |
-| 07-Nov-2023 | Week 07 | Synchronization & Deadlock | Ch. 6, 7, 8. |
-| 14-Nov-2023 | Week 08 | Scheduling + W06/W07 | Ch. 5. |
-| 21-Nov-2023 | Week 09 | Storage, Firmware, Bootloader, & Systemd | Ch. 11. |
-| 28-Nov-2023 | Week 10 | I/O & Programming | Ch. 12. |
-| 19-Dec-2023 | FINAL   | Gedung Baru (New Bldg) TBA | 13:00-15:30 |
+| 00-Xxx-2024 | Week 00 | Overview 1, Virtualization & Scripting | Ch. 1, 2, 18. |
+| 00-Xxx-2024 | Week 01 | Overview 2, Virtualization & Scripting | Ch. 1, 2, 18. |
+| 00-Xxx-2024 | Week 02 | Security, Protection, Privacy, & C-language. | Ch. 16, 17. |
+| 00-Xxx-2024 | Week 03 | File System & FUSE | Ch. 13, 14, 15. |
+| 00-Xxx-2024 | Week 04 | Addressing, Shared Lib, & Pointer | Ch. 9. |
+| 00-Xxx-2024 | Week 05 | Virtual Memory | Ch. 10. |
+| 00-Xxx-2024 | MIDTERM | Gedung Baru (New Bldg) A6-09 | 13:00-15:30 |
+| 00-Xxx-2024 | Week 06 | Concurrency: Processes & Threads | Ch. 3, 4. |
+| 00-Xxx-2024 | Week 07 | Synchronization & Deadlock | Ch. 6, 7, 8. |
+| 00-Xxx-2024 | Week 08 | Scheduling + W06/W07 | Ch. 5. |
+| 00-Xxx-2024 | Week 09 | Storage, Firmware, Bootloader, & Systemd | Ch. 11. |
+| 00-Xxx-2024 | Week 10 | I/O & Programming | Ch. 12. |
+| 00-Xxx-2024 | FINAL   | Gedung Baru (New Bldg) TBA | 13:00-15:30 |
 
 [](NNNN)
 [&#x213C;](#)<br id="idx03">
