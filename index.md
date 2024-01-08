@@ -35,13 +35,13 @@ title:  "Operating Systems - Sistem Operasi"
 | 00-Xxx-2024 | Week 03 | File System & FUSE | Ch. 13, 14, 15. |
 | 00-Xxx-2024 | Week 04 | Addressing, Shared Lib, & Pointer | Ch. 9. |
 | 00-Xxx-2024 | Week 05 | Virtual Memory | Ch. 10. |
-| 00-Xxx-2024 | MIDTERM | Gedung Baru (New Bldg) A6-09 | 13:00-15:30 |
+| 00-Xxx-2024 | MIDTERM | TBA ||
 | 00-Xxx-2024 | Week 06 | Concurrency: Processes & Threads | Ch. 3, 4. |
 | 00-Xxx-2024 | Week 07 | Synchronization & Deadlock | Ch. 6, 7, 8. |
 | 00-Xxx-2024 | Week 08 | Scheduling + W06/W07 | Ch. 5. |
 | 00-Xxx-2024 | Week 09 | Storage, Firmware, Bootloader, & Systemd | Ch. 11. |
 | 00-Xxx-2024 | Week 10 | I/O & Programming | Ch. 12. |
-| 00-Xxx-2024 | FINAL   | Gedung Baru (New Bldg) TBA | 13:00-15:30 |
+| 00-Xxx-2024 | FINAL   | TBA ||
 
 [](NNNN)
 [&#x213C;](#)<br id="idx03">
