@@ -6,7 +6,7 @@ title:  "Operating Systems - Sistem Operasi"
 <br>
 ## Last Report: TBA
 * [See Report](/Log/)
-* [Weekly Assignments](https://osp4diss.vlsm.org/AOS.html)
+* [Weekly Assignments](https://demos.vlsm.org/#idx000)
 * [HOW TO CONTACT the lecturer](#idx01)
 * [SCELE]({{ site.urlscele }})
 * [Schedule](#idx02)
@@ -64,9 +64,9 @@ title:  "Operating Systems - Sistem Operasi"
 | [Demos](https://github.com/os2xx/os/tree/master/Demos/) | [Slides](https://github.com/os2xx/os/tree/master/Slides/) | [OSP4DISS](https://osp4diss.vlsm.org/) | [Log Codes](https://osp4diss.vlsm.org/ETC/logCodes.txt) |
 |        |
 | SLIDES |
-| [WEEK00](Slides/os00.pdf) | [WEEK01](Slides/os01.pdf) | [WEEK02](Slides/os02.pdf) | [WEEK03](Slides/os03.pdf) |
-| [WEEK04](Slides/os04.pdf) | [WEEK05](Slides/os05.pdf) | [WEEK06](Slides/os06.pdf) | [WEEK07](Slides/os07.pdf) |
-| [WEEK08](Slides/os08.pdf) | [WEEK09](Slides/os09.pdf) | [WEEK10](Slides/os10.pdf) |
+| [WEEK00](https://docos.vlsm.org/Slides/os00.pdf) | [WEEK01](https://docos.vlsm.org/Slides/os01.pdf) | [WEEK02](https://docos.vlsm.org/Slides/os02.pdf) | [WEEK03](https://docos.vlsm.org/Slides/os03.pdf) |
+| [WEEK04](https://docos.vlsm.org/Slides/os04.pdf) | [WEEK05](https://docos.vlsm.org/Slides/os05.pdf) | [WEEK06](https://docos.vlsm.org/Slides/os06.pdf) | [WEEK07](https://docos.vlsm.org/Slides/os07.pdf) |
+| [WEEK08](https://docos.vlsm.org/Slides/os08.pdf) | [WEEK09](https://docos.vlsm.org/Slides/os09.pdf) | [WEEK10](https://docos.vlsm.org/Slides/os10.pdf) |
 |       |
 | EXAMS |
 | [MIDTERM W00](https://rms46.vlsm.org/2/195.pdf) | [MIDTERM W01](https://rms46.vlsm.org/2/196.pdf) | [MIDTERM W02](https://rms46.vlsm.org/2/197.pdf) | [MIDTERM W03](https://rms46.vlsm.org/2/198.pdf) |
