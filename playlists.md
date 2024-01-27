@@ -45,6 +45,5 @@ permalink: /playlists/
 * [Week 08 OS201](https://www.youtube.com/playlist?list=PLwaskZn3rUGtcRKqAPWveOj97EC7lkawh)
 * [Week 09 OS201](https://www.youtube.com/playlist?list=PLwaskZn3rUGvfnulNFPLXxHh_r6CfDZD4)
 * [Week 10 OS201](https://www.youtube.com/playlist?list=PLwaskZn3rUGtRQcNL_JszJDMzD5YBp6Wz)
-* [EXTRA 201](https://www.youtube.com/playlist?list=PLwaskZn3rUGs0kC5I3X0OrzX-0jGYu1bu)
 
 [](https://www.youtube.com/watch?v=ewzdFxTbwBM)

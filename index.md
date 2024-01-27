@@ -47,7 +47,7 @@ title:  "Operating Systems - Sistem Operasi"
 [&#x213C;](#)<br id="idx03">
 # LINKS
 
-* [Operating System Concepts 10ed. Slides](https://www.os-book.com/OS10/slide-dir/)
+* [Operating System Concepts 10ed. Slides](https://codex.cs.yale.edu/avi/os-book/OS10/slide-dir/)
 * [Introduction to GNU/Linux](https://osp4diss.vlsm.org/Welcome2GNULinux.html) ---
   Study some Command Lines, Editor, Regular Expression (regex), and String Processing. 
   * [From Students for Students](https://osp4diss.vlsm.org/osp-127.html) ---
