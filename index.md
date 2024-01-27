@@ -60,8 +60,8 @@ title:  "Operating Systems - Sistem Operasi"
 [&#x213C;](#)<br id="idx04">
 # MORE LINKS
 
-| [Last Report](Log/) | [CBKadal](https://github.com/cbkadal/os232/) | [FAQ](/FAQ/) | [DoIt](https://doit.vlsm.org/)
-| [Demos](https://github.com/os2xx/os/tree/master/Demos/) | [Slides](https://github.com/os2xx/os/tree/master/Slides/) | [OSP4DISS](https://osp4diss.vlsm.org/) | [Log Codes](https://doit.vlsm.org/ETC/logCodes.txt) |
+| [Last Report](Log/) | [CBKadal](https://github.com/cbkadal/os241/) | [FAQ](/FAQ/) | [DoIt](https://doit.vlsm.org/)
+| [Demos](https://github.com/os2xx/demOS/tree/master/Demos/) | [Slides](https://docOS.vlsm.org/) | [OSP4DISS](https://osp4diss.vlsm.org/) | [Log Codes](https://doit.vlsm.org/ETC/logCodes.txt) |
 |        |
 | SLIDES |
 | [WEEK00](https://docos.vlsm.org/Slides/os00.pdf) | [WEEK01](https://docos.vlsm.org/Slides/os01.pdf) | [WEEK02](https://docos.vlsm.org/Slides/os02.pdf) | [WEEK03](https://docos.vlsm.org/Slides/os03.pdf) |
@@ -78,8 +78,8 @@ title:  "Operating Systems - Sistem Operasi"
 | [MIDTERM W05 2017-2](https://rms46.vlsm.org/2/223.pdf) | [MIDTERM FORK 2010/11](https://rms46.vlsm.org/2/232.pdf) |
 |     |
 | ETC |
-| [OSC 10](https://os-book.com/) | [Slides](https://codex.cs.yale.edu/avi/os-book/OS10/slide-dir/) | [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) | [UDACITY](https://classroom.udacity.com/courses/ud923) | 
-| [OS Kunyuk 1](https://rms46.vlsm.org/2/213.pdf) | [OS Kunyuk 2](https://rms46.vlsm.org/2/214.pdf) | [Jekyll](https://jekyll.vlsm.org) | [Raspberry Pi](https://www.raspberrypi.org/) |
+| [OSC 10](https://codex.cs.yale.edu/avi/os-book/) | [Slides](https://codex.cs.yale.edu/avi/os-book/OS10/slide-dir/) | [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) | [UDACITY (login)](https://classroom.udacity.com/courses/ud923) | 
+| [OS Kunyuk 1](https://rms46.vlsm.org/2/213.pdf) | [OS Kunyuk 2](https://rms46.vlsm.org/2/214.pdf) | [Jekyll](https://jekyll.vlsm.org) | 
 
 [&#x213C;](#)<br id="idx05">
 <h3>DISCLAIMER</h3>
