@@ -45,8 +45,8 @@ title:  "Operating Systems - Sistem Operasi"
 [&#x213C;](#)<br id="idx04">
 # MORE LINKS
 
-| [Last Report](Log/) | [CBKadal](https://github.com/cbkadal/os232/) | [FAQ](/FAQ/) |
-| [Demos](https://github.com/os2xx/os/tree/master/Demos/) | [Slides](https://github.com/os2xx/os/tree/master/Slides/) | [OSP4DISS](https://osp4diss.vlsm.org/) | [Log Codes](https://osp4diss.vlsm.org/ETC/logCodes.txt) |
+| [Last Report](Log/) | [CBKadal](https://github.com/cbkadal/os232/) | [FAQ](/FAQ/) | [DoIt](https://doit.vlsm.org/)
+| [Demos](https://github.com/os2xx/os/tree/master/Demos/) | [Slides](https://github.com/os2xx/os/tree/master/Slides/) | [OSP4DISS](https://osp4diss.vlsm.org/) | [Log Codes](https://doit.vlsm.org/ETC/logCodes.txt) |
 |        |
 | SLIDES |
 | [WEEK00](https://docos.vlsm.org/Slides/os00.pdf) | [WEEK01](https://docos.vlsm.org/Slides/os01.pdf) | [WEEK02](https://docos.vlsm.org/Slides/os02.pdf) | [WEEK03](https://docos.vlsm.org/Slides/os03.pdf) |
