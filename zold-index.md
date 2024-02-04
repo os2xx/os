@@ -33,12 +33,12 @@ title:  "Operating Systems - Sistem Operasi"
 # LINKS
 
 * [Operating System Concepts 10ed. Slides](https://codex.cs.yale.edu/avi/os-book/OS10/slide-dir/)
-* [Introduction to GNU/Linux](https://osp4diss.vlsm.org/Welcome2GNULinux.html) ---
+* [Introduction to GNU/Linux](https://doit.vlsm.org/038.html) ---
   Study some Command Lines, Editor, Regular Expression (regex), and String Processing. 
-  * [From Students for Students](https://osp4diss.vlsm.org/osp-127.html) ---
-    Links from previous semesters.
-  * [More GNU/Linux](https://osp4diss.vlsm.org/osp-115.html) ---
+  * [More GNU/Linux](https://doit.vlsm.org/039.html) ---
     There are too many "GNU/Linux" sites around, do your own GSGS!
+  * [From Students for Students](https://doit.vlsm.org/040.html) ---
+    Links from previous semesters.
 * [Udacity: OS Visual Metaphors](https://goo.gl/HaUk5g)
 * [YouTube: OS Playlists](/playlists/)
 
