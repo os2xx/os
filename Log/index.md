@@ -3,7 +3,7 @@ layout: "layout"
 title: REPORT
 ---
 
-## Week: W00 Rev: 13-Feb-2024 08:51
+## Week: W01 Rev: 18-Feb-2024 17:53
 
 To Get CBKADAL`s TARBALL:
 
@@ -43,7 +43,7 @@ Remember: HOST=USER=GROUP=HOME=CMOUN2=cbkadal (but you are NOT cbkadal!)
 025. sabinamaritza: [GH](https://github.com/sabinamaritza/os241/) [GHP](https://sabinamaritza.github.io/os241/) [LOG](https://sabinamaritza.github.io/os241/TXT/mylog.txt) [TARBALL](sabinamaritza.tar.xz.txt)<br>
 026. sdikyarts: [GH](https://github.com/sdikyarts/os241/) [GHP](https://sdikyarts.github.io/os241/) [LOG](https://sdikyarts.github.io/os241/TXT/mylog.txt) [TARBALL](sdikyarts.tar.xz.txt)<br>
 027. sitaamirasyarifah: [GH](https://github.com/sitaamirasyarifah/os241/) [GHP](https://sitaamirasyarifah.github.io/os241/) [LOG](https://sitaamirasyarifah.github.io/os241/TXT/mylog.txt) [TARBALL](sitaamirasyarifah.tar.xz.txt)<br>
-028. stronovski: [GH](https://github.com/stronovski/os241/) [GHP](https://stronovski.github.io/os241/) [TARBALL](stronovski.tar.xz.txt)<br>
+028. stronovski: [GH](https://github.com/stronovski/os241/) [GHP](https://stronovski.github.io/os241/) [LOG](https://stronovski.github.io/os241/TXT/mylog.txt) [TARBALL](stronovski.tar.xz.txt)<br>
 029. uripsubagyo: [GH](https://github.com/uripsubagyo/os241/) [GHP](https://uripsubagyo.github.io/os241/) [LOG](https://uripsubagyo.github.io/os241/TXT/mylog.txt) [TARBALL](uripsubagyo.tar.xz.txt)<br>
 030. wahyuhiddayat: [GH](https://github.com/wahyuhiddayat/os241/) [GHP](https://wahyuhiddayat.github.io/os241/) [LOG](https://wahyuhiddayat.github.io/os241/TXT/mylog.txt) [TARBALL](wahyuhiddayat.tar.xz.txt)<br>
 031. yodh4: [GH](https://github.com/yodh4/os241/) [GHP](https://yodh4.github.io/os241/) [LOG](https://yodh4.github.io/os241/TXT/mylog.txt) [TARBALL](yodh4.tar.xz.txt)<br>
