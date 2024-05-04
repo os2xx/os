@@ -35,13 +35,13 @@ title:  "Operating Systems - Sistem Operasi"
 | 22-Feb-2024 | Week 03 | File System & FUSE | Ch. 13, 14, 15. |
 | 29-Feb-2024 | Week 04 | Addressing, Shared Lib, & Pointer | Ch. 9. |
 | 07-Mar-2024 | Week 05 | Virtual Memory | Ch. 10. |
-| 25-Mar-2024 | MIDTERM | 09:00 - finish |
+| 25-Mar-2024 | MIDTERM | 09:00 - finish: Room A6.11 | Week 00 - 05 |
 | 01-Apr-2024 | Week 06 | Concurrency: Processes & Threads | Ch. 3, 4. |
 | 18-Apr-2024 | Week 07 | Synchronization & Deadlock | Ch. 6, 7, 8. |
 | 25-Apr-2024 | Week 08 | Scheduling + W06/W07 | Ch. 5. |
 | 02-May-2024 | Week 09 | Storage, Firmware, Bootloader, & Systemd | Ch. 11. |
 | 13-May-2024 | Week 10 | I/O & Programming | Ch. 12. |
-| 20-May-2024 | FINAL   | TBA ||
+| 22-May-2024 | FINAL   | 09:00 - finish: Room A6.11 | Week 06 - 10 |
 
 [](NNNN)
 [&#x213C;](#)<br id="idx03">
