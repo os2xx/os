@@ -6,7 +6,7 @@ title:  "Operating Systems - Sistem Operasi"
 <br>
 ## Last Report: WXX Rev: XX-XXX-XXXX XX:XX
 * [See Report](/Log/)
-* [Weekly Assignments](https://demos.vlsm.org/#idx000)
+* [Weekly Assignments](https://demos.vlsm.org/)
 * [HOW TO CONTACT the lecturer](#idx01)
 * [SCELE]({{ site.urlscele }})
 * [Schedule](#idx02)
@@ -29,19 +29,19 @@ title:  "Operating Systems - Sistem Operasi"
 #### This schedule is subject to change!
 [](ZCZC)
 
-| 29-Jan-2024 | Week 00 | Overview 1, Virtualization & Scripting | Ch. 1, 2, 18. |
-| 05-Feb-2024 | Week 01 | Overview 2, Virtualization & Scripting | Ch. 1, 2, 18. |
-| 15-Feb-2024 | Week 02 | Security, Protection, Privacy, & C-language. | Ch. 16, 17. |
-| 22-Feb-2024 | Week 03 | File System & FUSE | Ch. 13, 14, 15. |
-| 29-Feb-2024 | Week 04 | Addressing, Shared Lib, & Pointer | Ch. 9. |
-| 07-Mar-2024 | Week 05 | Virtual Memory | Ch. 10. |
-| 25-Mar-2024 | MIDTERM | 09:00 - finish: Room A6.11 | Week 00 - 05 |
-| 01-Apr-2024 | Week 06 | Concurrency: Processes & Threads | Ch. 3, 4. |
-| 18-Apr-2024 | Week 07 | Synchronization & Deadlock | Ch. 6, 7, 8. |
-| 25-Apr-2024 | Week 08 | Scheduling + W06/W07 | Ch. 5. |
-| 02-May-2024 | Week 09 | Storage, Firmware, Bootloader, & Systemd | Ch. 11. |
-| 13-May-2024 | Week 10 | I/O & Programming | Ch. 12. |
-| 22-May-2024 | FINAL   | 09:00 - finish: Room A6.11 | Week 06 - 10 |
+| XX-Xxx-2024 | Week 00 | Overview 1, Virtualization & Scripting | Ch. 1, 2, 18. |
+| XX-Xxx-2024 | Week 01 | Overview 2, Virtualization & Scripting | Ch. 1, 2, 18. |
+| XX-Xxx-2024 | Week 02 | Security, Protection, Privacy, & C-language. | Ch. 16, 17. |
+| XX-Xxx-2024 | Week 03 | File System & FUSE | Ch. 13, 14, 15. |
+| XX-Xxx-2024 | Week 04 | Addressing, Shared Lib, & Pointer | Ch. 9. |
+| XX-Xxx-2024 | Week 05 | Virtual Memory | Ch. 10. |
+| XX-Xxx-2024 | MIDTERM | TBA |
+| XX-Xxx-2024 | Week 06 | Concurrency: Processes & Threads | Ch. 3, 4. |
+| XX-Xxx-2024 | Week 07 | Synchronization & Deadlock | Ch. 6, 7, 8. |
+| XX-Xxx-2024 | Week 08 | Scheduling + W06/W07 | Ch. 5. |
+| XX-Xxx-2024 | Week 09 | Storage, Firmware, Bootloader, & Systemd | Ch. 11. |
+| XX-Xxx-2024 | Week 10 | I/O & Programming | Ch. 12. |
+| XX-Xxx-2024 | FINAL   | TBA |
 
 [](NNNN)
 [&#x213C;](#)<br id="idx03">
@@ -54,7 +54,6 @@ title:  "Operating Systems - Sistem Operasi"
     There are too many "GNU/Linux" sites around, do your own GSGS!
   * [From Students for Students](https://doit.vlsm.org/040.html) ---
     Links from previous semesters.
-* [Udacity: OS Visual Metaphors](https://goo.gl/HaUk5g)
 * [YouTube: OS Playlists](/playlists/)
 
 [&#x213C;](#)<br id="idx04">

@@ -6,7 +6,7 @@ title:  "Operating Systems - Sistem Operasi"
 <br>
 ## Last Report: WXX Rev: XX-XXX-XXXX XX:XX
 * [See Report](/Log/)
-* [Weekly Assignments](https://demos.vlsm.org/#idx000)
+* [Weekly Assignments](https://demos.vlsm.org/)
 * [HOW TO CONTACT the lecturer](#idx01)
 * [SCELE]({{ site.urlscele }})
 * [Schedule](#idx02)
@@ -39,7 +39,6 @@ title:  "Operating Systems - Sistem Operasi"
     There are too many "GNU/Linux" sites around, do your own GSGS!
   * [From Students for Students](https://doit.vlsm.org/040.html) ---
     Links from previous semesters.
-* [Udacity: OS Visual Metaphors](https://goo.gl/HaUk5g)
 * [YouTube: OS Playlists](/playlists/)
 
 [&#x213C;](#)<br id="idx04">
