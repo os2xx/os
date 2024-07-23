@@ -28,10 +28,14 @@
 
 .plainclass1 h1 {
   color:            hsl(100, 50%, 50%);
+  font-size:        1.9em;
+  font-weight:      bold;
 }
 
 .plainclass1 h2 {
   color:            hsl(100, 50%, 50%);
+  font-size:        1.4em;
+  font-weight:      bold;
 }
 
 .plainclass1 h3 {
@@ -55,6 +59,10 @@
 
 .container a:hover {
   color: #f0f0f0;
+}
+
+.textleft {
+  text-align:   left;
 }
 
 .row {
@@ -132,6 +140,16 @@
   clear: both;
 }
 
+td {
+  padding-top:      3px;
+  padding-bottom:   3px;
+}
+
+li {
+  padding-top:      3px;
+  padding-bottom:   3px;
+}
+
 .navbar {
   background-color: #101010;
   color:            #FFFFFF;
@@ -157,10 +175,15 @@
 }
 
 pre {
-  border:        3px solid rgba(255, 255, 255, 0.15);
-  padding:       10px; 
-  color:         #b5e853;
-  border-radius: 2px;
+  background-color: hsla(0,     0%,    0%, 1);
+  border:           1px solid hsla(0,    50%,   20%, 1);
+  padding:          10px;
+  font-size:        16px;
+  color:            hsla(0,   100%,  100%, 1);
+  border-radius:    2px;
+  word-wrap:        normal;
+  overflow:         auto;
+  overflow-y:       hidden;
 }
 
 table {

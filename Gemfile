@@ -1,11 +1,19 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'jekyll-sitemap'
-gem 'github-pages', group: :jekyll_plugins
+group :jekyll_plugins do
 gem "addressable"
-gem "nokogiri"
 gem "faraday-retry"
-gem 'webrick'
-gem "minitest"
 gem "ffi"
+gem "github-pages"
+gem "jekyll"
+gem "jekyll-sitemap"
+gem "jekyll-seo-tag"
+gem "jekyll-feed"
+gem "jekyll-paginate"
+gem "minitest"
+gem "nokogiri"
+gem "readline-ext"
+gem "tzinfo-data"
+gem "webrick"
+end
 
