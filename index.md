@@ -6,9 +6,9 @@ title:  "Operating Systems - Sistem Operasi"
 <br>
 ## Last Report: WXX Rev: XX-XXX-XXXX XX:XX
 * [See Report](/Log/){:target="_blank"}
-* [Weekly Assignments](https://demos.vlsm.org/)
+* [Weekly Assignments](https://demos.vlsm.org/){:target="_blank"}
 * [HOW TO CONTACT the lecturer(s)](#idx01)
-* [SCELE]({{ site.urlscele }})
+* [SCELE]({{ site.urlscele }}){:target="_blank"}
 * [Schedule](#idx02)
 * [LINKS](#idx03)
 * [MORE LINKS](#idx04)
@@ -18,10 +18,10 @@ title:  "Operating Systems - Sistem Operasi"
 
 [&#x213C;](#)<br id="idx01">
 # HOW TO CONTACT the lecturer(s)
-  * No [Puss in Boots face](https://rahmatm.samik-ibrahim.vlsm.org/2013/12/puss-in-boots.html), please!
+  * No [Puss in Boots face](https://rahmatm.samik-ibrahim.vlsm.org/2013/12/puss-in-boots.html){:target="_blank"}, please!
   * Always introduce yourself! State your "GitHubAccount", "Student ID", "CPU," and "OS class".
     * For assignment questions, use 
-      [<span style="color:red; font-weight:bold; font-size:larger;">SCELE</span>]({{ site.urlscele }}).
+      [<span style="color:red; font-weight:bold; font-size:larger;">SCELE</span>]({{ site.urlscele }}){:target="_blank"}.
     * For grading related questions, email (Subject:[**OS**]) rms46 at ui dot ac dot id
 
 [&#x213C;](#)<br id="idx02">
