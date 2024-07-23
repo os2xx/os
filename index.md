@@ -5,9 +5,9 @@ title:  "Operating Systems - Sistem Operasi"
 
 <br>
 ## Last Report: WXX Rev: XX-XXX-XXXX XX:XX
-* [See Report](/Log/)
+* [See Report](/Log/){:target="_blank"}
 * [Weekly Assignments](https://demos.vlsm.org/)
-* [HOW TO CONTACT the lecturer](#idx01)
+* [HOW TO CONTACT the lecturer(s)](#idx01)
 * [SCELE]({{ site.urlscele }})
 * [Schedule](#idx02)
 * [LINKS](#idx03)
@@ -77,8 +77,8 @@ title:  "Operating Systems - Sistem Operasi"
 | [MIDTERM W05 2017-2](https://rms46.vlsm.org/2/223.pdf) | [MIDTERM FORK 2010/11](https://rms46.vlsm.org/2/232.pdf) |
 |     |
 | ETC |
-| [OSC 10](https://codex.cs.yale.edu/avi/os-book/) | [Slides](https://codex.cs.yale.edu/avi/os-book/OS10/slide-dir/) | [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) | [UDACITY (login)](https://classroom.udacity.com/courses/ud923) | 
-| [OS Kunyuk 1](https://rms46.vlsm.org/2/213.pdf) | [OS Kunyuk 2](https://rms46.vlsm.org/2/214.pdf) | [Jekyll](https://jekyll.vlsm.org) | 
+| [OSC 10](https://codex.cs.yale.edu/avi/os-book/) | [Slides](https://codex.cs.yale.edu/avi/os-book/OS10/slide-dir/) | [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) | [GitHub Template](https://template.vlsm.org/) | 
+| [OS Kunyuk 1](https://rms46.vlsm.org/2/213.pdf) | [OS Kunyuk 2](https://rms46.vlsm.org/2/214.pdf) |
 
 [&#x213C;](#)<br id="idx05">
 <h3>DISCLAIMER</h3>
