@@ -1,0 +1,19 @@
+
+| 26-Aug-2024 | Week 00 | Overview 1, Virtualization & Scripting | Ch. 1, 2, 18. |
+| 02-Sep-2024 | Week 01 | Overview 2, Virtualization & Scripting | Ch. 1, 2, 18. |
+| 09-Sep-2024 | Week 02 | Security, Protection, Privacy, & C-language. | Ch. 16, 17. |
+| 18-Sep-2024 | Week 03 | File System & FUSE | Ch. 13, 14, 15. |
+| 25-Sep-2024 | Week 04 | Addressing, Shared Lib, & Pointer | Ch. 9. |
+| 02-Oct-2024 | Week 05 | Virtual Memory | Ch. 10. |
+| 14-Oct-2024 | MIDTERM | 14 to 22 | TBA  |
+| 23-Oct-2024 | Week 06 | Concurrency: Processes & Threads | Ch. 3, 4. |
+| 30-Oct-2024 | Week 07 | Synchronization & Deadlock | Ch. 6, 7, 8. |
+| 06-Nov-2024 | Week 08 | Scheduling + W06/W07 | Ch. 5. |
+| 13-Nov-2024 | Week 09 | Storage, Firmware, Bootloader, & Systemd | Ch. 11. |
+| 20-Nov-2024 | Week 10 | I/O & Programming | Ch. 12. |
+| 11-Dec-2024 | FINAL   | 11 to 20 | TBA |
+
+[//]: # (This is a comment, it will not be included)
+<!--
+-->
+
