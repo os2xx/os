@@ -4,7 +4,7 @@ title:  "Operating Systems - Sistem Operasi"
 ---
 
 <br>
-## Last Report: W00 Rev: 22-Aug-2024 05:35
+## Last Report: W00 Rev: 23-Aug-2024 06:27
 * [See Report](/Log/){:target="_blank"}
 * [Weekly Assignments](https://demos.vlsm.org/){:target="_blank"}
 * [HOW TO CONTACT the lecturer(s)](#idx01)
