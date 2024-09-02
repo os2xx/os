@@ -4,7 +4,7 @@ title:  "Operating Systems - Sistem Operasi"
 ---
 
 <br>
-## Last Report: W00 Rev: 02-Sep-2024 07:16
+## Last Report: W00 Rev: 02-Sep-2024 20:52
 * [See Report](/Log/){:target="_blank"}
 * [Weekly Assignments](https://demos.vlsm.org/){:target="_blank"}
 * [HOW TO CONTACT the lecturer(s)](#idx01)
@@ -44,7 +44,7 @@ title:  "Operating Systems - Sistem Operasi"
 [&#x213C;](#)<br id="idx04">
 # MORE LINKS
 
-| [Last Report](Log/) | [CBKadal](https://github.com/cbkadal/os241/) | [FAQ](/FAQ/) | [DoIt](https://doit.vlsm.org/)
+| [Last Report](Log/) | [CBKadal](https://github.com/cbkadal/os242/) | [FAQ](/FAQ/) | [DoIt](https://doit.vlsm.org/)
 | [Demos](https://github.com/os2xx/demOS/tree/master/Demos/) | [Slides](https://docOS.vlsm.org/) | [OSP4DISS](https://osp4diss.vlsm.org/) | [Log Codes](https://doit.vlsm.org/ETC/logCodes.txt) |
 |        |
 | SLIDES |
