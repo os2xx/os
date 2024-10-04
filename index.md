@@ -36,7 +36,7 @@ title:  "Operating Systems - Sistem Operasi"
 | 18-Sep-2024 | Week 03 | File System & FUSE | Ch. 13, 14, 15. |
 | 25-Sep-2024 | Week 04 | Addressing, Shared Lib, & Pointer | Ch. 9. |
 | 02-Oct-2024 | Week 05 | Virtual Memory | Ch. 10. |
-| 22-Oct-2024 | MIDTERM | 09:00-11:30 | A2.06  |
+| 22-Oct-2024 | MIDTERM | Room: A2.06 | 09:00-11:30 |
 | 23-Oct-2024 | Week 06 | Concurrency: Processes & Threads | Ch. 3, 4. |
 | 30-Oct-2024 | Week 07 | Synchronization & Deadlock | Ch. 6, 7, 8. |
 | 06-Nov-2024 | Week 08 | Scheduling + W06/W07 | Ch. 5. |
