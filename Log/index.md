@@ -3,7 +3,7 @@ layout: "layout"
 title: REPORT
 ---
 
-## Week: W05 Rev: 11-Oct-2024 23:30
+## Week: W06 Rev: 01-Nov-2024 21:28
 
 To Get CBKADAL`s TARBALL:
 
