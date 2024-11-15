@@ -42,7 +42,7 @@ title:  "Operating Systems - Sistem Operasi"
 | 06-Nov-2024 | Week 08 | Scheduling + W06/W07 | Ch. 5. |
 | 13-Nov-2024 | Week 09 | Storage, Firmware, Bootloader, & Systemd | Ch. 11. |
 | 20-Nov-2024 | Week 10 | I/O & Programming | Ch. 12. |
-| 11-Dec-2024 | FINAL   | 11 to 20 | TBA |
+| 16-Dec-2024 | FINAL   | Room: A2.06 | 09:00-11:30 |
 
 [//]: # (This is a comment, it will not be included)
 <!--
