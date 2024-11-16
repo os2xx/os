@@ -24,6 +24,8 @@ title:  "Operating Systems - Sistem Operasi"
       [<span style="color:red; font-weight:bold; font-size:larger;">SCELE</span>]({{ site.urlscele }}){:target="_blank"}.
     * For grading related questions, email (Subject:[**OS**]) rms46 at ui dot ac dot id
     * For SCELE QUIZ (not POP QUIZ) grading appeal, email (Subject:[**APPEAL**]) amril dot syalim at cs dot ui dot ac dot id
+    * For any other business, or any permission, you should contact SEKRE directly:
+      * email sekreakademik(at)cs dot ui dot ac dot id
 
 [&#x213C;](#)<br id="idx02">
 # Schedule (Ref: OSC10)
